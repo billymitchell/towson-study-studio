@@ -1,0 +1,5070 @@
+[
+  {
+    "id": "sa-software",
+    "type": "short-answer",
+    "topicId": "intro",
+    "subtopicId": "software",
+    "difficulty": "Intermediate",
+    "prompt": "Define software and explain why software engineering is broader than programming.",
+    "modelAnswer": "Software comprises computer programs and their associated documentation. Software engineering covers the full production and maintenance lifecycle, including specification, development, validation, and evolution. Programming is one activity within that discipline. Example: A delivered scheduling product includes its program, configuration, and user documentation, not just its source code.",
+    "expectedConcepts": [
+      "Programs and associated documentation",
+      "Engineering includes production and maintenance",
+      "Programming is part of a wider lifecycle"
+    ],
+    "rubric": [
+      "Programs and associated documentation",
+      "Engineering includes production and maintenance",
+      "Programming is part of a wider lifecycle"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-four-ps",
+    "type": "short-answer",
+    "topicId": "intro",
+    "subtopicId": "four-ps",
+    "difficulty": "Intermediate",
+    "prompt": "Name the four Ps and explain each using a clinic software project.",
+    "modelAnswer": "The four Ps are People, Product, Process, and Project. People include customers, managers, developers, testers, and users; communication and collaboration matter. Product covers generic or customized software and qualities such as acceptability, dependability/security, efficiency, and maintainability. Process structures the four core activities. Project balances constraints to deliver the result. Example: For a clinic system: staff and developers are People; the clinic application is the Product; elicitation, construction, testing, and change form the Process; coordination of scope, schedule, and resources is the Project.",
+    "expectedConcepts": [
+      "People and their roles",
+      "Product and its qualities",
+      "Process activities",
+      "Project coordination and constraints"
+    ],
+    "rubric": [
+      "People and their roles",
+      "Product and its qualities",
+      "Process activities",
+      "Project coordination and constraints"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-evolution",
+    "type": "short-answer",
+    "topicId": "intro",
+    "subtopicId": "evolution",
+    "difficulty": "Intermediate",
+    "prompt": "Explain software evolution and why its cost matters after delivery.",
+    "modelAnswer": "Evolution modifies software in response to changing customer and market requirements. Software is rarely finished permanently. Requirements and environments change, so development and evolution form a continuing lifecycle. For customized systems, evolution costs can exceed initial development costs. Example: A clinic adds telehealth appointments to an existing scheduling system when service needs change.",
+    "expectedConcepts": [
+      "Changing customer or market needs",
+      "Modification of an existing system",
+      "Evolution can cost more than initial custom development"
+    ],
+    "rubric": [
+      "Changing customer or market needs",
+      "Modification of an existing system",
+      "Evolution can cost more than initial custom development"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-ethics",
+    "type": "short-answer",
+    "topicId": "intro",
+    "subtopicId": "ethics",
+    "difficulty": "Intermediate",
+    "prompt": "Explain the four professional responsibilities and apply one to a patient-data scenario.",
+    "modelAnswer": "The lecture identifies confidentiality, competence, intellectual property rights, and computer misuse as professional responsibilities. Respect client confidentiality even without a signed agreement; be truthful about competence; protect employer/client intellectual property; and do not misuse other people’s computers. Professional responsibility extends beyond technical correctness. Example: A developer asked to share patient test data should protect confidentiality and seek an appropriate authorized route.",
+    "expectedConcepts": [
+      "Confidentiality",
+      "Honest representation of competence",
+      "Intellectual property protection",
+      "Avoidance of computer misuse",
+      "Reasoned scenario application"
+    ],
+    "rubric": [
+      "Confidentiality",
+      "Honest representation of competence",
+      "Intellectual property protection",
+      "Avoidance of computer misuse",
+      "Reasoned scenario application"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-activities",
+    "type": "short-answer",
+    "topicId": "process",
+    "subtopicId": "activities",
+    "difficulty": "Intermediate",
+    "prompt": "Describe the four process activities and what a process description adds.",
+    "modelAnswer": "The four fundamental activities are specification, development, validation, and evolution. Specification establishes services and constraints; development designs and implements them; validation checks customer needs; evolution handles change. Process descriptions can state activities, roles, work products, and pre/postconditions. The activities may be interleaved rather than strictly sequential. Example: A team interviews users, builds an increment, checks it with users, and then changes it based on feedback.",
+    "expectedConcepts": [
+      "Specification",
+      "Development",
+      "Validation",
+      "Evolution",
+      "Roles, work products, or conditions"
+    ],
+    "rubric": [
+      "Specification",
+      "Development",
+      "Validation",
+      "Evolution",
+      "Roles, work products, or conditions"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-plan-agile",
+    "type": "short-answer",
+    "topicId": "process",
+    "subtopicId": "plan-agile",
+    "difficulty": "Intermediate",
+    "prompt": "Compare plan-driven and agile planning, and justify a choice for changing requirements.",
+    "modelAnswer": "Plan-driven work plans activities in advance; agile work plans incrementally and accommodates changing requirements. Plan-driven processes assess progress against a plan. Agile processes make it easier to adapt to changing customer requirements. Most practical processes combine elements; suitability depends on the system and constraints. Example: A project with stable contractual requirements may emphasize advance planning, while a changing user-facing service benefits from frequent incremental feedback.",
+    "expectedConcepts": [
+      "Advance planning versus incremental planning",
+      "Response to changing requirements",
+      "Context-based trade-off",
+      "Possible hybrid process"
+    ],
+    "rubric": [
+      "Advance planning versus incremental planning",
+      "Response to changing requirements",
+      "Context-based trade-off",
+      "Possible hybrid process"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-models",
+    "type": "short-answer",
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Intermediate",
+    "prompt": "Compare the three process models and explain one limitation of each.",
+    "modelAnswer": "Waterfall separates process phases; incremental development interleaves activities in versions; reuse-oriented development assembles existing components. Waterfall fits well-understood stable requirements but makes later change costly. Incremental development offers early usable versions and feedback, though progress visibility and structure need attention. Reuse-oriented development reduces new construction but may require adapting requirements to available components. Example: For a service portal, deliver booking before reporting; if a suitable package exists, evaluate its fit rather than assuming all features must be built.",
+    "expectedConcepts": [
+      "Waterfall phase separation and change cost",
+      "Incremental interleaving and feedback",
+      "Reuse-oriented integration and requirements compromise"
+    ],
+    "rubric": [
+      "Waterfall phase separation and change cost",
+      "Incremental interleaving and feedback",
+      "Reuse-oriented integration and requirements compromise"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-change",
+    "type": "short-answer",
+    "topicId": "process",
+    "subtopicId": "change",
+    "difficulty": "Intermediate",
+    "prompt": "Explain change anticipation and change tolerance, using a costly late requirement change.",
+    "modelAnswer": "Requirements change creates rework; anticipating change and tolerating change can reduce that cost. Change anticipation uses activities such as prototyping to reveal likely changes before major investment. Change tolerance structures development so change can be accommodated, for example through incremental delivery. Later changes may affect more completed work and dependencies. Example: Prototype appointment booking with staff before finalizing requirements, then deliver increments so new workflow needs can be accommodated.",
+    "expectedConcepts": [
+      "Change causes rework",
+      "Anticipation through prototyping",
+      "Tolerance through incremental delivery",
+      "Reasoned explanation of downstream cost"
+    ],
+    "rubric": [
+      "Change causes rework",
+      "Anticipation through prototyping",
+      "Tolerance through incremental delivery",
+      "Reasoned explanation of downstream cost"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-principles",
+    "type": "short-answer",
+    "topicId": "agile",
+    "subtopicId": "principles",
+    "difficulty": "Intermediate",
+    "prompt": "Explain all five agile principles and apply two to a changing booking project.",
+    "modelAnswer": "Agile principles include customer involvement, incremental delivery, people over process, embracing change, and maintaining simplicity. Customers help prioritize and evaluate increments. Teams use their skills rather than rigid rules, accept changing needs, and avoid unnecessary complexity. These principles require active collaboration and disciplined engineering. Example: A team delivers a small booking increment, reviews it with staff, reprioritizes feedback, and avoids speculative features.",
+    "expectedConcepts": [
+      "Customer involvement",
+      "Incremental delivery",
+      "People over process",
+      "Embracing change",
+      "Maintaining simplicity",
+      "Scenario application"
+    ],
+    "rubric": [
+      "Customer involvement",
+      "Incremental delivery",
+      "People over process",
+      "Embracing change",
+      "Maintaining simplicity",
+      "Scenario application"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-xp",
+    "type": "short-answer",
+    "topicId": "agile",
+    "subtopicId": "xp",
+    "difficulty": "Intermediate",
+    "prompt": "Explain test-first development, refactoring, pair programming, and continuous integration in XP (Extreme Programming).",
+    "modelAnswer": "XP (Extreme Programming) combines frequent small releases with practices such as test-first development, pair programming, refactoring, and continuous integration. Incremental planning uses customer stories; simple design addresses current needs. Refactoring improves structure without changing behavior; collective ownership lets the team improve any code. Tests are written before implementation, integrations happen frequently, and an available customer guides priorities. The lecture also lists sustainable pace. Example: Write a failing test for a booking rule, implement the smallest change to pass it, then refactor while tests protect behavior.",
+    "expectedConcepts": [
+      "Test before implementation",
+      "Refactoring preserves behavior",
+      "Pairs collaborate on code",
+      "Frequent integration with tests",
+      "Connection to small releases and customer feedback"
+    ],
+    "rubric": [
+      "Test before implementation",
+      "Refactoring preserves behavior",
+      "Pairs collaborate on code",
+      "Frequent integration with tests",
+      "Connection to small releases and customer feedback"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-scrum",
+    "type": "short-answer",
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Intermediate",
+    "prompt": "Describe Scrum roles, backlog, sprint, daily Scrum, increment, and velocity.",
+    "modelAnswer": "Scrum organizes work through a product backlog, sprints, daily Scrums, and potentially shippable increments. The Product Owner represents priorities and manages the product backlog. The ScrumMaster supports Scrum and removes impediments. The Development Team builds the increment. Sprint planning selects work, the sprint develops it, daily Scrums coordinate, and review/retrospective inform further work. Velocity describes completed work and informs planning, not an individual performance ranking. Example: A Product Owner prioritizes appointment reminders; the team selects a sprint goal, coordinates daily, and demonstrates the increment.",
+    "expectedConcepts": [
+      "Product Owner priorities",
+      "ScrumMaster facilitation",
+      "Development Team delivery",
+      "Product backlog and sprint",
+      "Daily Scrum and increment",
+      "Velocity as completed work for planning"
+    ],
+    "rubric": [
+      "Product Owner priorities",
+      "ScrumMaster facilitation",
+      "Development Team delivery",
+      "Product backlog and sprint",
+      "Daily Scrum and increment",
+      "Velocity as completed work for planning"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-types",
+    "type": "short-answer",
+    "topicId": "requirements",
+    "subtopicId": "types",
+    "difficulty": "Intermediate",
+    "prompt": "Distinguish user/system and functional/non-functional requirements; give examples and classify non-functional constraints.",
+    "modelAnswer": "User requirements give high-level services and constraints; system requirements describe detailed functions and constraints. Functional requirements specify services or behavior. Non-functional requirements constrain qualities or development, and may be product, organizational, or external requirements. User/system abstraction and functional/non-functional classification are separate dimensions. Example: “Book an appointment” is functional. “Return available slots within two seconds under the stated load” is a product performance constraint. A mandated organizational tool is an organizational constraint.",
+    "expectedConcepts": [
+      "High-level user versus detailed system requirements",
+      "Functional services",
+      "Non-functional constraints",
+      "Product, organizational, external classifications",
+      "Dimensions are independent"
+    ],
+    "rubric": [
+      "High-level user versus detailed system requirements",
+      "Functional services",
+      "Non-functional constraints",
+      "Product, organizational, external classifications",
+      "Dimensions are independent"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-elicitation",
+    "type": "short-answer",
+    "topicId": "requirements",
+    "subtopicId": "elicitation",
+    "difficulty": "Intermediate",
+    "prompt": "Plan elicitation for conflicting patient and receptionist needs. Explain interview limitations and a complementary method.",
+    "modelAnswer": "Elicitation discovers stakeholder needs, domain knowledge, constraints, and conflicting viewpoints. Stakeholders may struggle to articulate needs, use domain terms, or have conflicting priorities. Interviews should be prepared, open-minded, and supported by prompts or examples; do not assume interviews expose all tacit working practices. Observation, scenarios, and prototypes can complement interviews. Example: Interview patients and receptionists separately, compare booking priorities, observe actual work, and validate a prototype with both groups.",
+    "expectedConcepts": [
+      "Multiple stakeholder viewpoints",
+      "Prepared and open-minded interviewing",
+      "Conflict or ambiguity discovery",
+      "Tacit knowledge limitation",
+      "Observation, scenario, or prototype"
+    ],
+    "rubric": [
+      "Multiple stakeholder viewpoints",
+      "Prepared and open-minded interviewing",
+      "Conflict or ambiguity discovery",
+      "Tacit knowledge limitation",
+      "Observation, scenario, or prototype"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-specification",
+    "type": "short-answer",
+    "topicId": "requirements",
+    "subtopicId": "specification",
+    "difficulty": "Intermediate",
+    "prompt": "Improve “The booking system should be fast and reliable.” Explain the structured fields needed before it is testable.",
+    "modelAnswer": "Natural-language requirements are accessible but can be unclear, incomplete, or combine several requirements. A structured template retains expressiveness while standardizing fields: identifier, definition, rationale, source/author, inputs, required function, outputs, related requirements/conflicts, test cases, date, and priority. A use-case template instead describes interactions and paths. Prefer separate, measurable statements with clear conditions. Example: Replace “The system should respond quickly” with a negotiated response limit, operating conditions, and a repeatable test. Separate availability and response-time requirements.",
+    "expectedConcepts": [
+      "Identify ambiguity and amalgamation",
+      "Separate statements",
+      "Agree measurable conditions and thresholds",
+      "Inputs/function/outputs or rationale/source",
+      "Test cases and traceability"
+    ],
+    "rubric": [
+      "Identify ambiguity and amalgamation",
+      "Separate statements",
+      "Agree measurable conditions and thresholds",
+      "Inputs/function/outputs or rationale/source",
+      "Test cases and traceability"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-use-template",
+    "type": "short-answer",
+    "topicId": "requirements",
+    "subtopicId": "use-template",
+    "difficulty": "Intermediate",
+    "prompt": "Outline a cash-withdrawal use case with actors, trigger, main flow, exception, precondition, and postcondition.",
+    "modelAnswer": "A use case describes interactions between actors and the system toward a user goal. The lecture template includes identifier, iteration, summary, actors, event sequence, alternate/exception paths, extensions, trigger, assumptions, precondition, postcondition, author, and modification date. Actors are external roles, including other systems. Diagrams complement the textual steps; they do not capture every detail. Example: For withdrawal: the customer requests cash; the system validates credentials, checks funds, dispenses cash, and records the debit. Insufficient funds is an exception path.",
+    "expectedConcepts": [
+      "External actor and user goal",
+      "Trigger and precondition",
+      "Main interaction steps",
+      "Alternate or exception path",
+      "Postcondition and identification"
+    ],
+    "rubric": [
+      "External actor and user goal",
+      "Trigger and precondition",
+      "Main interaction steps",
+      "Alternate or exception path",
+      "Postcondition and identification"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-validation",
+    "type": "short-answer",
+    "topicId": "requirements",
+    "subtopicId": "validation",
+    "difficulty": "Intermediate",
+    "prompt": "Name the five validation checks and apply test-case generation to an ambiguous response-time requirement.",
+    "modelAnswer": "Validation checks whether requirements define the system the customer actually wants. Validity checks real needs; consistency checks conflicts; completeness checks missing information; realism checks feasibility within constraints; verifiability checks whether compliance can be demonstrated. Reviews, prototypes, and test-case generation expose problems before expensive implementation rework. Example: If booking “must be instantaneous,” ask what response time and load would satisfy the need, negotiate a feasible value, and derive a test with expected results.",
+    "expectedConcepts": [
+      "Validity",
+      "Consistency",
+      "Completeness",
+      "Realism",
+      "Verifiability",
+      "Repeatable test with conditions and expected outcome"
+    ],
+    "rubric": [
+      "Validity",
+      "Consistency",
+      "Completeness",
+      "Realism",
+      "Verifiability",
+      "Repeatable test with conditions and expected outcome"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-management",
+    "type": "short-answer",
+    "topicId": "requirements",
+    "subtopicId": "management",
+    "difficulty": "Intermediate",
+    "prompt": "Explain the four requirements management planning elements for a changed booking rule.",
+    "modelAnswer": "Requirements management plans identification, change handling, traceability policies, and tool support. Stable identifiers let changes and tests refer to the same requirement. A change-management process evaluates impact and approves changes. Traceability connects requirements to sources and dependent artifacts; tools support the records and workflow. Example: A changed booking rule has an ID (identifier), links to a stakeholder request and tests, an impact analysis, and a recorded approval before implementation.",
+    "expectedConcepts": [
+      "Stable identification",
+      "Change-management process",
+      "Traceability policy",
+      "Tool support",
+      "Impact on related artifacts"
+    ],
+    "rubric": [
+      "Stable identification",
+      "Change-management process",
+      "Traceability policy",
+      "Tool support",
+      "Impact on related artifacts"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-views",
+    "type": "short-answer",
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Intermediate",
+    "prompt": "Explain the 4+1 views and choose a view for concurrency, code organization, and deployment concerns.",
+    "modelAnswer": "Architecture describes system organization. The lecture uses the 4+1 model: logical, process, development, and physical views linked by use-case scenarios. Logical view focuses on functionality and components/connectors. Process view models active processes, concurrency, communication, and performance. Development view organizes code artifacts such as packages and modules. Physical view maps software to hardware, networks, and deployment. Scenarios link views to requirements. Example: For a music player, browsing/purchasing scenarios tie together functional components, concurrent playback/download work, code modules, and device/server deployment.",
+    "expectedConcepts": [
+      "Logical functionality",
+      "Process concurrency and communication",
+      "Development code artifacts",
+      "Physical deployment",
+      "Scenarios link the views"
+    ],
+    "rubric": [
+      "Logical functionality",
+      "Process concurrency and communication",
+      "Development code artifacts",
+      "Physical deployment",
+      "Scenarios link the views"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-applications",
+    "type": "short-answer",
+    "topicId": "architecture",
+    "subtopicId": "applications",
+    "difficulty": "Intermediate",
+    "prompt": "Distinguish the four application types with a characteristic and example for each.",
+    "modelAnswer": "The four application types are data processing, transaction processing, event processing, and language processing. Data processing runs data-driven batches without explicit user intervention during processing. Transaction processing handles requests and updates stored information. Event processing responds to environmental events. Language processing interprets a formal language representing user intentions. Example: Payroll is data processing; reservation services are transaction processing; a real-time control system is event processing; a compiler is language processing.",
+    "expectedConcepts": [
+      "Data-driven batch processing",
+      "Requests with database updates",
+      "Actions driven by events",
+      "Formal-language processing",
+      "Appropriate examples"
+    ],
+    "rubric": [
+      "Data-driven batch processing",
+      "Requests with database updates",
+      "Actions driven by events",
+      "Formal-language processing",
+      "Appropriate examples"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-decomposition",
+    "type": "short-answer",
+    "topicId": "architecture",
+    "subtopicId": "decomposition",
+    "difficulty": "Intermediate",
+    "prompt": "Compare functional and object-oriented decomposition using payroll.",
+    "modelAnswer": "Functional design decomposes transformations of inputs into outputs; object-oriented design decomposes a system into objects with attributes and operations. Functional modules emphasize data flow and transformations. Object-oriented design groups state and related behavior behind interfaces in loosely coupled objects/classes. These are different decomposition approaches, not simply different programming language choices. Example: Payroll can be viewed as read data → calculate pay → produce outputs, or as employee/payroll objects that own data and operations.",
+    "expectedConcepts": [
+      "Functions transform inputs to outputs",
+      "Data flow between modules",
+      "Objects combine attributes and operations",
+      "Interfaces and loose coupling",
+      "Scenario-based comparison"
+    ],
+    "rubric": [
+      "Functions transform inputs to outputs",
+      "Data flow between modules",
+      "Objects combine attributes and operations",
+      "Interfaces and loose coupling",
+      "Scenario-based comparison"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-context",
+    "type": "short-answer",
+    "topicId": "modeling",
+    "subtopicId": "context",
+    "difficulty": "Intermediate",
+    "prompt": "Explain all four perspectives and identify the boundary and external systems for an appointment portal.",
+    "modelAnswer": "External, interaction, structural, and behavioral perspectives describe different aspects of a system; context models show its operational environment. External perspective shows context; interaction shows communication; structural shows organization/data; behavioral shows dynamic responses. A context boundary distinguishes the system under design from external systems. Context relationships do not describe detailed internal workflows; social and organizational concerns influence boundaries. Example: An appointment portal sits inside the chosen boundary; identity and notification services sit outside. Lines show relationships rather than booking step order.",
+    "expectedConcepts": [
+      "External/context",
+      "Interaction",
+      "Structural",
+      "Behavioral",
+      "System boundary and external dependencies"
+    ],
+    "rubric": [
+      "External/context",
+      "Interaction",
+      "Structural",
+      "Behavioral",
+      "System boundary and external dependencies"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "sa-use-diagrams",
+    "type": "short-answer",
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Intermediate",
+    "prompt": "Explain actors, boundary, associations, include, extend, and generalization; state the relationship directions.",
+    "modelAnswer": "Use-case diagrams show external actors, goal-oriented use cases, and their relationships inside a system boundary. Associations connect actors to use cases. Include factors out required shared steps and points toward the included behavior. Extend adds conditional behavior and points toward the base use case. Generalization goes from a specialized element toward the general one. Actors can be people or systems; not every stakeholder is an actor. Example: A patient is associated with Book appointment. Book appointment includes Check availability. An optional Request assistance use case can extend Book appointment when the specified condition holds.",
+    "expectedConcepts": [
+      "External roles and goal-oriented use cases",
+      "Boundary and associations",
+      "Include points to required reused behavior",
+      "Extend points to base under a condition",
+      "Generalization points to general element"
+    ],
+    "rubric": [
+      "External roles and goal-oriented use cases",
+      "Boundary and associations",
+      "Include points to required reused behavior",
+      "Extend points to base under a condition",
+      "Generalization points to general element"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-1",
+    "type": "multiple-choice",
+    "topicId": "process",
+    "subtopicId": "activities",
+    "difficulty": "Basic",
+    "prompt": "Which activity checks that the system meets customer requirements?",
+    "choices": [
+      "Validation",
+      "Development",
+      "Evolution",
+      "Project scheduling"
+    ],
+    "answer": 0,
+    "explanation": "Validation checks the software against customer needs.",
+    "distractorExplanations": [
+      "Validation checks the software against customer needs.",
+      "Development designs and programs the system.",
+      "Evolution modifies software for changing needs.",
+      "Scheduling coordinates project work; it is not the core validation activity."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-2",
+    "type": "multiple-choice",
+    "topicId": "process",
+    "subtopicId": "plan-agile",
+    "difficulty": "Basic",
+    "prompt": "A team plans in increments as user needs change. Which description fits?",
+    "choices": [
+      "Plan-driven with every detail fixed",
+      "Agile incremental planning",
+      "No process",
+      "Reuse alone"
+    ],
+    "answer": 1,
+    "explanation": "Agile planning is incremental and accommodates change.",
+    "distractorExplanations": [
+      "Fixed advance planning is the plan-driven emphasis.",
+      "Agile planning is incremental and accommodates change.",
+      "Incremental planning is still a managed process.",
+      "Reuse describes component integration, not this planning approach."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-3",
+    "type": "multiple-choice",
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Basic",
+    "prompt": "What is a typical limitation of reuse-oriented development?",
+    "choices": [
+      "No need for integration",
+      "Requirements may need to fit available components",
+      "All components must be written from scratch",
+      "Feedback cannot be collected"
+    ],
+    "answer": 1,
+    "explanation": "Available components can constrain requirements.",
+    "distractorExplanations": [
+      "Integration still requires work.",
+      "Available components can constrain requirements.",
+      "Writing everything afresh defeats reuse.",
+      "Reuse does not prohibit feedback."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-4",
+    "type": "multiple-choice",
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Basic",
+    "prompt": "What distinguishes incremental development?",
+    "choices": [
+      "No validation",
+      "Specification, development, and validation interleave",
+      "All requirements are frozen permanently",
+      "Only one final delivery is possible"
+    ],
+    "answer": 1,
+    "explanation": "Activities interleave as versions are developed.",
+    "distractorExplanations": [
+      "Each increment still needs validation.",
+      "Activities interleave as versions are developed.",
+      "Requirements can evolve through feedback.",
+      "Increments enable multiple versions and deliveries."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-5",
+    "type": "multiple-choice",
+    "topicId": "process",
+    "subtopicId": "change",
+    "difficulty": "Basic",
+    "prompt": "Which is an example of change anticipation?",
+    "choices": [
+      "Prototype a risky workflow before committing to it",
+      "Wait until deployment to ask users",
+      "Remove all validation",
+      "Assume requirements never change"
+    ],
+    "answer": 0,
+    "explanation": "A prototype exposes likely changes early.",
+    "distractorExplanations": [
+      "A prototype exposes likely changes early.",
+      "Late feedback increases avoidable rework.",
+      "Validation helps discover problems; removing it does not anticipate change.",
+      "The lecture recognizes change as normal."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-6",
+    "type": "multiple-choice",
+    "topicId": "agile",
+    "subtopicId": "principles",
+    "difficulty": "Basic",
+    "prompt": "Which choice best illustrates maintaining simplicity?",
+    "choices": [
+      "Build every speculative feature",
+      "Implement current needs and avoid unnecessary complexity",
+      "Ignore all future change",
+      "Skip design entirely"
+    ],
+    "answer": 1,
+    "explanation": "Simple design addresses current needs and avoids needless complexity.",
+    "distractorExplanations": [
+      "Speculative features add complexity without current value.",
+      "Simple design addresses current needs and avoids needless complexity.",
+      "Simplicity does not deny change.",
+      "Design remains necessary."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-7",
+    "type": "multiple-choice",
+    "topicId": "agile",
+    "subtopicId": "xp",
+    "difficulty": "Basic",
+    "prompt": "What does refactoring do in XP (Extreme Programming)?",
+    "choices": [
+      "Adds a new user feature",
+      "Changes structure while preserving observable behavior",
+      "Replaces all tests with inspection",
+      "Freezes the design"
+    ],
+    "answer": 1,
+    "explanation": "Refactoring improves code structure without changing behavior.",
+    "distractorExplanations": [
+      "A feature changes behavior; refactoring preserves it.",
+      "Refactoring improves code structure without changing behavior.",
+      "Tests help protect behavior during refactoring.",
+      "Refactoring enables design improvement rather than freezing it."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-8",
+    "type": "multiple-choice",
+    "topicId": "agile",
+    "subtopicId": "xp",
+    "difficulty": "Basic",
+    "prompt": "In test-first development, what comes first for a new behavior?",
+    "choices": [
+      "Write a test describing the behavior",
+      "Deploy the complete application",
+      "Delete failing tests",
+      "Wait until user acceptance to test"
+    ],
+    "answer": 0,
+    "explanation": "The test is authored before the implementation.",
+    "distractorExplanations": [
+      "The test is authored before the implementation.",
+      "Deployment follows implementation and checks.",
+      "A failing test guides implementation; it should not simply be deleted.",
+      "Late-only testing is not test-first development."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-9",
+    "type": "multiple-choice",
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Basic",
+    "prompt": "Who represents priorities in the product backlog?",
+    "choices": [
+      "ScrumMaster",
+      "Product Owner",
+      "Any external vendor alone",
+      "An individual tester alone"
+    ],
+    "answer": 1,
+    "explanation": "The Product Owner manages product priorities and the backlog.",
+    "distractorExplanations": [
+      "The ScrumMaster supports the process and removes impediments.",
+      "The Product Owner manages product priorities and the backlog.",
+      "A vendor alone does not fulfill the Product Owner responsibility.",
+      "Testing does not alone own product prioritization."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-10",
+    "type": "multiple-choice",
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Basic",
+    "prompt": "What is a sprint intended to produce?",
+    "choices": [
+      "A potentially shippable increment",
+      "Only a permanent requirements freeze",
+      "An individual performance ranking",
+      "An untested code archive"
+    ],
+    "answer": 0,
+    "explanation": "The sprint develops an increment that is potentially shippable.",
+    "distractorExplanations": [
+      "The sprint develops an increment that is potentially shippable.",
+      "Scrum continues to accommodate product learning.",
+      "Velocity supports planning; ranking individuals is not the sprint purpose.",
+      "Quality and completion matter for the increment."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-11",
+    "type": "multiple-choice",
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Basic",
+    "prompt": "Which architectural view focuses on concurrent processes and communication?",
+    "choices": [
+      "Physical",
+      "Development",
+      "Process",
+      "Logical only"
+    ],
+    "answer": 2,
+    "explanation": "Process view covers active processes, concurrency, and communication.",
+    "distractorExplanations": [
+      "Physical view maps software to hardware and deployment.",
+      "Development view organizes code artifacts.",
+      "Process view covers active processes, concurrency, and communication.",
+      "Logical view primarily addresses functionality and components."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-12",
+    "type": "multiple-choice",
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Basic",
+    "prompt": "True or false: one architectural view captures every system concern.",
+    "choices": [
+      "True, all views are interchangeable",
+      "False, views address different concerns",
+      "True, a deployment view defines all user goals",
+      "False, architecture has no relation to requirements"
+    ],
+    "answer": 1,
+    "explanation": "Multiple views plus scenarios cover different concerns.",
+    "distractorExplanations": [
+      "The views have distinct purposes.",
+      "Multiple views plus scenarios cover different concerns.",
+      "Deployment alone does not describe all functionality.",
+      "Requirements influence architectural choices."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-13",
+    "type": "multiple-choice",
+    "topicId": "architecture",
+    "subtopicId": "applications",
+    "difficulty": "Basic",
+    "prompt": "A compiler primarily exemplifies which application type?",
+    "choices": [
+      "Transaction processing",
+      "Language processing",
+      "Payroll batch processing",
+      "Reservation processing"
+    ],
+    "answer": 1,
+    "explanation": "A compiler processes a formal language.",
+    "distractorExplanations": [
+      "Transaction systems handle requests and update records.",
+      "A compiler processes a formal language.",
+      "Payroll illustrates data processing.",
+      "Reservations illustrate transaction processing."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-14",
+    "type": "multiple-choice",
+    "topicId": "architecture",
+    "subtopicId": "decomposition",
+    "difficulty": "Basic",
+    "prompt": "Which description best fits object-oriented design?",
+    "choices": [
+      "Transformations only, with no state grouping",
+      "Objects encapsulating attributes and operations",
+      "A single global data structure for every module",
+      "Eliminating interfaces"
+    ],
+    "answer": 1,
+    "explanation": "Objects combine state and behavior behind interfaces.",
+    "distractorExplanations": [
+      "That describes a functional emphasis rather than object decomposition.",
+      "Objects combine state and behavior behind interfaces.",
+      "Global shared state does not define object-oriented decomposition.",
+      "Interfaces help organize loosely coupled objects."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-15",
+    "type": "multiple-choice",
+    "topicId": "modeling",
+    "subtopicId": "context",
+    "difficulty": "Basic",
+    "prompt": "What does a context model primarily show?",
+    "choices": [
+      "Detailed order of internal calls",
+      "The system boundary and its external environment",
+      "Every class attribute",
+      "Every possible state transition"
+    ],
+    "answer": 1,
+    "explanation": "Context shows the operational environment and what lies outside the boundary.",
+    "distractorExplanations": [
+      "Internal call order is not context-model detail.",
+      "Context shows the operational environment and what lies outside the boundary.",
+      "Class attributes belong to structural detail.",
+      "State transitions describe behavioral detail."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-16",
+    "type": "multiple-choice",
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Basic",
+    "prompt": "Where does an include arrow point?",
+    "choices": [
+      "From the included behavior to the caller",
+      "From the base use case to the included behavior",
+      "From every actor to the boundary",
+      "From an optional extension to an actor"
+    ],
+    "answer": 1,
+    "explanation": "Include points toward the required reused behavior.",
+    "distractorExplanations": [
+      "That reverses the include relationship.",
+      "Include points toward the required reused behavior.",
+      "Actor associations do not define include.",
+      "This does not describe include; extend points to a base use case."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-17",
+    "type": "multiple-choice",
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Basic",
+    "prompt": "Which statement about actors is correct?",
+    "choices": [
+      "Only humans can be actors",
+      "Every stakeholder must be an actor",
+      "An external system can be an actor",
+      "Internal implementation classes must be actors"
+    ],
+    "answer": 2,
+    "explanation": "An actor is an external interacting role, including another system.",
+    "distractorExplanations": [
+      "External systems may also be actors.",
+      "A stakeholder who never interacts is not necessarily an actor.",
+      "An actor is an external interacting role, including another system.",
+      "Internal classes sit inside the implementation, not as external actors."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-01",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "software",
+    "difficulty": "Intermediate",
+    "prompt": "A release contains executable files but no installation instructions or user documentation. What is missing from the course definition of software?",
+    "choices": [
+      "Associated documentation",
+      "A separate hardware product",
+      "A project manager in the release package",
+      "A guarantee that requirements will never change"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Software includes programs and associated documentation.",
+    "distractorExplanations": [
+      "Software includes programs and associated documentation.",
+      "Hardware is distinct from software and its documentation.",
+      "People manage the project; they are not part of the software deliverable.",
+      "Evolution is expected; permanent requirements are not part of the definition."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-02",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "software",
+    "difficulty": "Intermediate",
+    "prompt": "Which responsibility most clearly extends beyond programming?",
+    "choices": [
+      "Choosing a variable name inside a function",
+      "Validating the delivered system against customer needs",
+      "Writing a loop to process records",
+      "Fixing a syntax error before compilation"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Validation is a lifecycle engineering responsibility involving customer needs.",
+    "distractorExplanations": [
+      "Naming a variable is a programming activity.",
+      "Validation is a lifecycle engineering responsibility involving customer needs.",
+      "Implementing a loop is programming.",
+      "Correcting syntax is programming, not the broader lifecycle distinction."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-03",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "software",
+    "difficulty": "Intermediate",
+    "prompt": "A developer says engineering work ends as soon as the first release runs. Which response matches the course?",
+    "choices": [
+      "Only debugging continues; requirement changes are outside engineering",
+      "Documentation belongs entirely to customers",
+      "Engineering also covers maintenance and evolution after delivery",
+      "All later changes must be treated as hardware work"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "The discipline covers software production and maintenance, including evolution.",
+    "distractorExplanations": [
+      "Changing requirements can require software evolution as well as debugging.",
+      "Associated documentation is part of software and its production.",
+      "The discipline covers software production and maintenance, including evolution.",
+      "Software can change without replacing hardware."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-04",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "four-ps",
+    "difficulty": "Intermediate",
+    "prompt": "Which P concerns coordinating delivery constraints and resources?",
+    "choices": [
+      "Product",
+      "People",
+      "Process",
+      "Project"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Project coordinates the effort and constraints toward a deliverable.",
+    "distractorExplanations": [
+      "Product describes the software and its qualities.",
+      "People describes participants and their roles.",
+      "Process describes how engineering activities are organized.",
+      "Project coordinates the effort and constraints toward a deliverable."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-05",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "four-ps",
+    "difficulty": "Intermediate",
+    "prompt": "A clinic app has useful functions, but patients cannot understand its controls. Which product quality needs attention?",
+    "choices": [
+      "Acceptability",
+      "Maintainability",
+      "Efficiency",
+      "Dependability and security"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Acceptability includes understandability and usability for intended users.",
+    "distractorExplanations": [
+      "Acceptability includes understandability and usability for intended users.",
+      "Maintainability concerns adapting the software to changing needs.",
+      "Efficiency concerns responsiveness and resource use.",
+      "Dependability and security concern reliable, safe, protected operation."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-06",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "four-ps",
+    "difficulty": "Intermediate",
+    "prompt": "The team interviews staff, designs the solution, validates it, and accommodates later changes. Which P describes this organized work?",
+    "choices": [
+      "People",
+      "Process",
+      "Product",
+      "Project"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Process organizes specification, development, validation, and evolution.",
+    "distractorExplanations": [
+      "People are the staff and team participants.",
+      "Process organizes specification, development, validation, and evolution.",
+      "Product is the delivered application and its qualities.",
+      "Project manages the overall delivery effort and constraints."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-07",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "evolution",
+    "difficulty": "Intermediate",
+    "prompt": "A university changes its enrollment policy, so an existing application must support a new approval rule. What kind of work is this?",
+    "choices": [
+      "Initial software installation",
+      "A documentation-only correction",
+      "Software evolution",
+      "A hardware replacement requirement"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "The software is modified to reflect a changed customer requirement.",
+    "distractorExplanations": [
+      "Installation places an existing release into use; it does not implement the rule.",
+      "The behavior must change, so documentation alone is insufficient.",
+      "The software is modified to reflect a changed customer requirement.",
+      "A policy change does not inherently require new hardware."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-08",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "evolution",
+    "difficulty": "Intermediate",
+    "prompt": "Which cost assumption is safest when planning a customized system?",
+    "choices": [
+      "Treat the development budget as the entire lifetime cost",
+      "Assume validation removes all future maintenance needs",
+      "Assume a customized product cannot outlive its first requirements",
+      "Budget for ongoing evolution as well as initial development"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "For customized systems, evolution costs can exceed initial development costs.",
+    "distractorExplanations": [
+      "Requirements and environments change after delivery.",
+      "Validation checks current needs; it does not prevent future change.",
+      "An existing system can evolve rather than being replaced for every new need.",
+      "For customized systems, evolution costs can exceed initial development costs."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-09",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "evolution",
+    "difficulty": "Intermediate",
+    "prompt": "Which change is driven primarily by a new market requirement rather than correcting an implementation defect?",
+    "choices": [
+      "Adding mobile booking because customers now expect it",
+      "Repairing a crash caused by an invalid array index",
+      "Correcting a calculation that violates the existing specification",
+      "Restoring a missing file from the unchanged release package"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "A newly expected service capability is a changing market requirement.",
+    "distractorExplanations": [
+      "A newly expected service capability is a changing market requirement.",
+      "The crash is an implementation defect against existing behavior.",
+      "The existing specification already requires the correct calculation.",
+      "Restoring the package does not introduce a changed requirement."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-10",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "ethics",
+    "difficulty": "Intermediate",
+    "prompt": "A developer has not signed a confidentiality agreement. How should client data be treated?",
+    "choices": [
+      "It can be shared freely with other clients",
+      "Confidentiality still deserves respect",
+      "Only source code needs confidentiality",
+      "Confidentiality starts only after the first release"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "The lecture states that confidentiality applies even without a signed agreement.",
+    "distractorExplanations": [
+      "Client information does not become unrestricted because an agreement is absent.",
+      "The lecture states that confidentiality applies even without a signed agreement.",
+      "Confidentiality can cover data and other client information, not just code.",
+      "The responsibility applies during development as well as after release."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-11",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "ethics",
+    "difficulty": "Intermediate",
+    "prompt": "An engineer is asked to lead work outside their expertise. Which responsibility is most directly involved?",
+    "choices": [
+      "Intellectual property rights",
+      "Computer misuse",
+      "Competence",
+      "Product efficiency"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Engineers should represent their competence honestly and avoid knowingly accepting unsuitable work.",
+    "distractorExplanations": [
+      "Intellectual property concerns rights in protected work, not skill representation.",
+      "Computer misuse concerns inappropriate use of other computers.",
+      "Engineers should represent their competence honestly and avoid knowingly accepting unsuitable work.",
+      "Efficiency is a product quality rather than this professional responsibility."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-12",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "ethics",
+    "difficulty": "Intermediate",
+    "prompt": "Copying a client-owned implementation into another client project without authorization primarily raises which concern?",
+    "choices": [
+      "Incremental planning",
+      "Velocity",
+      "System boundary placement",
+      "Intellectual property rights"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Engineers must protect employer and client intellectual property.",
+    "distractorExplanations": [
+      "Planning increments does not determine ownership or permitted reuse.",
+      "Velocity measures completed work for planning, not ownership.",
+      "A model boundary does not grant rights to reuse an implementation.",
+      "Engineers must protect employer and client intellectual property."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-13",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "activities",
+    "difficulty": "Intermediate",
+    "prompt": "A process description assigns reviewers and identifies the document produced after a review. What does this illustrate?",
+    "choices": [
+      "Roles and work products in a process description",
+      "A replacement for the software requirements",
+      "The physical architecture of the system",
+      "A guarantee that the process cannot change"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Process descriptions can specify roles, work products, and conditions.",
+    "distractorExplanations": [
+      "Process descriptions can specify roles, work products, and conditions.",
+      "A process document organizes work; it does not replace product requirements.",
+      "Physical architecture describes deployment rather than review responsibilities.",
+      "A process can still be adapted to its circumstances."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-14",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "activities",
+    "difficulty": "Intermediate",
+    "prompt": "Users and engineers agree on services and operational constraints before implementation. Which fundamental activity is emphasized?",
+    "choices": [
+      "Evolution",
+      "Specification",
+      "Validation of delivered software",
+      "Development of program code"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Specification defines the services to produce and constraints on operation.",
+    "distractorExplanations": [
+      "Evolution changes an existing system for new needs.",
+      "Specification defines the services to produce and constraints on operation.",
+      "Validation checks whether software meets needs; this scenario is defining them.",
+      "Development designs and programs the solution after or alongside specification."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-15",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "plan-agile",
+    "difficulty": "Intermediate",
+    "prompt": "A manager proposes combining contractual checkpoints with iterative user feedback. Which interpretation is most defensible?",
+    "choices": [
+      "The team must choose one label and discard the other practices",
+      "Iterative feedback makes planning impossible",
+      "A practical process can combine plan-driven and agile elements",
+      "Contractual checkpoints automatically prevent incremental delivery"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "The lecture recognizes that practical processes often combine elements of both approaches.",
+    "distractorExplanations": [
+      "A label need not exclude useful practices that fit the context.",
+      "Agile work still plans incrementally.",
+      "The lecture recognizes that practical processes often combine elements of both approaches.",
+      "Checkpoints can coexist with increments when the process is designed accordingly."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-16",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "plan-agile",
+    "difficulty": "Intermediate",
+    "prompt": "Which planning approach is most directly suited to reprioritizing work after each user review?",
+    "choices": [
+      "A fixed detailed plan with no revision mechanism",
+      "Selecting only reusable components",
+      "Replacing the project plan with a system context diagram",
+      "Incremental planning in an agile process"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Incremental planning supports adapting priorities as customer needs change.",
+    "distractorExplanations": [
+      "A plan without revision does not support the stated reprioritization.",
+      "Reuse is an implementation/process-model choice, not a planning substitute.",
+      "A context model describes the environment rather than work priorities.",
+      "Incremental planning supports adapting priorities as customer needs change."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-17",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Intermediate",
+    "prompt": "Why can late requirement changes be difficult in a waterfall process?",
+    "choices": [
+      "They can require revisiting work from already completed phases",
+      "Waterfall makes all requirements automatically complete",
+      "Waterfall requires every requirement to be a use case",
+      "Waterfall validates software before any specification exists"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Separated phases can create costly downstream rework when earlier decisions change.",
+    "distractorExplanations": [
+      "Separated phases can create costly downstream rework when earlier decisions change.",
+      "A process model cannot guarantee complete requirements.",
+      "Use cases are a specification technique, not a universal waterfall constraint.",
+      "Specification and development inform validation rather than following this reversed sequence."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-18",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Intermediate",
+    "prompt": "A team delivers booking, then cancellation, then reporting as usable versions. Which model best matches?",
+    "choices": [
+      "A single-pass waterfall delivery",
+      "Incremental development",
+      "Reuse-oriented development solely because there are several features",
+      "Requirements validation without development"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Usable versions with increasing functionality illustrate incremental development.",
+    "distractorExplanations": [
+      "A single final delivery does not describe these usable increments.",
+      "Usable versions with increasing functionality illustrate incremental development.",
+      "Several features do not establish that existing components are being integrated.",
+      "Delivering working features requires development as well as validation."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-19",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Intermediate",
+    "prompt": "Before committing to an existing scheduling package, what should the team evaluate?",
+    "choices": [
+      "Whether requirements analysis can be omitted",
+      "Whether the package contains only newly written code",
+      "Whether the available components satisfy needs and what compromises are required",
+      "Whether all stakeholder feedback can be deferred until replacement"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Reuse requires assessing component fit and adapting requirements where necessary.",
+    "distractorExplanations": [
+      "Existing components do not remove the need to understand requirements.",
+      "A reused package is selected precisely because it already exists.",
+      "Reuse requires assessing component fit and adapting requirements where necessary.",
+      "Feedback helps determine fit before and during integration."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-20",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "change",
+    "difficulty": "Intermediate",
+    "prompt": "Which approach is an example of change tolerance?",
+    "choices": [
+      "Obtain a signature and assume all future changes disappear",
+      "Replace every prototype with a complete architecture document",
+      "Classify all change requests as implementation defects",
+      "Structure delivery into increments that can accommodate revised needs"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Incremental development/delivery makes accommodating changes more manageable.",
+    "distractorExplanations": [
+      "Approval does not eliminate customer or market changes.",
+      "Documents alone do not make implementation tolerant of change.",
+      "A new need is not necessarily a defect against an existing requirement.",
+      "Incremental development/delivery makes accommodating changes more manageable."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-21",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "change",
+    "difficulty": "Intermediate",
+    "prompt": "Receptionists discover a workflow problem in an early prototype. Why is that useful?",
+    "choices": [
+      "The team can change requirements before larger implementation investment",
+      "The prototype proves no further validation is needed",
+      "The prototype prevents all later changes",
+      "The prototype itself must become the final system"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Change anticipation exposes likely rework while the investment is still small.",
+    "distractorExplanations": [
+      "Change anticipation exposes likely rework while the investment is still small.",
+      "Further validation is still needed as the system develops.",
+      "Anticipation reduces risk; it does not eliminate all future change.",
+      "A prototype can be exploratory and need not be the final implementation."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-22",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "change",
+    "difficulty": "Intermediate",
+    "prompt": "Why can the same requirement change become more expensive later in development?",
+    "choices": [
+      "Requirements become technically impossible to edit after design",
+      "More completed work and dependencies may need revision",
+      "Later changes always affect only documentation",
+      "Incremental processes have no dependencies to revise"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Downstream implementation and related artifacts can increase the rework needed.",
+    "distractorExplanations": [
+      "Changes remain possible, though their impact may grow.",
+      "Downstream implementation and related artifacts can increase the rework needed.",
+      "Behavior, tests, designs, and related requirements may all be affected.",
+      "Incremental work still has dependencies and can require rework."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-23",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "principles",
+    "difficulty": "Intermediate",
+    "prompt": "Who should help prioritize and assess agile increments?",
+    "choices": [
+      "Only the infrastructure administrator",
+      "Only the team member with the highest velocity",
+      "Customers or their available representatives",
+      "Only the author of the initial project proposal"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Customer involvement connects priorities and feedback to actual needs.",
+    "distractorExplanations": [
+      "Infrastructure expertise alone does not represent all customer needs.",
+      "Velocity is not a basis for assigning product priorities to an individual.",
+      "Customer involvement connects priorities and feedback to actual needs.",
+      "Ongoing involvement matters beyond an initial proposal."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-24",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "principles",
+    "difficulty": "Intermediate",
+    "prompt": "A team simplifies a feature after customer feedback changes what is needed. Which principle best fits accepting the revision?",
+    "choices": [
+      "Freezing the original specification",
+      "Eliminating validation",
+      "Maximizing speculative functionality",
+      "Embracing change"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Agile processes accommodate changing requirements rather than treating them as exceptional.",
+    "distractorExplanations": [
+      "A permanent freeze prevents the stated adaptation.",
+      "Feedback and validation help guide the change.",
+      "Speculative functionality can conflict with maintaining simplicity.",
+      "Agile processes accommodate changing requirements rather than treating them as exceptional."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-25",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "principles",
+    "difficulty": "Intermediate",
+    "prompt": "How should “people over process” be applied?",
+    "choices": [
+      "Use team skills and collaboration while retaining disciplined engineering",
+      "Remove customer involvement to protect developer autonomy",
+      "Stop testing because people are trusted",
+      "Apply every process rule identically regardless of context"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "The principle values people and their skills without discarding quality practices.",
+    "distractorExplanations": [
+      "The principle values people and their skills without discarding quality practices.",
+      "Customer involvement is also an agile principle.",
+      "Trust does not replace validation or engineering discipline.",
+      "Rigid rules ignore the role of skilled people and context."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-26",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "xp",
+    "difficulty": "Intermediate",
+    "prompt": "Two developers work together on implementation and review decisions as they go. Which practice is illustrated?",
+    "choices": [
+      "Collective ownership alone",
+      "Pair programming",
+      "Small releases alone",
+      "Requirements traceability"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Pair programming is collaborative work by two developers on the code.",
+    "distractorExplanations": [
+      "Collective ownership permits team-wide changes; it does not specifically require a pair.",
+      "Pair programming is collaborative work by two developers on the code.",
+      "Small releases concern delivery size and frequency.",
+      "Traceability connects requirements to sources and dependent artifacts."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-27",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "xp",
+    "difficulty": "Intermediate",
+    "prompt": "A team integrates changes frequently and checks them with automated tests. Which practice is emphasized?",
+    "choices": [
+      "A long integration phase after all features are complete",
+      "A product backlog freeze",
+      "Continuous integration",
+      "Physical deployment modeling"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Frequent integration and tests reveal integration problems promptly.",
+    "distractorExplanations": [
+      "Deferring integration conflicts with continuous integration.",
+      "Backlog management is a Scrum/product planning concern.",
+      "Frequent integration and tests reveal integration problems promptly.",
+      "Deployment modeling does not itself integrate and test code."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-28",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Intermediate",
+    "prompt": "A blocked team needs help resolving an impediment to its Scrum process. Which role most directly supports that?",
+    "choices": [
+      "Product Owner acting only as backlog prioritizer",
+      "An external user without a team role",
+      "The physical deployment model",
+      "ScrumMaster"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "The ScrumMaster supports the process and helps remove impediments.",
+    "distractorExplanations": [
+      "The Product Owner primarily represents product priorities; this wording emphasizes facilitation.",
+      "Users can provide feedback, but that does not define the Scrum facilitation role.",
+      "A deployment model is an artifact, not a Scrum role.",
+      "The ScrumMaster supports the process and helps remove impediments."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-29",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Intermediate",
+    "prompt": "What is the main purpose of the daily Scrum in the lecture cycle?",
+    "choices": [
+      "Coordinate the team’s work and expose impediments",
+      "Approve every individual code line through the customer",
+      "Replace all sprint planning",
+      "Rank individual developers using velocity"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Daily coordination helps the team understand progress and blockers.",
+    "distractorExplanations": [
+      "Daily coordination helps the team understand progress and blockers.",
+      "Code-line approval is not the purpose of the daily Scrum.",
+      "Daily coordination complements rather than replaces planning.",
+      "Velocity supports planning and is not an individual ranking."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-30",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Intermediate",
+    "prompt": "How should a team use its velocity?",
+    "choices": [
+      "As a guarantee of the exact delivery date of every feature",
+      "As evidence of completed work to inform future planning",
+      "As an individual performance score",
+      "As a count of all ideas placed in the backlog"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Velocity measures completed work and supports realistic planning.",
+    "distractorExplanations": [
+      "Uncertainty and changing work prevent it from guaranteeing dates.",
+      "Velocity measures completed work and supports realistic planning.",
+      "Individual ranking is not the intended planning use.",
+      "Backlog ideas are not completed work."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-31",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "types",
+    "difficulty": "Intermediate",
+    "prompt": "“The system shall allow a patient to cancel a booking” is primarily what kind of requirement?",
+    "choices": [
+      "Product performance constraint",
+      "Organizational development constraint",
+      "Functional",
+      "External regulatory constraint"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Cancellation is a service/behavior provided by the system.",
+    "distractorExplanations": [
+      "The statement specifies no performance limit.",
+      "It does not mandate a development tool or organizational process.",
+      "Cancellation is a service/behavior provided by the system.",
+      "It does not identify a regulatory obligation."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-32",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "types",
+    "difficulty": "Intermediate",
+    "prompt": "“Available slots must be returned within an agreed response limit under a stated load” is primarily which non-functional class?",
+    "choices": [
+      "Organizational",
+      "External",
+      "It is necessarily a user-interface implementation function",
+      "Product"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "A response-time constraint describes a quality of the product.",
+    "distractorExplanations": [
+      "Organizational constraints arise from organization policies or processes.",
+      "External constraints arise outside the organization/system, such as regulation.",
+      "The statement constrains behavior quality rather than defining an internal implementation function.",
+      "A response-time constraint describes a quality of the product."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-33",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "types",
+    "difficulty": "Intermediate",
+    "prompt": "Which classification correctly treats the two requirement dimensions independently?",
+    "choices": [
+      "A system requirement can be functional or non-functional",
+      "Every user requirement is functional by definition",
+      "Every system requirement is non-functional by definition",
+      "Only system requirements can describe customer services"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Abstraction level and behavior/constraint type are independent classifications.",
+    "distractorExplanations": [
+      "Abstraction level and behavior/constraint type are independent classifications.",
+      "High-level user statements can also contain constraints.",
+      "Detailed system requirements include functions as well as constraints.",
+      "User requirements also describe services at a higher level."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-34",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "elicitation",
+    "difficulty": "Intermediate",
+    "prompt": "Patients and receptionists describe conflicting booking priorities. What is the best elicitation response?",
+    "choices": [
+      "Accept the first statement as the agreed requirement",
+      "Identify both viewpoints and negotiate or expose the conflict",
+      "Discard the less technical stakeholder’s input",
+      "Hide the disagreement until after implementation"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Elicitation should uncover differing needs and make conflicts explicit.",
+    "distractorExplanations": [
+      "One statement does not establish agreement or completeness.",
+      "Elicitation should uncover differing needs and make conflicts explicit.",
+      "Nontechnical stakeholders may have essential domain knowledge.",
+      "Late discovery risks expensive rework."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-35",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "elicitation",
+    "difficulty": "Intermediate",
+    "prompt": "Which interview approach is most appropriate?",
+    "choices": [
+      "Use only leading questions that confirm the proposed design",
+      "Assume domain terms have the same meaning for every stakeholder",
+      "Prepare examples and remain open to unexpected needs",
+      "Exclude follow-up questions so the initial script remains unchanged"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Preparation and open-minded follow-up support discovering real needs.",
+    "distractorExplanations": [
+      "Leading questions can hide alternatives and disagreements.",
+      "Terminology should be clarified rather than assumed to be shared.",
+      "Preparation and open-minded follow-up support discovering real needs.",
+      "Relevant follow-up can uncover missing or tacit requirements."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-36",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "elicitation",
+    "difficulty": "Intermediate",
+    "prompt": "Interviews miss an informal workaround staff use every day. Which complementary method is most useful?",
+    "choices": [
+      "Ask only the same closed questions again",
+      "Replace all stakeholder input with code inspection",
+      "Treat the workaround as irrelevant because it was not mentioned",
+      "Observe the staff’s work in its actual environment"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Observation can expose tacit working practices that are difficult to articulate.",
+    "distractorExplanations": [
+      "Repeating narrow questions may continue to miss tacit behavior.",
+      "Code inspection alone does not discover current user work practices.",
+      "Unmentioned practices can still affect real requirements.",
+      "Observation can expose tacit working practices that are difficult to articulate."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-37",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "specification",
+    "difficulty": "Intermediate",
+    "prompt": "What is the main problem with “The system should be fast and reliable”?",
+    "choices": [
+      "The statement combines vague qualities without measurable conditions",
+      "It contains too many independently testable requirements",
+      "It fully defines response time and operating load",
+      "It identifies all requirement dependencies"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "The qualities must be separated and agreed conditions/criteria made testable.",
+    "distractorExplanations": [
+      "The qualities must be separated and agreed conditions/criteria made testable.",
+      "The sentence does not specify independently verifiable criteria.",
+      "Neither a limit nor a load is stated.",
+      "No dependencies are identified."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-38",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "specification",
+    "difficulty": "Intermediate",
+    "prompt": "What distinguishes a structured requirement template from a use-case template?",
+    "choices": [
+      "Both are only lists of internal classes",
+      "The former specifies a requirement; the latter describes actor/system interaction paths",
+      "The former is only for hardware and the latter only for source code",
+      "The former removes the need for test cases"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Structured requirements and use cases organize different but complementary information.",
+    "distractorExplanations": [
+      "Requirements and use cases describe needs and interactions rather than only internal classes.",
+      "Structured requirements and use cases organize different but complementary information.",
+      "Neither template is limited in this way.",
+      "Test cases help make structured requirements verifiable."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-39",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "specification",
+    "difficulty": "Intermediate",
+    "prompt": "Before replacing “instant response” with a numerical limit, what should the analyst do?",
+    "choices": [
+      "Choose a convenient number without agreement",
+      "Remove the requirement because it is non-functional",
+      "Negotiate a meaningful limit and operating conditions with stakeholders",
+      "Treat the use of “shall” as sufficient verification"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "A meaningful, agreed threshold with conditions creates a testable requirement.",
+    "distractorExplanations": [
+      "An arbitrary number may fail to represent the real need or feasibility.",
+      "Non-functional requirements still matter and should be clarified.",
+      "A meaningful, agreed threshold with conditions creates a testable requirement.",
+      "Mandatory wording does not supply measurable test criteria."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-40",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "use-template",
+    "difficulty": "Intermediate",
+    "prompt": "Who is an actor in a use case?",
+    "choices": [
+      "Any internal class that stores data",
+      "Every stakeholder, even one who never interacts",
+      "Only a named individual human",
+      "An external role that interacts with the system"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Actors represent external interacting roles, including other systems.",
+    "distractorExplanations": [
+      "Internal classes belong to implementation details inside the system.",
+      "A stakeholder may have an interest without interacting as an actor.",
+      "An actor may be a role or external system rather than one human.",
+      "Actors represent external interacting roles, including other systems."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-41",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "use-template",
+    "difficulty": "Intermediate",
+    "prompt": "Which use-case field captures what must already be true before the interaction starts?",
+    "choices": [
+      "Precondition",
+      "Postcondition",
+      "Modification date",
+      "Author"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "A precondition states the required starting state.",
+    "distractorExplanations": [
+      "A precondition states the required starting state.",
+      "A postcondition describes the resulting state after the use case.",
+      "The date records document history.",
+      "The author identifies who documented the use case."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-42",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "use-template",
+    "difficulty": "Intermediate",
+    "prompt": "Insufficient funds interrupts a normal withdrawal flow. Where should that behavior be documented?",
+    "choices": [
+      "Only the software package name",
+      "An exception or alternate path",
+      "Only the system’s physical deployment view",
+      "The author field"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "The template captures departures from the main success flow.",
+    "distractorExplanations": [
+      "A package name does not describe an interaction path.",
+      "The template captures departures from the main success flow.",
+      "Deployment information does not specify the withdrawal exception.",
+      "The author field records responsibility rather than behavior."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-43",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "validation",
+    "difficulty": "Intermediate",
+    "prompt": "Two requirements demand mutually exclusive booking rules. Which check most directly addresses this?",
+    "choices": [
+      "Validity only",
+      "Realism only",
+      "Consistency",
+      "Verifiability only"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Consistency checks identify contradictions and conflicts.",
+    "distractorExplanations": [
+      "Validity asks whether requirements meet real needs, not specifically whether they contradict.",
+      "Realism examines feasibility under constraints.",
+      "Consistency checks identify contradictions and conflicts.",
+      "Verifiability examines whether compliance can be tested."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-44",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "validation",
+    "difficulty": "Intermediate",
+    "prompt": "A requirement is clear but cannot be delivered with the available budget, schedule, and tools. Which check is most relevant?",
+    "choices": [
+      "Completeness only",
+      "Consistency only",
+      "Identification",
+      "Realism"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Realism checks feasibility under budget, schedule, and tool constraints.",
+    "distractorExplanations": [
+      "A complete statement can still be infeasible.",
+      "A consistent statement can still be infeasible.",
+      "Identification assigns references; it does not establish feasibility.",
+      "Realism checks feasibility under budget, schedule, and tool constraints."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-45",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "validation",
+    "difficulty": "Intermediate",
+    "prompt": "Why derive test cases while reviewing requirements?",
+    "choices": [
+      "Difficulty designing a test can expose ambiguity or unverifiable requirements",
+      "Test cases remove the need for customer validation",
+      "Tests make every requirement feasible automatically",
+      "Tests replace the need to record expected outcomes"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Test-case generation exposes requirements that cannot be demonstrated clearly.",
+    "distractorExplanations": [
+      "Test-case generation exposes requirements that cannot be demonstrated clearly.",
+      "Tests complement customer validation rather than replacing it.",
+      "A test cannot change feasibility constraints.",
+      "A meaningful test needs expected outcomes."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-46",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "management",
+    "difficulty": "Intermediate",
+    "prompt": "Why assign stable requirement identifiers?",
+    "choices": [
+      "So requirement text can never be revised",
+      "So changes, dependencies, and tests can refer to the same requirement",
+      "So all requirements receive the same priority",
+      "So tools can approve changes without analysis"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Stable IDs (identifiers) support traceability even as requirement text changes.",
+    "distractorExplanations": [
+      "An ID (identifier) preserves reference, not an immutable statement.",
+      "Stable IDs (identifiers) support traceability even as requirement text changes.",
+      "Identification and prioritization are different concerns.",
+      "Tool support does not replace impact analysis and approval."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-47",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "management",
+    "difficulty": "Intermediate",
+    "prompt": "A booking change may affect several tests and an external interface. What should precede implementation?",
+    "choices": [
+      "Change the code first and omit traceability updates",
+      "Rename the requirement to hide the old dependencies",
+      "Analyze impact and follow the change-management process",
+      "Treat the request as approved because it is recent"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Change management evaluates effects and records appropriate decisions.",
+    "distractorExplanations": [
+      "Changing first can miss dependent artifacts and approval requirements.",
+      "Renaming does not remove actual dependencies.",
+      "Change management evaluates effects and records appropriate decisions.",
+      "Recency does not establish approval."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-48",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "management",
+    "difficulty": "Intermediate",
+    "prompt": "What is a traceability policy intended to specify?",
+    "choices": [
+      "The color scheme of the documentation tool",
+      "A rule that only test names may change",
+      "The system’s runtime thread schedule",
+      "Which links between requirements, sources, and dependent artifacts should be maintained"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Traceability policies define the relationships needed to follow requirements and changes.",
+    "distractorExplanations": [
+      "Tool appearance does not define traceability relationships.",
+      "Traceability does not limit change to test names.",
+      "Thread scheduling is an architectural/runtime concern.",
+      "Traceability policies define the relationships needed to follow requirements and changes."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-49",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Intermediate",
+    "prompt": "Which architectural view best addresses packages, modules, and binaries?",
+    "choices": [
+      "Development",
+      "Physical",
+      "Process",
+      "Use-case scenarios alone"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "The development view organizes code artifacts.",
+    "distractorExplanations": [
+      "The development view organizes code artifacts.",
+      "The physical view maps software to deployment hardware.",
+      "The process view covers active processes and communication.",
+      "Scenarios connect concerns but do not replace a code-artifact view."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-50",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Intermediate",
+    "prompt": "Which view helps an operations team reason about hosts, networks, and storage?",
+    "choices": [
+      "Logical",
+      "Physical",
+      "Development",
+      "A requirements change log alone"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "The physical view focuses on deployment and hardware mapping.",
+    "distractorExplanations": [
+      "The logical view addresses functionality/components.",
+      "The physical view focuses on deployment and hardware mapping.",
+      "The development view organizes code artifacts.",
+      "A change log records changes, not the deployment structure."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-51",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Intermediate",
+    "prompt": "What is the “+1” in the lecture’s 4+1 architectural view model?",
+    "choices": [
+      "An additional database table",
+      "A fifth identical structural drawing",
+      "Use-case scenarios linking the views to requirements",
+      "A replacement for all non-functional requirements"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Scenarios link and help validate the other architectural views.",
+    "distractorExplanations": [
+      "A database table is not the model’s unifying scenario element.",
+      "The views cover different concerns rather than duplicating one drawing.",
+      "Scenarios link and help validate the other architectural views.",
+      "Architecture still addresses relevant non-functional requirements."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-52",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "applications",
+    "difficulty": "Intermediate",
+    "prompt": "A payroll application processes a batch of employee records without ongoing user intervention. Which type best fits?",
+    "choices": [
+      "Transaction processing as the primary batch classification",
+      "Language processing",
+      "Event processing as the primary classification",
+      "Data processing"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Data-processing applications are data-driven batch systems.",
+    "distractorExplanations": [
+      "Transaction processing emphasizes individual requests and information updates.",
+      "Language processing interprets formal-language input.",
+      "Event processing primarily responds to interpreted environmental events.",
+      "Data-processing applications are data-driven batch systems."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-53",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "applications",
+    "difficulty": "Intermediate",
+    "prompt": "A reservation service processes a user’s booking request and updates its database. Which type best fits?",
+    "choices": [
+      "Transaction processing",
+      "Language processing",
+      "Unattended payroll batch processing",
+      "A context model"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Transaction processing handles requests and updates stored information.",
+    "distractorExplanations": [
+      "Transaction processing handles requests and updates stored information.",
+      "The scenario is not interpreting a formal language.",
+      "The scenario describes an interactive request, not an unattended batch.",
+      "A context model is a modeling artifact, not an application architecture type."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-54",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "applications",
+    "difficulty": "Intermediate",
+    "prompt": "A real-time system chooses an action after interpreting a sensor event. Which type is emphasized?",
+    "choices": [
+      "Language processing",
+      "Event processing",
+      "Unattended batch data processing",
+      "A requirements review"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "System actions triggered by environmental events characterize event processing.",
+    "distractorExplanations": [
+      "A formal language is not the input described.",
+      "System actions triggered by environmental events characterize event processing.",
+      "The described trigger is an event rather than a predefined batch.",
+      "A review is an engineering activity, not this application type."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-55",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "decomposition",
+    "difficulty": "Intermediate",
+    "prompt": "“Read records → calculate pay → produce outputs” illustrates which decomposition emphasis?",
+    "choices": [
+      "External actors and user goals",
+      "Physical deployment hosts only",
+      "Functional transformations and data flow",
+      "Requirement ownership"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Functional decomposition organizes transformations of input into output.",
+    "distractorExplanations": [
+      "Actors and goals describe use cases rather than internal transformations.",
+      "Hosts describe a physical view, not these processing steps.",
+      "Functional decomposition organizes transformations of input into output.",
+      "Ownership does not define the decomposition approach."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-56",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "decomposition",
+    "difficulty": "Intermediate",
+    "prompt": "What information is grouped together in object-oriented decomposition?",
+    "choices": [
+      "All system data in one unrestricted global table",
+      "Only the order of every user click",
+      "Only hardware network addresses",
+      "Related attributes and operations behind object interfaces"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "Objects/classes combine related state and behavior.",
+    "distractorExplanations": [
+      "Unrestricted global data is not the intended encapsulated organization.",
+      "User click order does not define object state and operations.",
+      "Deployment addresses belong to a different concern.",
+      "Objects/classes combine related state and behavior."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-57",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "decomposition",
+    "difficulty": "Intermediate",
+    "prompt": "Why are interfaces useful between loosely coupled objects?",
+    "choices": [
+      "They define interactions while reducing dependence on internal details",
+      "They guarantee that all objects share the same internal representation",
+      "They remove all object state",
+      "They make requirement changes impossible"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Interfaces let objects collaborate without exposing every implementation detail.",
+    "distractorExplanations": [
+      "Interfaces let objects collaborate without exposing every implementation detail.",
+      "Objects can have distinct internal representations.",
+      "Objects can still own attributes and state.",
+      "Interfaces can support manageable change rather than prevent it."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-58",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "context",
+    "difficulty": "Intermediate",
+    "prompt": "Which perspective most directly models a system’s dynamic response to events?",
+    "choices": [
+      "External",
+      "Behavioral",
+      "Structural",
+      "Development view of code artifacts"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "The behavioral perspective models dynamic behavior and responses.",
+    "distractorExplanations": [
+      "The external perspective describes the environment/context.",
+      "The behavioral perspective models dynamic behavior and responses.",
+      "The structural perspective describes organization or data structure.",
+      "The development architectural view concerns code organization."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-59",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "context",
+    "difficulty": "Intermediate",
+    "prompt": "What determines whether an identity service is inside or outside a context boundary?",
+    "choices": [
+      "Whether it has a visually short name",
+      "Its position near the center of the page",
+      "The chosen scope of the system under design and organizational responsibility",
+      "Whether an actor uses a password"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "The boundary defines scope, influenced by social and organizational concerns.",
+    "distractorExplanations": [
+      "Label length has no semantic effect on scope.",
+      "Visual layout does not determine whether an entity is part of the system.",
+      "The boundary defines scope, influenced by social and organizational concerns.",
+      "A password interaction does not alone establish system ownership/scope."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-60",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "context",
+    "difficulty": "Intermediate",
+    "prompt": "Which element usually belongs outside a portal’s context boundary when it is a separate organizational service?",
+    "choices": [
+      "An internal booking function implemented within the portal",
+      "The portal’s own internal data transformation",
+      "The portal’s own UI (user interface) component",
+      "An external notification service used by the portal"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 3,
+    "explanation": "A separate interacting service belongs to the portal’s operational environment.",
+    "distractorExplanations": [
+      "An internal function is within the system under design.",
+      "Internal processing is not an external context dependency.",
+      "An internal UI (user interface) component is not an external system.",
+      "A separate interacting service belongs to the portal’s operational environment."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-61",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Intermediate",
+    "prompt": "Which relationship adds conditional behavior to a base use case?",
+    "choices": [
+      "Extend",
+      "Include",
+      "An actor association by itself",
+      "The system boundary"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 0,
+    "explanation": "Extend adds behavior under a specified condition and points toward the base.",
+    "distractorExplanations": [
+      "Extend adds behavior under a specified condition and points toward the base.",
+      "Include factors out required reused behavior.",
+      "An association identifies actor participation, not a conditional extension.",
+      "The boundary defines scope rather than conditional behavior."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-62",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Intermediate",
+    "prompt": "Which direction is correct for use-case generalization?",
+    "choices": [
+      "From the general element toward every specialized element",
+      "From the specialized element toward the general element",
+      "From an actor to every system boundary",
+      "From an included behavior to its caller"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 1,
+    "explanation": "Generalization points toward the more general element.",
+    "distractorExplanations": [
+      "That reverses the taught generalization direction.",
+      "Generalization points toward the more general element.",
+      "Boundary links do not define generalization.",
+      "That describes a reversed include rather than generalization."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-expanded-63",
+    "type": "multiple-choice",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Intermediate",
+    "prompt": "Which is the best candidate for a user-goal use case?",
+    "choices": [
+      "Write an internal cache entry",
+      "Choose an array size",
+      "Cancel appointment",
+      "Allocate a UI (user interface) widget"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "answer": 2,
+    "explanation": "Cancellation is a goal an external actor can achieve through the system.",
+    "distractorExplanations": [
+      "A cache write is an internal implementation step.",
+      "An array size is an implementation decision.",
+      "Cancellation is a goal an external actor can achieve through the system.",
+      "Widget allocation is internal construction, not an external user goal."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-01",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "four-ps",
+    "difficulty": "Intermediate",
+    "prompt": "Select the qualities of a good software product identified in the lecture.",
+    "choices": [
+      "Dependability and security",
+      "Acceptability",
+      "Maintainability",
+      "A project proposal deadline"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Dependability and security concern reliable, protected operation. Acceptability covers usability and suitability for intended users. Maintainability supports evolution as needs change.",
+    "distractorExplanations": [
+      "Dependability and security concern reliable, protected operation.",
+      "Acceptability covers usability and suitability for intended users.",
+      "Maintainability supports evolution as needs change.",
+      "A deadline is a project constraint, not one of these product qualities."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-02",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "evolution",
+    "difficulty": "Intermediate",
+    "prompt": "Select statements consistent with software evolution.",
+    "choices": [
+      "Market changes can require software modifications",
+      "Evolution costs end after initial delivery",
+      "Customer requirements can change after delivery",
+      "All maintenance is exclusively bug fixing"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Market expectations are another driver of evolution. Changing customer needs are a driver of evolution.",
+    "distractorExplanations": [
+      "Market expectations are another driver of evolution.",
+      "Evolution can continue throughout the system lifecycle and may exceed initial development cost.",
+      "Changing customer needs are a driver of evolution.",
+      "Maintenance/evolution can add or adapt behavior, not just fix defects."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-03",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "intro",
+    "subtopicId": "ethics",
+    "difficulty": "Intermediate",
+    "prompt": "Select the professional responsibilities explicitly listed in the lecture.",
+    "choices": [
+      "Competence",
+      "Confidentiality",
+      "Maximizing personal velocity",
+      "Intellectual property rights"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. Truthfully representing competence is a listed responsibility. Respecting client confidentiality is a listed responsibility. Protecting employer/client intellectual property is a listed responsibility.",
+    "distractorExplanations": [
+      "Truthfully representing competence is a listed responsibility.",
+      "Respecting client confidentiality is a listed responsibility.",
+      "Velocity is a planning measure, not one of the lecture’s four ethics categories.",
+      "Protecting employer/client intellectual property is a listed responsibility."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-04",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "activities",
+    "difficulty": "Intermediate",
+    "prompt": "Select the fundamental software-process activities.",
+    "choices": [
+      "Validation",
+      "Deployment scheduling",
+      "Specification",
+      "Marketing approval"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Validation checks whether software satisfies needs. Specification defines services and constraints.",
+    "distractorExplanations": [
+      "Validation checks whether software satisfies needs.",
+      "Scheduling is project coordination, not one of the four fundamental activities: specification, development, validation, and evolution.",
+      "Specification defines services and constraints.",
+      "Marketing approval is not one of the four core engineering activities; development is the fourth."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-05",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "plan-agile",
+    "difficulty": "Intermediate",
+    "prompt": "Select statements consistent with the plan-driven/agile comparison.",
+    "choices": [
+      "Practical processes may combine elements of both",
+      "Agile means all planning must be removed",
+      "Agile processes plan incrementally",
+      "Plan-driven processes emphasize advance planning"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. Hybrid elements can be appropriate to a project’s context. Agile planning evolves through increments. Advance planning is a defining plan-driven emphasis.",
+    "distractorExplanations": [
+      "Hybrid elements can be appropriate to a project’s context.",
+      "Agile uses planning; it does not eliminate it.",
+      "Agile planning evolves through increments.",
+      "Advance planning is a defining plan-driven emphasis."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-06",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "models",
+    "difficulty": "Intermediate",
+    "prompt": "Select strengths or trade-offs associated with incremental development.",
+    "choices": [
+      "Specification, development, and validation can interleave",
+      "Every increment must implement the entire product",
+      "Early versions can obtain user feedback",
+      "All requirements must remain unchanged forever"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Interleaving is a characteristic of incremental development. Incremental versions enable feedback before all functionality is complete.",
+    "distractorExplanations": [
+      "Interleaving is a characteristic of incremental development.",
+      "An increment can deliver a usable subset; the complete product need not be finished in the first version.",
+      "Incremental versions enable feedback before all functionality is complete.",
+      "The model can accommodate evolving requirements."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-07",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "process",
+    "subtopicId": "change",
+    "difficulty": "Intermediate",
+    "prompt": "Select approaches that can help reduce the cost of change.",
+    "choices": [
+      "Expose likely changes early through user feedback",
+      "Prototype an uncertain workflow before major investment",
+      "Use increments to accommodate revised needs",
+      "Assume a signed specification eliminates all future changes"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Early feedback can reveal rework before dependent implementation grows. Prototyping supports change anticipation. Incremental work supports change tolerance.",
+    "distractorExplanations": [
+      "Early feedback can reveal rework before dependent implementation grows.",
+      "Prototyping supports change anticipation.",
+      "Incremental work supports change tolerance.",
+      "Approval does not eliminate changing needs."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-08",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "principles",
+    "difficulty": "Intermediate",
+    "prompt": "Select agile principles presented in the lecture.",
+    "choices": [
+      "Eliminating customer reviews",
+      "Maximizing speculative features",
+      "Customer involvement",
+      "Embracing change"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "c",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. Customers help guide priorities and feedback. Agile processes accept changing needs.",
+    "distractorExplanations": [
+      "Agile customer involvement relies on feedback and review rather than eliminating them.",
+      "Speculative features can add complexity without current value.",
+      "Customers help guide priorities and feedback.",
+      "Agile processes accept changing needs."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-09",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "xp",
+    "difficulty": "Intermediate",
+    "prompt": "Select XP (Extreme Programming) practices described in the course.",
+    "choices": [
+      "Collective ownership",
+      "One integration event only at the end",
+      "Continuous integration",
+      "Pair programming"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. The team can improve code through collective ownership. Frequent integration is an XP (Extreme Programming) practice. Pairs collaborate on implementation.",
+    "distractorExplanations": [
+      "The team can improve code through collective ownership.",
+      "A single late integration conflicts with continuous integration.",
+      "Frequent integration is an XP (Extreme Programming) practice.",
+      "Pairs collaborate on implementation."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-10",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "agile",
+    "subtopicId": "scrum",
+    "difficulty": "Intermediate",
+    "prompt": "Select statements about Scrum roles and work.",
+    "choices": [
+      "Velocity is a universal individual performance ranking",
+      "The ScrumMaster supports the process and removes impediments",
+      "The Product Owner manages product priorities",
+      "The ScrumMaster alone writes every increment"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Process support and impediment removal are ScrumMaster responsibilities. The Product Owner represents product priorities and backlog choices.",
+    "distractorExplanations": [
+      "Velocity informs planning; it is not an individual ranking.",
+      "Process support and impediment removal are ScrumMaster responsibilities.",
+      "The Product Owner represents product priorities and backlog choices.",
+      "The Development Team builds the increment; the ScrumMaster supports the process."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-11",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "types",
+    "difficulty": "Intermediate",
+    "prompt": "Select statements that correctly classify requirements.",
+    "choices": [
+      "Functional requirements specify services or behavior",
+      "User/system and functional/non-functional are independent dimensions",
+      "Non-functional requirements constrain qualities or development",
+      "A system requirement must always be non-functional"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Functional requirements describe what services the system provides. Abstraction and requirement type answer different questions. Non-functional requirements include product, organizational, and external constraints.",
+    "distractorExplanations": [
+      "Functional requirements describe what services the system provides.",
+      "Abstraction and requirement type answer different questions.",
+      "Non-functional requirements include product, organizational, and external constraints.",
+      "Detailed system requirements can specify functions as well as constraints."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-12",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "elicitation",
+    "difficulty": "Intermediate",
+    "prompt": "Select useful actions when stakeholder needs are unclear or conflicting.",
+    "choices": [
+      "Treat the first statement as complete agreement",
+      "Approve conflicting requirements without negotiation",
+      "Interview multiple stakeholder groups",
+      "Clarify domain terminology"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "c",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. Multiple viewpoints reveal differing needs. Terminology clarification helps expose ambiguity.",
+    "distractorExplanations": [
+      "The first statement does not establish agreement or completeness.",
+      "Conflicts must be exposed and negotiated rather than approved without resolution.",
+      "Multiple viewpoints reveal differing needs.",
+      "Terminology clarification helps expose ambiguity."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-13",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "specification",
+    "difficulty": "Intermediate",
+    "prompt": "Select information appropriate to a structured requirement template.",
+    "choices": [
+      "Related requirements and test cases",
+      "Inputs, required function, and outputs",
+      "A stable identifier and rationale",
+      "Only internal class names, with all user needs omitted"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Dependencies and tests improve traceability and verifiability. These fields specify the required behavior. Identification and rationale support understanding and reference.",
+    "distractorExplanations": [
+      "Dependencies and tests improve traceability and verifiability.",
+      "These fields specify the required behavior.",
+      "Identification and rationale support understanding and reference.",
+      "A requirement template should specify needs, not only internal classes."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-14",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "use-template",
+    "difficulty": "Intermediate",
+    "prompt": "Select fields that help document a use-case interaction.",
+    "choices": [
+      "Actors and trigger",
+      "Postconditions describe only events before the use case starts",
+      "Only deployment-host network addresses",
+      "Main event sequence"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. Actors and the trigger establish participants and initiation. The event sequence describes actor/system interaction.",
+    "distractorExplanations": [
+      "Actors and the trigger establish participants and initiation.",
+      "Preconditions describe the initial situation; postconditions describe the resulting state.",
+      "Deployment addresses do not replace interaction fields.",
+      "The event sequence describes actor/system interaction."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-15",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "validation",
+    "difficulty": "Intermediate",
+    "prompt": "Select requirements-validation checks taught in the course.",
+    "choices": [
+      "Consistency",
+      "Validity",
+      "Realism",
+      "Source-code indentation"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Consistency checks conflicting statements. Validity checks whether requirements reflect real needs. Realism checks feasibility under constraints.",
+    "distractorExplanations": [
+      "Consistency checks conflicting statements.",
+      "Validity checks whether requirements reflect real needs.",
+      "Realism checks feasibility under constraints.",
+      "Indentation is a code-style concern; completeness and verifiability are other requirements checks."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-16",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "requirements",
+    "subtopicId": "management",
+    "difficulty": "Intermediate",
+    "prompt": "Select requirements-management planning elements.",
+    "choices": [
+      "Unrecorded verbal approval as the only change mechanism",
+      "Change-management process",
+      "Keep dependent artifacts unlinked to avoid maintaining traceability",
+      "Requirements identification"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "b",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. A defined change process supports evaluation and approval. Stable IDs (identifiers) support references to requirements.",
+    "distractorExplanations": [
+      "Unrecorded changes undermine controlled management; tool support is another planning element.",
+      "A defined change process supports evaluation and approval.",
+      "A traceability policy defines useful links between requirements and dependent artifacts.",
+      "Stable IDs (identifiers) support references to requirements."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-17",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "views",
+    "difficulty": "Intermediate",
+    "prompt": "Select correct architectural-view mappings.",
+    "choices": [
+      "Development view: code artifacts",
+      "Physical view: hardware/deployment mapping",
+      "Process view: concurrency and communication",
+      "Logical view: only the dates in a change log"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. The development view organizes packages, modules, and binaries. The physical view maps software to hardware and deployment. The process view models active processes and their communication.",
+    "distractorExplanations": [
+      "The development view organizes packages, modules, and binaries.",
+      "The physical view maps software to hardware and deployment.",
+      "The process view models active processes and their communication.",
+      "The logical view focuses on functionality/components, not just document dates."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-18",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "architecture",
+    "subtopicId": "applications",
+    "difficulty": "Intermediate",
+    "prompt": "Select correct application-type examples from the lecture.",
+    "choices": [
+      "Payroll: data processing",
+      "Compiler: requirements-management planning",
+      "Reservation service: transaction processing",
+      "Compiler: transaction processing"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Payroll is a data-driven batch example. Reservations process requests and update stored information.",
+    "distractorExplanations": [
+      "Payroll is a data-driven batch example.",
+      "Requirements-management planning is not a compiler application type.",
+      "Reservations process requests and update stored information.",
+      "A compiler processes a formal language; it is a language-processing application."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-19",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "context",
+    "difficulty": "Intermediate",
+    "prompt": "Select statements consistent with context models.",
+    "choices": [
+      "They show the operational environment",
+      "They distinguish inside and outside the system boundary",
+      "They primarily specify detailed internal call order",
+      "Social and organizational concerns can influence the boundary"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "d"
+    ],
+    "explanation": "Select all and only the options supported by the course. The operational environment is the main focus. The boundary defines the system under design and external entities. The lecture explicitly recognizes these influences on scope.",
+    "distractorExplanations": [
+      "The operational environment is the main focus.",
+      "The boundary defines the system under design and external entities.",
+      "Detailed call sequences belong to other interaction/behavioral modeling detail.",
+      "The lecture explicitly recognizes these influences on scope."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "mcq-select-20",
+    "type": "multiple-answer",
+    "version": 1,
+    "topicId": "modeling",
+    "subtopicId": "use-diagrams",
+    "difficulty": "Intermediate",
+    "prompt": "Select correct use-case relationship statements.",
+    "choices": [
+      "Include points toward required reused behavior",
+      "All actors must be internal implementation components",
+      "Extend points toward the base use case",
+      "Every internal class must be an external actor"
+    ],
+    "choiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctChoiceIds": [
+      "a",
+      "c"
+    ],
+    "explanation": "Select all and only the options supported by the course. Include factors out required shared steps. Extend adds conditional behavior to a base use case.",
+    "distractorExplanations": [
+      "Include factors out required shared steps.",
+      "Actors represent external interacting roles or systems, not internal implementation components.",
+      "Extend adds conditional behavior to a base use case.",
+      "Implementation classes inside the system are not external actors."
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  }
+]

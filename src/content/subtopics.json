@@ -1,0 +1,817 @@
+[
+  {
+    "id": "software",
+    "topicId": "intro",
+    "title": "What software is",
+    "priority": "MEDIUM",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in what software is."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in what software is."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Define software and explain why software engineering is broader than programming."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P11"
+    ],
+    "formats": [
+      "Short answer"
+    ]
+  },
+  {
+    "id": "four-ps",
+    "topicId": "intro",
+    "title": "The four Ps",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in the four ps."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in the four ps."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Name the four Ps and explain each using a clinic software project."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "formats": [
+      "Short answer"
+    ]
+  },
+  {
+    "id": "evolution",
+    "topicId": "intro",
+    "title": "Software change and evolution",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in software change and evolution."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in software change and evolution."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain software evolution and why its cost matters after delivery."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "formats": [
+      "Short answer"
+    ]
+  },
+  {
+    "id": "ethics",
+    "topicId": "intro",
+    "title": "Software engineering ethics",
+    "priority": "MEDIUM",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in software engineering ethics."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in software engineering ethics."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain the four professional responsibilities and apply one to a patient-data scenario."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "formats": [
+      "Short answer"
+    ]
+  },
+  {
+    "id": "activities",
+    "topicId": "process",
+    "title": "Process activities and descriptions",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in process activities and descriptions."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in process activities and descriptions."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Describe the four process activities and what a process description adds."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "Case study"
+    ]
+  },
+  {
+    "id": "plan-agile",
+    "topicId": "process",
+    "title": "Plan-driven versus agile",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in plan-driven versus agile."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in plan-driven versus agile."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Compare plan-driven and agile planning, and justify a choice for changing requirements."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "Case study"
+    ]
+  },
+  {
+    "id": "models",
+    "topicId": "process",
+    "title": "Waterfall, incremental, and reuse-oriented models",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in waterfall, incremental, and reuse-oriented models."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in waterfall, incremental, and reuse-oriented models."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Compare the three process models and explain one limitation of each."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "Case study"
+    ]
+  },
+  {
+    "id": "change",
+    "topicId": "process",
+    "title": "Coping with change and rework cost",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in coping with change and rework cost."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in coping with change and rework cost."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain change anticipation and change tolerance, using a costly late requirement change."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "Case study"
+    ]
+  },
+  {
+    "id": "principles",
+    "topicId": "agile",
+    "title": "Agile principles",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in agile principles."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in agile principles."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain all five agile principles and apply two to a changing booking project."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer"
+    ]
+  },
+  {
+    "id": "xp",
+    "topicId": "agile",
+    "title": "Extreme Programming and test-first development",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in extreme programming and test-first development."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in extreme programming and test-first development."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain test-first development, refactoring, pair programming, and continuous integration in XP (Extreme Programming)."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer"
+    ]
+  },
+  {
+    "id": "scrum",
+    "topicId": "agile",
+    "title": "Scrum components and sprint cycle",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in scrum components and sprint cycle."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in scrum components and sprint cycle."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Describe Scrum roles, backlog, sprint, daily Scrum, increment, and velocity."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer"
+    ]
+  },
+  {
+    "id": "types",
+    "topicId": "requirements",
+    "title": "Requirement types",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in requirement types."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in requirement types."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Distinguish user/system and functional/non-functional requirements; give examples and classify non-functional constraints."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "elicitation",
+    "topicId": "requirements",
+    "title": "Elicitation, stakeholders, and interviews",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in elicitation, stakeholders, and interviews."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in elicitation, stakeholders, and interviews."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Plan elicitation for conflicting patient and receptionist needs. Explain interview limitations and a complementary method."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "specification",
+    "topicId": "requirements",
+    "title": "Natural-language and structured specification",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in natural-language and structured specification."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in natural-language and structured specification."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Improve “The booking system should be fast and reliable.” Explain the structured fields needed before it is testable."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "use-template",
+    "topicId": "requirements",
+    "title": "Use-case template and notation",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in use-case template and notation."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in use-case template and notation."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Outline a cash-withdrawal use case with actors, trigger, main flow, exception, precondition, and postcondition."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "validation",
+    "topicId": "requirements",
+    "title": "Requirements validation and testing",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in requirements validation and testing."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in requirements validation and testing."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Name the five validation checks and apply test-case generation to an ambiguous response-time requirement."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "management",
+    "topicId": "requirements",
+    "title": "Requirements management planning",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in requirements management planning."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in requirements management planning."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain the four requirements management planning elements for a changed booking rule."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "views",
+    "topicId": "architecture",
+    "title": "System and architectural views",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in system and architectural views."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in system and architectural views."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain the 4+1 views and choose a view for concurrency, code organization, and deployment concerns."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "True/false"
+    ]
+  },
+  {
+    "id": "applications",
+    "topicId": "architecture",
+    "title": "Application architecture types",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in application architecture types."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in application architecture types."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Distinguish the four application types with a characteristic and example for each."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "True/false"
+    ]
+  },
+  {
+    "id": "decomposition",
+    "topicId": "architecture",
+    "title": "Functional versus object-oriented design",
+    "priority": "HIGH",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in functional versus object-oriented design."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in functional versus object-oriented design."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Compare functional and object-oriented decomposition using payroll."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "True/false"
+    ]
+  },
+  {
+    "id": "context",
+    "topicId": "modeling",
+    "title": "System perspectives and context models",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in system perspectives and context models."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in system perspectives and context models."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain all four perspectives and identify the boundary and external systems for an appointment portal."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "formats": [
+      "MCQ",
+      "Case study",
+      "Diagram"
+    ]
+  },
+  {
+    "id": "use-diagrams",
+    "topicId": "modeling",
+    "title": "Use-case diagrams",
+    "priority": "CRITICAL",
+    "objectives": [
+      {
+        "skill": "KNOW",
+        "text": "Define the key terms in use-case diagrams."
+      },
+      {
+        "skill": "UNDERSTAND",
+        "text": "Explain the distinctions and common mistakes in use-case diagrams."
+      },
+      {
+        "skill": "APPLY",
+        "text": "Explain actors, boundary, associations, include, extend, and generalization; state the relationship directions."
+      }
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "formats": [
+      "MCQ",
+      "Case study",
+      "Diagram"
+    ]
+  }
+]

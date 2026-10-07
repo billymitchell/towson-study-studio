@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({testDir:'./tests/e2e',fullyParallel:false,workers:1,retries:0,timeout:45000,use:{baseURL:'http://127.0.0.1:3000',headless:true,launchOptions:{executablePath:process.env.PLAYWRIGHT_USE_BUNDLED?undefined:process.env.PLAYWRIGHT_CHROME_PATH??'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'},trace:'retain-on-failure'},reporter:'list'});

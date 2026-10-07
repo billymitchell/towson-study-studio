@@ -1,0 +1,83 @@
+[
+  {
+    "id": "intro",
+    "title": "Introduction",
+    "reviewChapter": 1,
+    "priority": "HIGH",
+    "formats": [
+      "Short answer"
+    ],
+    "sourceIds": [
+      "MR-P1"
+    ]
+  },
+  {
+    "id": "process",
+    "title": "Software process",
+    "reviewChapter": 2,
+    "priority": "HIGH",
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "Case study"
+    ],
+    "sourceIds": [
+      "MR-P1"
+    ]
+  },
+  {
+    "id": "agile",
+    "title": "Agile development",
+    "reviewChapter": 3,
+    "priority": "HIGH",
+    "formats": [
+      "MCQ",
+      "Short answer"
+    ],
+    "sourceIds": [
+      "MR-P1"
+    ]
+  },
+  {
+    "id": "requirements",
+    "title": "Requirements engineering",
+    "reviewChapter": 4,
+    "priority": "CRITICAL",
+    "formats": [
+      "Short answer",
+      "Case study",
+      "Diagram"
+    ],
+    "sourceIds": [
+      "MR-P1"
+    ]
+  },
+  {
+    "id": "architecture",
+    "title": "Architecture design",
+    "reviewChapter": 5,
+    "priority": "HIGH",
+    "formats": [
+      "MCQ",
+      "Short answer",
+      "True/false"
+    ],
+    "sourceIds": [
+      "MR-P1"
+    ]
+  },
+  {
+    "id": "modeling",
+    "title": "System modeling",
+    "reviewChapter": 6,
+    "priority": "CRITICAL",
+    "formats": [
+      "MCQ",
+      "Case study",
+      "Diagram"
+    ],
+    "sourceIds": [
+      "MR-P1"
+    ]
+  }
+]

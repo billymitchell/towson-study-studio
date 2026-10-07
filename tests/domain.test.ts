@@ -1,0 +1,38 @@
+import { describe, expect, it } from 'vitest';
+import { content } from '@/lib/contentRepository';
+import { validateContent } from '@/content/validate';
+import { exampleGraph, gradeDiagram } from '@/lib/diagramGrader';
+import { emptyStore, loadStore, parseStore, saveStore, type StorageAdapter } from '@/lib/storage';
+import { nextStudy, topicMastery, missedIds } from '@/lib/mastery';
+import { createMockItems } from '@/lib/mockExam';
+import type { Attempt } from '@/content/types';
+const clone=<T,>(v:T):T=>JSON.parse(JSON.stringify(v));
+const attempt=(patch:Partial<Attempt>={}):Attempt=>({id:'attempt-1',itemId:'mcq-1',topicId:'process',itemType:'multiple-choice',response:0,score:1,confidence:'High',completedAt:'2026-10-05T12:00:00.000Z',sourceIds:['MR-P1','L2-P3'],...patch});
+describe('source-linked content',()=>{
+  it('covers all review chapters and every row with a concept and question',()=>{expect(content.topics).toHaveLength(6);expect(content.subtopics).toHaveLength(22);expect(content.questions).toHaveLength(122);expect(()=>validateContent(content)).not.toThrow();});
+  it('rejects unknown or missing citations',()=>{const bad=clone(content);bad.concepts[0].sourceIds=['unknown'];expect(()=>validateContent(bad)).toThrow('Unknown reference');bad.concepts[0].sourceIds=[];expect(()=>validateContent(bad)).toThrow();});
+  it('rejects broken hierarchy, duplicate choices, and unsupported diagram types',()=>{const bad=clone(content);bad.questions[0].topicId='invalid';expect(()=>validateContent(bad)).toThrow();const mc=clone(content);const q=mc.questions.find(q=>q.type==='multiple-choice')!;if(q.type==='multiple-choice')q.choices[1]=q.choices[0];expect(()=>validateContent(mc)).toThrow('Duplicate MCQ');const d=clone(content) as unknown as {diagrams:{diagramType:string}[]};d.diagrams[0].diagramType='sequence';expect(()=>validateContent(d)).toThrow();});
+  it('requires models, distractor reasons, and integrated case concepts',()=>{for(const q of content.questions){if(q.type!=='short-answer'){expect(q.choices).toHaveLength(4);expect(q.distractorExplanations.every(Boolean)).toBe(true);}else expect(q.rubric.length).toBeGreaterThan(0);}expect(content.cases.every(c=>c.conceptIds.length>=2)).toBe(true);});
+});
+describe('semantic diagram grading',()=>{
+  it.each(content.diagrams.map(d=>[d.title,d] as const))('accepts the %s solution regardless of layout',(_,d)=>{const graph=exampleGraph(d);graph.nodes.forEach(n=>{n.x=900;n.y=-100;});expect(gradeDiagram(d,graph).score).toBe(1);});
+  it('accepts authored aliases and reversed undirected endpoints',()=>{const d=content.diagrams[0],graph=exampleGraph(d);graph.nodes[0].label='Portal';const e=graph.edges[0];[e.source,e.target]=[e.target,e.source];expect(gradeDiagram(d,graph).score).toBe(1);});
+  it('reports missing and extra elements, placement, relations, labels, and reversed include',()=>{const d=content.diagrams[1],g=exampleGraph(d);g.nodes[0].inside=true;g.nodes.push({id:'extra',label:'Internal database',kind:'external',inside:true,x:0,y:0});const e=g.edges[2];[e.source,e.target]=[e.target,e.source];e.label='extend';e.relation='extend';const result=gradeDiagram(d,g);expect(result.score).toBeLessThan(1);expect(result.feedback.join(' ')).toMatch(/Boundary/);expect(result.feedback.join(' ')).toMatch(/Extra element/);expect(result.feedback.join(' ')).toMatch(/Wrong direction/);expect(result.feedback.join(' ')).toMatch(/Wrong label/);expect(result.feedback.join(' ')).toMatch(/Wrong relation/);g.nodes=g.nodes.filter(n=>n.id!=='cancel');g.edges=g.edges.filter(e=>e.target!=='cancel');expect(gradeDiagram(d,g).feedback.join(' ')).toMatch(/Missing element/);expect(gradeDiagram(d,g).feedback.join(' ')).toMatch(/Missing connection/);});
+  it('penalizes duplicate nodes and connections',()=>{const d=content.diagrams[0],g=exampleGraph(d);g.nodes.push({...g.nodes[0],id:'duplicate'});g.edges.push({...g.edges[0],id:'duplicate-edge'});expect(gradeDiagram(d,g).score).toBeLessThan(1);});
+});
+describe('versioned persistence and recovery',()=>{
+  function memory():StorageAdapter{const m=new Map<string,string>();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>{m.set(k,v);},removeItem:k=>{m.delete(k);}};}
+  it('round-trips attempts, graphs, and completed sessions',()=>{const adapter=memory(),store=emptyStore();store.attempts=[attempt()];const d=content.diagrams[0];store.diagrams=[{id:d.id,exerciseId:d.id,topicId:d.topicId,diagramType:d.diagramType,graph:exampleGraph(d),updatedAt:'2026-10-05T12:00:00.000Z',sourceIds:d.sourceIds}];store.sessions=[{id:'session-1',itemIds:['mcq-1'],responses:{'mcq-1':0},confidence:{'mcq-1':'High'},completedAt:'2026-10-05T12:00:00.000Z'}];saveStore(adapter,store);expect(loadStore(adapter)).toEqual(store);});
+  it('migrates the supported v0 format',()=>{expect(parseStore(JSON.stringify({version:0,attempts:[attempt()],diagrams:[]}))).toEqual({...emptyStore(),attempts:[attempt()]});});
+  it('rejects corruption, unsupported versions, invalid scores, and broken graph references',()=>{expect(()=>parseStore('garbage')).toThrow();expect(()=>parseStore(JSON.stringify({version:9,attempts:[],diagrams:[]}))).toThrow();expect(()=>parseStore(JSON.stringify({...emptyStore(),attempts:[attempt({score:4})]}))).toThrow();expect(()=>parseStore(JSON.stringify({...emptyStore(),attempts:[attempt({itemId:'unknown'})]}))).toThrow();const d=content.diagrams[0],graph=exampleGraph(d);graph.edges[0].source='unknown';expect(()=>parseStore(JSON.stringify({...emptyStore(),diagrams:[{id:d.id,exerciseId:d.id,topicId:d.topicId,diagramType:d.diagramType,graph,updatedAt:'2026-10-05T12:00:00.000Z',sourceIds:d.sourceIds}]}))).toThrow();});
+  it('surfaces read and write failures without overwriting existing data',()=>{const adapter:StorageAdapter={getItem:()=>'{invalid',setItem:()=>{throw new Error('quota');},removeItem:()=>{}};expect(()=>loadStore(adapter)).toThrow();expect(()=>saveStore(adapter,emptyStore())).toThrow('quota');});
+});
+describe('mastery, confidence, missed practice, and next-study ordering',()=>{
+  const topic=content.topics.find(t=>t.id==='process')!;
+  it('derives status and means from the latest ten attempts',()=>{expect(topicMastery(topic,[]).status).toBe('Weak');expect(topicMastery(topic,[attempt()]).status).toBe('Developing');expect(topicMastery(topic,Array.from({length:3},()=>attempt())).status).toBe('Strong');const records=[attempt({score:0}),...Array.from({length:10},()=>attempt())];expect(topicMastery(topic,records).mastery).toBe(1);});
+  it('removes successfully retried items from missed practice',()=>{const records=[attempt({score:0}),attempt({id:'retry',score:1,completedAt:'2026-10-05T13:00:00.000Z'})];expect(missedIds(records).has('mcq-1')).toBe(false);});
+  it('uses blueprint priority for an unpracticed queue, and promotes misses and stale practice',()=>{const now=Date.parse('2026-10-05T12:00:00.000Z');expect(nextStudy(content.topics,[],now)[0].topic.priority).toBe('CRITICAL');const fresh=topicMastery(topic,[attempt()],now),stale=topicMastery(topic,[attempt({completedAt:'2026-09-01T12:00:00.000Z'})],now);expect(stale.rank).toBeGreaterThan(fresh.rank);expect(topicMastery(topic,[attempt({score:0,confidence:'Low'})],now).rank).toBeGreaterThan(fresh.rank);});
+});
+describe('mock configuration',()=>{
+  it('contains all four formats with unique source-linked IDs',()=>{const items=createMockItems({mcq:3,shortAnswer:2,cases:1,diagrams:1},()=>0.5);expect(items).toHaveLength(7);expect(new Set(items.map(i=>i.id)).size).toBe(7);expect(items.every(i=>i.sourceIds.includes('MR-P1'))).toBe(true);expect(items.filter(i=>'diagramType' in i)).toHaveLength(1);expect(()=>createMockItems({mcq:0,shortAnswer:1,cases:1,diagrams:1})).toThrow();});
+});

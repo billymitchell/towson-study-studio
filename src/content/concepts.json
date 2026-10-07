@@ -1,0 +1,694 @@
+[
+  {
+    "id": "concept-software",
+    "subtopicId": "software",
+    "title": "What software is",
+    "definition": "Software comprises computer programs and their associated documentation.",
+    "explanation": "Software engineering covers the full production and maintenance lifecycle, including specification, development, validation, and evolution. Programming is one activity within that discipline.",
+    "example": "A delivered scheduling product includes its program, configuration, and user documentation, not just its source code.",
+    "commonMistake": "Equating software engineering with writing code alone.",
+    "relatedConceptIds": [
+      "concept-four-ps",
+      "concept-evolution"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-four-ps",
+    "subtopicId": "four-ps",
+    "title": "The four Ps",
+    "definition": "The four Ps are People, Product, Process, and Project.",
+    "explanation": "People include customers, managers, developers, testers, and users; communication and collaboration matter. Product covers generic or customized software and qualities such as acceptability, dependability/security, efficiency, and maintainability. Process structures the four core activities. Project balances constraints to deliver the result.",
+    "example": "For a clinic system: staff and developers are People; the clinic application is the Product; elicitation, construction, testing, and change form the Process; coordination of scope, schedule, and resources is the Project.",
+    "commonMistake": "Substituting programming or performance for one of the four Ps.",
+    "relatedConceptIds": [
+      "concept-software",
+      "concept-evolution"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P14",
+      "L1-P15",
+      "L1-P16",
+      "L1-P17",
+      "L1-P18",
+      "L1-P19",
+      "L1-P20",
+      "L1-P21"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-evolution",
+    "subtopicId": "evolution",
+    "title": "Software change and evolution",
+    "definition": "Evolution modifies software in response to changing customer and market requirements.",
+    "explanation": "Software is rarely finished permanently. Requirements and environments change, so development and evolution form a continuing lifecycle. For customized systems, evolution costs can exceed initial development costs.",
+    "example": "A clinic adds telehealth appointments to an existing scheduling system when service needs change.",
+    "commonMistake": "Treating all maintenance as bug fixing or assuming delivery ends engineering work.",
+    "relatedConceptIds": [
+      "concept-software",
+      "concept-four-ps"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P12",
+      "L1-P20"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-ethics",
+    "subtopicId": "ethics",
+    "title": "Software engineering ethics",
+    "definition": "The lecture identifies confidentiality, competence, intellectual property rights, and computer misuse as professional responsibilities.",
+    "explanation": "Respect client confidentiality even without a signed agreement; be truthful about competence; protect employer/client intellectual property; and do not misuse other people’s computers. Professional responsibility extends beyond technical correctness.",
+    "example": "A developer asked to share patient test data should protect confidentiality and seek an appropriate authorized route.",
+    "commonMistake": "Assuming confidentiality only matters when a formal agreement exists.",
+    "relatedConceptIds": [
+      "concept-software",
+      "concept-four-ps"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L1-P27",
+      "L1-P28",
+      "L1-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-activities",
+    "subtopicId": "activities",
+    "title": "Process activities and descriptions",
+    "definition": "The four fundamental activities are specification, development, validation, and evolution.",
+    "explanation": "Specification establishes services and constraints; development designs and implements them; validation checks customer needs; evolution handles change. Process descriptions can state activities, roles, work products, and pre/postconditions. The activities may be interleaved rather than strictly sequential.",
+    "example": "A team interviews users, builds an increment, checks it with users, and then changes it based on feedback.",
+    "commonMistake": "Confusing validation with implementation or assuming every process follows one fixed sequence.",
+    "relatedConceptIds": [
+      "concept-plan-agile",
+      "concept-models"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P3",
+      "L2-P4",
+      "L2-P5",
+      "L2-P6",
+      "L2-P7",
+      "L2-P8",
+      "L2-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-plan-agile",
+    "subtopicId": "plan-agile",
+    "title": "Plan-driven versus agile",
+    "definition": "Plan-driven work plans activities in advance; agile work plans incrementally and accommodates changing requirements.",
+    "explanation": "Plan-driven processes assess progress against a plan. Agile processes make it easier to adapt to changing customer requirements. Most practical processes combine elements; suitability depends on the system and constraints.",
+    "example": "A project with stable contractual requirements may emphasize advance planning, while a changing user-facing service benefits from frequent incremental feedback.",
+    "commonMistake": "Claiming agile means no planning, documentation, or discipline.",
+    "relatedConceptIds": [
+      "concept-activities",
+      "concept-models"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P9",
+      "L2-P10"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-models",
+    "subtopicId": "models",
+    "title": "Waterfall, incremental, and reuse-oriented models",
+    "definition": "Waterfall separates process phases; incremental development interleaves activities in versions; reuse-oriented development assembles existing components.",
+    "explanation": "Waterfall fits well-understood stable requirements but makes later change costly. Incremental development offers early usable versions and feedback, though progress visibility and structure need attention. Reuse-oriented development reduces new construction but may require adapting requirements to available components.",
+    "example": "For a service portal, deliver booking before reporting; if a suitable package exists, evaluate its fit rather than assuming all features must be built.",
+    "commonMistake": "Treating reuse as copying code without requirements analysis or component evaluation.",
+    "relatedConceptIds": [
+      "concept-activities",
+      "concept-plan-agile"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P11",
+      "L2-P12",
+      "L2-P13",
+      "L2-P14",
+      "L2-P15",
+      "L2-P16",
+      "L2-P17",
+      "L2-P18",
+      "L2-P19",
+      "L2-P20",
+      "L2-P21",
+      "L2-P22",
+      "L2-P23",
+      "L2-P24",
+      "L2-P25",
+      "L2-P26",
+      "L2-P27",
+      "L2-P28",
+      "L2-P29",
+      "L2-P30",
+      "L2-P31",
+      "L2-P32",
+      "L2-P33",
+      "L2-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-change",
+    "subtopicId": "change",
+    "title": "Coping with change and rework cost",
+    "definition": "Requirements change creates rework; anticipating change and tolerating change can reduce that cost.",
+    "explanation": "Change anticipation uses activities such as prototyping to reveal likely changes before major investment. Change tolerance structures development so change can be accommodated, for example through incremental delivery. Later changes may affect more completed work and dependencies.",
+    "example": "Prototype appointment booking with staff before finalizing requirements, then deliver increments so new workflow needs can be accommodated.",
+    "commonMistake": "Promising that an agile process eliminates all rework.",
+    "relatedConceptIds": [
+      "concept-activities",
+      "concept-plan-agile"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L2-P57",
+      "L2-P58",
+      "L2-P59",
+      "L2-P60"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-principles",
+    "subtopicId": "principles",
+    "title": "Agile principles",
+    "definition": "Agile principles include customer involvement, incremental delivery, people over process, embracing change, and maintaining simplicity.",
+    "explanation": "Customers help prioritize and evaluate increments. Teams use their skills rather than rigid rules, accept changing needs, and avoid unnecessary complexity. These principles require active collaboration and disciplined engineering.",
+    "example": "A team delivers a small booking increment, reviews it with staff, reprioritizes feedback, and avoids speculative features.",
+    "commonMistake": "Interpreting people over process as permission to skip quality checks.",
+    "relatedConceptIds": [
+      "concept-xp",
+      "concept-scrum"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P8",
+      "L3-P9",
+      "L3-P10",
+      "L3-P11"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-xp",
+    "subtopicId": "xp",
+    "title": "Extreme Programming and test-first development",
+    "definition": "XP (Extreme Programming) combines frequent small releases with practices such as test-first development, pair programming, refactoring, and continuous integration.",
+    "explanation": "Incremental planning uses customer stories; simple design addresses current needs. Refactoring improves structure without changing behavior; collective ownership lets the team improve any code. Tests are written before implementation, integrations happen frequently, and an available customer guides priorities. The lecture also lists sustainable pace.",
+    "example": "Write a failing test for a booking rule, implement the smallest change to pass it, then refactor while tests protect behavior.",
+    "commonMistake": "Calling new functionality refactoring, or writing tests only after everything is implemented.",
+    "relatedConceptIds": [
+      "concept-principles",
+      "concept-scrum"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P16",
+      "L3-P17",
+      "L3-P18",
+      "L3-P19",
+      "L3-P20",
+      "L3-P21",
+      "L3-P22",
+      "L3-P23",
+      "L3-P24",
+      "L3-P34",
+      "L3-P35",
+      "L3-P36",
+      "L3-P37",
+      "L3-P38",
+      "L3-P39",
+      "L3-P40",
+      "L3-P41"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-scrum",
+    "subtopicId": "scrum",
+    "title": "Scrum components and sprint cycle",
+    "definition": "Scrum organizes work through a product backlog, sprints, daily Scrums, and potentially shippable increments.",
+    "explanation": "The Product Owner represents priorities and manages the product backlog. The ScrumMaster supports Scrum and removes impediments. The Development Team builds the increment. Sprint planning selects work, the sprint develops it, daily Scrums coordinate, and review/retrospective inform further work. Velocity describes completed work and informs planning, not an individual performance ranking.",
+    "example": "A Product Owner prioritizes appointment reminders; the team selects a sprint goal, coordinates daily, and demonstrates the increment.",
+    "commonMistake": "Confusing the ScrumMaster with the Product Owner or treating velocity as a universal team comparison.",
+    "relatedConceptIds": [
+      "concept-principles",
+      "concept-xp"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L3-P41",
+      "L3-P42",
+      "L3-P43",
+      "L3-P44",
+      "L3-P45",
+      "L3-P46",
+      "L3-P47",
+      "L3-P48",
+      "L3-P49",
+      "L3-P50",
+      "L3-P51",
+      "L3-P52",
+      "L3-P53",
+      "L3-P54",
+      "L3-P55",
+      "L3-P56"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-types",
+    "subtopicId": "types",
+    "title": "Requirement types",
+    "definition": "User requirements give high-level services and constraints; system requirements describe detailed functions and constraints.",
+    "explanation": "Functional requirements specify services or behavior. Non-functional requirements constrain qualities or development, and may be product, organizational, or external requirements. User/system abstraction and functional/non-functional classification are separate dimensions.",
+    "example": "“Book an appointment” is functional. “Return available slots within two seconds under the stated load” is a product performance constraint. A mandated organizational tool is an organizational constraint.",
+    "commonMistake": "Assuming every user requirement is functional and every system requirement is non-functional.",
+    "relatedConceptIds": [
+      "concept-elicitation",
+      "concept-specification"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P6",
+      "L4-P7",
+      "L4-P8",
+      "L4-P9",
+      "L4-P10",
+      "L4-P11",
+      "L4-P12",
+      "L4-P13",
+      "L4-P14",
+      "L4-P15"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-elicitation",
+    "subtopicId": "elicitation",
+    "title": "Elicitation, stakeholders, and interviews",
+    "definition": "Elicitation discovers stakeholder needs, domain knowledge, constraints, and conflicting viewpoints.",
+    "explanation": "Stakeholders may struggle to articulate needs, use domain terms, or have conflicting priorities. Interviews should be prepared, open-minded, and supported by prompts or examples; do not assume interviews expose all tacit working practices. Observation, scenarios, and prototypes can complement interviews.",
+    "example": "Interview patients and receptionists separately, compare booking priorities, observe actual work, and validate a prototype with both groups.",
+    "commonMistake": "Treating the first stakeholder’s statement as a complete, agreed requirement.",
+    "relatedConceptIds": [
+      "concept-types",
+      "concept-specification"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P18",
+      "L4-P19",
+      "L4-P20",
+      "L4-P21",
+      "L4-P22",
+      "L4-P23",
+      "L4-P24",
+      "L4-P25",
+      "L4-P26",
+      "L4-P27",
+      "L4-P28",
+      "L4-P29",
+      "L4-P30"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-specification",
+    "subtopicId": "specification",
+    "title": "Natural-language and structured specification",
+    "definition": "Natural-language requirements are accessible but can be unclear, incomplete, or combine several requirements.",
+    "explanation": "A structured template retains expressiveness while standardizing fields: identifier, definition, rationale, source/author, inputs, required function, outputs, related requirements/conflicts, test cases, date, and priority. A use-case template instead describes interactions and paths. Prefer separate, measurable statements with clear conditions.",
+    "example": "Replace “The system should respond quickly” with a negotiated response limit, operating conditions, and a repeatable test. Separate availability and response-time requirements.",
+    "commonMistake": "Adding a template without removing ambiguity, or inventing an unagreed numerical threshold.",
+    "relatedConceptIds": [
+      "concept-types",
+      "concept-elicitation"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P31",
+      "L4-P32",
+      "L4-P33",
+      "L4-P34",
+      "L4-P35",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-use-template",
+    "subtopicId": "use-template",
+    "title": "Use-case template and notation",
+    "definition": "A use case describes interactions between actors and the system toward a user goal.",
+    "explanation": "The lecture template includes identifier, iteration, summary, actors, event sequence, alternate/exception paths, extensions, trigger, assumptions, precondition, postcondition, author, and modification date. Actors are external roles, including other systems. Diagrams complement the textual steps; they do not capture every detail.",
+    "example": "For withdrawal: the customer requests cash; the system validates credentials, checks funds, dispenses cash, and records the debit. Insufficient funds is an exception path.",
+    "commonMistake": "Modeling internal classes as actors or omitting alternate paths and postconditions.",
+    "relatedConceptIds": [
+      "concept-types",
+      "concept-elicitation"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-validation",
+    "subtopicId": "validation",
+    "title": "Requirements validation and testing",
+    "definition": "Validation checks whether requirements define the system the customer actually wants.",
+    "explanation": "Validity checks real needs; consistency checks conflicts; completeness checks missing information; realism checks feasibility within constraints; verifiability checks whether compliance can be demonstrated. Reviews, prototypes, and test-case generation expose problems before expensive implementation rework.",
+    "example": "If booking “must be instantaneous,” ask what response time and load would satisfy the need, negotiate a feasible value, and derive a test with expected results.",
+    "commonMistake": "Checking only spelling or assuming a requirement is verifiable because it contains the word “shall.”",
+    "relatedConceptIds": [
+      "concept-types",
+      "concept-elicitation"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P48",
+      "L4-P49",
+      "L4-P50",
+      "L4-P51",
+      "L4-P52",
+      "L4-P53",
+      "L4-P54",
+      "L4-P55",
+      "L4-P56",
+      "L4-P57"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-management",
+    "subtopicId": "management",
+    "title": "Requirements management planning",
+    "definition": "Requirements management plans identification, change handling, traceability policies, and tool support.",
+    "explanation": "Stable identifiers let changes and tests refer to the same requirement. A change-management process evaluates impact and approves changes. Traceability connects requirements to sources and dependent artifacts; tools support the records and workflow.",
+    "example": "A changed booking rule has an ID (identifier), links to a stakeholder request and tests, an impact analysis, and a recorded approval before implementation.",
+    "commonMistake": "Accepting changes informally without assessing their effect on dependent requirements and tests.",
+    "relatedConceptIds": [
+      "concept-types",
+      "concept-elicitation"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L4-P96",
+      "L4-P97",
+      "L4-P98"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-views",
+    "subtopicId": "views",
+    "title": "System and architectural views",
+    "definition": "Architecture describes system organization. The lecture uses the 4+1 model: logical, process, development, and physical views linked by use-case scenarios.",
+    "explanation": "Logical view focuses on functionality and components/connectors. Process view models active processes, concurrency, communication, and performance. Development view organizes code artifacts such as packages and modules. Physical view maps software to hardware, networks, and deployment. Scenarios link views to requirements.",
+    "example": "For a music player, browsing/purchasing scenarios tie together functional components, concurrent playback/download work, code modules, and device/server deployment.",
+    "commonMistake": "Treating one structural diagram as the complete architecture or confusing process and development views.",
+    "relatedConceptIds": [
+      "concept-applications",
+      "concept-decomposition"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P4",
+      "L5-P5",
+      "L5-P6",
+      "L5-P7",
+      "L5-P8",
+      "L5-P9",
+      "L5-P10",
+      "L5-P11",
+      "L5-P12",
+      "L5-P13",
+      "L5-P14",
+      "L5-P15",
+      "L5-P16",
+      "L5-P17",
+      "L5-P18",
+      "L5-P19"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-applications",
+    "subtopicId": "applications",
+    "title": "Application architecture types",
+    "definition": "The four application types are data processing, transaction processing, event processing, and language processing.",
+    "explanation": "Data processing runs data-driven batches without explicit user intervention during processing. Transaction processing handles requests and updates stored information. Event processing responds to environmental events. Language processing interprets a formal language representing user intentions.",
+    "example": "Payroll is data processing; reservation services are transaction processing; a real-time control system is event processing; a compiler is language processing.",
+    "commonMistake": "Classifying any application that stores data as only data processing.",
+    "relatedConceptIds": [
+      "concept-views",
+      "concept-decomposition"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P47",
+      "L5-P48",
+      "L5-P49",
+      "L5-P50",
+      "L5-P51",
+      "L5-P52",
+      "L5-P53"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-decomposition",
+    "subtopicId": "decomposition",
+    "title": "Functional versus object-oriented design",
+    "definition": "Functional design decomposes transformations of inputs into outputs; object-oriented design decomposes a system into objects with attributes and operations.",
+    "explanation": "Functional modules emphasize data flow and transformations. Object-oriented design groups state and related behavior behind interfaces in loosely coupled objects/classes. These are different decomposition approaches, not simply different programming language choices.",
+    "example": "Payroll can be viewed as read data → calculate pay → produce outputs, or as employee/payroll objects that own data and operations.",
+    "commonMistake": "Claiming object-oriented design is merely naming functions after nouns.",
+    "relatedConceptIds": [
+      "concept-views",
+      "concept-applications"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L5-P54",
+      "L5-P55",
+      "L5-P56",
+      "L5-P57",
+      "L5-P58",
+      "L5-P59"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-context",
+    "subtopicId": "context",
+    "title": "System perspectives and context models",
+    "definition": "External, interaction, structural, and behavioral perspectives describe different aspects of a system; context models show its operational environment.",
+    "explanation": "External perspective shows context; interaction shows communication; structural shows organization/data; behavioral shows dynamic responses. A context boundary distinguishes the system under design from external systems. Context relationships do not describe detailed internal workflows; social and organizational concerns influence boundaries.",
+    "example": "An appointment portal sits inside the chosen boundary; identity and notification services sit outside. Lines show relationships rather than booking step order.",
+    "commonMistake": "Putting internal implementation modules into a context model or using it as a sequence diagram.",
+    "relatedConceptIds": [
+      "concept-use-diagrams"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "concept-use-diagrams",
+    "subtopicId": "use-diagrams",
+    "title": "Use-case diagrams",
+    "definition": "Use-case diagrams show external actors, goal-oriented use cases, and their relationships inside a system boundary.",
+    "explanation": "Associations connect actors to use cases. Include factors out required shared steps and points toward the included behavior. Extend adds conditional behavior and points toward the base use case. Generalization goes from a specialized element toward the general one. Actors can be people or systems; not every stakeholder is an actor.",
+    "example": "A patient is associated with Book appointment. Book appointment includes Check availability. An optional Request assistance use case can extend Book appointment when the specified condition holds.",
+    "commonMistake": "Treating include as optional, reversing its arrow, or turning every internal operation into an independent user goal.",
+    "relatedConceptIds": [
+      "concept-context"
+    ],
+    "skills": [
+      "KNOW",
+      "UNDERSTAND",
+      "APPLY"
+    ],
+    "sourceIds": [
+      "MR-P1",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  }
+]

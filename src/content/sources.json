@@ -1,0 +1,3313 @@
+[
+  {
+    "id": "MR-P1",
+    "file": "Midterm review Fall 2026.pdf",
+    "label": "Midterm review · p. 1",
+    "page": 1,
+    "role": "Scope authority"
+  },
+  {
+    "id": "L1-P1",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 1",
+    "page": 1,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P2",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 2",
+    "page": 2,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P3",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 3",
+    "page": 3,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P4",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 4",
+    "page": 4,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P5",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 5",
+    "page": 5,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P6",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 6",
+    "page": 6,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P7",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 7",
+    "page": 7,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P8",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 8",
+    "page": 8,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P9",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 9",
+    "page": 9,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P10",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 10",
+    "page": 10,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P11",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 11",
+    "page": 11,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P12",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 12",
+    "page": 12,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P13",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 13",
+    "page": 13,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P14",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 14",
+    "page": 14,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P15",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 15",
+    "page": 15,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P16",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 16",
+    "page": 16,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P17",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 17",
+    "page": 17,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P18",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 18",
+    "page": 18,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P19",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 19",
+    "page": 19,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P20",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 20",
+    "page": 20,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P21",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 21",
+    "page": 21,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P22",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 22",
+    "page": 22,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P23",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 23",
+    "page": 23,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P24",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 24",
+    "page": 24,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P25",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 25",
+    "page": 25,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P26",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 26",
+    "page": 26,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P27",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 27",
+    "page": 27,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P28",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 28",
+    "page": 28,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P29",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 29",
+    "page": 29,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P30",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 30",
+    "page": 30,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P31",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 31",
+    "page": 31,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P32",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 32",
+    "page": 32,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P33",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 33",
+    "page": 33,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P34",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 34",
+    "page": 34,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P35",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 35",
+    "page": 35,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P36",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 36",
+    "page": 36,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L1-P37",
+    "file": "Chp1 Introduction.pdf",
+    "label": "Lecture 1 · p. 37",
+    "page": 37,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P1",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 1",
+    "page": 1,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P2",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 2",
+    "page": 2,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P3",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 3",
+    "page": 3,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P4",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 4",
+    "page": 4,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P5",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 5",
+    "page": 5,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P6",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 6",
+    "page": 6,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P7",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 7",
+    "page": 7,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P8",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 8",
+    "page": 8,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P9",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 9",
+    "page": 9,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P10",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 10",
+    "page": 10,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P11",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 11",
+    "page": 11,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P12",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 12",
+    "page": 12,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P13",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 13",
+    "page": 13,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P14",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 14",
+    "page": 14,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P15",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 15",
+    "page": 15,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P16",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 16",
+    "page": 16,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P17",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 17",
+    "page": 17,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P18",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 18",
+    "page": 18,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P19",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 19",
+    "page": 19,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P20",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 20",
+    "page": 20,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P21",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 21",
+    "page": 21,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P22",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 22",
+    "page": 22,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P23",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 23",
+    "page": 23,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P24",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 24",
+    "page": 24,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P25",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 25",
+    "page": 25,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P26",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 26",
+    "page": 26,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P27",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 27",
+    "page": 27,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P28",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 28",
+    "page": 28,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P29",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 29",
+    "page": 29,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P30",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 30",
+    "page": 30,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P31",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 31",
+    "page": 31,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P32",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 32",
+    "page": 32,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P33",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 33",
+    "page": 33,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P34",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 34",
+    "page": 34,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P35",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 35",
+    "page": 35,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P36",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 36",
+    "page": 36,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P37",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 37",
+    "page": 37,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P38",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 38",
+    "page": 38,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P39",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 39",
+    "page": 39,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P40",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 40",
+    "page": 40,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P41",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 41",
+    "page": 41,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P42",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 42",
+    "page": 42,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P43",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 43",
+    "page": 43,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P44",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 44",
+    "page": 44,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P45",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 45",
+    "page": 45,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P46",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 46",
+    "page": 46,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P47",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 47",
+    "page": 47,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P48",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 48",
+    "page": 48,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P49",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 49",
+    "page": 49,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P50",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 50",
+    "page": 50,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P51",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 51",
+    "page": 51,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P52",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 52",
+    "page": 52,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P53",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 53",
+    "page": 53,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P54",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 54",
+    "page": 54,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P55",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 55",
+    "page": 55,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P56",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 56",
+    "page": 56,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P57",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 57",
+    "page": 57,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P58",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 58",
+    "page": 58,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P59",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 59",
+    "page": 59,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P60",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 60",
+    "page": 60,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P61",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 61",
+    "page": 61,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P62",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 62",
+    "page": 62,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P63",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 63",
+    "page": 63,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P64",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 64",
+    "page": 64,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P65",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 65",
+    "page": 65,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P66",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 66",
+    "page": 66,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P67",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 67",
+    "page": 67,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P68",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 68",
+    "page": 68,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P69",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 69",
+    "page": 69,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P70",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 70",
+    "page": 70,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P71",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 71",
+    "page": 71,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P72",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 72",
+    "page": 72,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P73",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 73",
+    "page": 73,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P74",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 74",
+    "page": 74,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P75",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 75",
+    "page": 75,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P76",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 76",
+    "page": 76,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P77",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 77",
+    "page": 77,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P78",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 78",
+    "page": 78,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L2-P79",
+    "file": "Chp2 Software Process.pdf",
+    "label": "Lecture 2 · p. 79",
+    "page": 79,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P1",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 1",
+    "page": 1,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P2",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 2",
+    "page": 2,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P3",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 3",
+    "page": 3,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P4",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 4",
+    "page": 4,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P5",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 5",
+    "page": 5,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P6",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 6",
+    "page": 6,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P7",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 7",
+    "page": 7,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P8",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 8",
+    "page": 8,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P9",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 9",
+    "page": 9,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P10",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 10",
+    "page": 10,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P11",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 11",
+    "page": 11,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P12",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 12",
+    "page": 12,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P13",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 13",
+    "page": 13,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P14",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 14",
+    "page": 14,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P15",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 15",
+    "page": 15,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P16",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 16",
+    "page": 16,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P17",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 17",
+    "page": 17,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P18",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 18",
+    "page": 18,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P19",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 19",
+    "page": 19,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P20",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 20",
+    "page": 20,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P21",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 21",
+    "page": 21,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P22",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 22",
+    "page": 22,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P23",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 23",
+    "page": 23,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P24",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 24",
+    "page": 24,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P25",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 25",
+    "page": 25,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P26",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 26",
+    "page": 26,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P27",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 27",
+    "page": 27,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P28",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 28",
+    "page": 28,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P29",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 29",
+    "page": 29,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P30",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 30",
+    "page": 30,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P31",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 31",
+    "page": 31,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P32",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 32",
+    "page": 32,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P33",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 33",
+    "page": 33,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P34",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 34",
+    "page": 34,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P35",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 35",
+    "page": 35,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P36",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 36",
+    "page": 36,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P37",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 37",
+    "page": 37,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P38",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 38",
+    "page": 38,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P39",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 39",
+    "page": 39,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P40",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 40",
+    "page": 40,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P41",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 41",
+    "page": 41,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P42",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 42",
+    "page": 42,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P43",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 43",
+    "page": 43,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P44",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 44",
+    "page": 44,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P45",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 45",
+    "page": 45,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P46",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 46",
+    "page": 46,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P47",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 47",
+    "page": 47,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P48",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 48",
+    "page": 48,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P49",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 49",
+    "page": 49,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P50",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 50",
+    "page": 50,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P51",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 51",
+    "page": 51,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P52",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 52",
+    "page": 52,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P53",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 53",
+    "page": 53,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P54",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 54",
+    "page": 54,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P55",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 55",
+    "page": 55,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P56",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 56",
+    "page": 56,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L3-P57",
+    "file": "Chp3 Agile Development 1.pdf",
+    "label": "Lecture 3 · p. 57",
+    "page": 57,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P1",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 1",
+    "page": 1,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P2",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 2",
+    "page": 2,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P3",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 3",
+    "page": 3,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P4",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 4",
+    "page": 4,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P5",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 5",
+    "page": 5,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P6",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 6",
+    "page": 6,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P7",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 7",
+    "page": 7,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P8",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 8",
+    "page": 8,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P9",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 9",
+    "page": 9,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P10",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 10",
+    "page": 10,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P11",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 11",
+    "page": 11,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P12",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 12",
+    "page": 12,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P13",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 13",
+    "page": 13,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P14",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 14",
+    "page": 14,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P15",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 15",
+    "page": 15,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P16",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 16",
+    "page": 16,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P17",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 17",
+    "page": 17,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P18",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 18",
+    "page": 18,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P19",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 19",
+    "page": 19,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P20",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 20",
+    "page": 20,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P21",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 21",
+    "page": 21,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P22",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 22",
+    "page": 22,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P23",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 23",
+    "page": 23,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P24",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 24",
+    "page": 24,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P25",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 25",
+    "page": 25,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P26",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 26",
+    "page": 26,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P27",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 27",
+    "page": 27,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P28",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 28",
+    "page": 28,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P29",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 29",
+    "page": 29,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P30",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 30",
+    "page": 30,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P31",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 31",
+    "page": 31,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P32",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 32",
+    "page": 32,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P33",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 33",
+    "page": 33,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P34",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 34",
+    "page": 34,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P35",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 35",
+    "page": 35,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P36",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 36",
+    "page": 36,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P37",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 37",
+    "page": 37,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P38",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 38",
+    "page": 38,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P39",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 39",
+    "page": 39,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P40",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 40",
+    "page": 40,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P41",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 41",
+    "page": 41,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P42",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 42",
+    "page": 42,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P43",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 43",
+    "page": 43,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P44",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 44",
+    "page": 44,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P45",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 45",
+    "page": 45,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P46",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 46",
+    "page": 46,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P47",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 47",
+    "page": 47,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P48",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 48",
+    "page": 48,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P49",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 49",
+    "page": 49,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P50",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 50",
+    "page": 50,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P51",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 51",
+    "page": 51,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P52",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 52",
+    "page": 52,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P53",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 53",
+    "page": 53,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P54",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 54",
+    "page": 54,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P55",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 55",
+    "page": 55,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P56",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 56",
+    "page": 56,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P57",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 57",
+    "page": 57,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P58",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 58",
+    "page": 58,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P59",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 59",
+    "page": 59,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P60",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 60",
+    "page": 60,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P61",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 61",
+    "page": 61,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P62",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 62",
+    "page": 62,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P63",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 63",
+    "page": 63,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P64",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 64",
+    "page": 64,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P65",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 65",
+    "page": 65,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P66",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 66",
+    "page": 66,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P67",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 67",
+    "page": 67,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P68",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 68",
+    "page": 68,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P69",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 69",
+    "page": 69,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P70",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 70",
+    "page": 70,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P71",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 71",
+    "page": 71,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P72",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 72",
+    "page": 72,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P73",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 73",
+    "page": 73,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P74",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 74",
+    "page": 74,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P75",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 75",
+    "page": 75,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P76",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 76",
+    "page": 76,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P77",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 77",
+    "page": 77,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P78",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 78",
+    "page": 78,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P79",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 79",
+    "page": 79,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P80",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 80",
+    "page": 80,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P81",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 81",
+    "page": 81,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P82",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 82",
+    "page": 82,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P83",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 83",
+    "page": 83,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P84",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 84",
+    "page": 84,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P85",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 85",
+    "page": 85,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P86",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 86",
+    "page": 86,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P87",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 87",
+    "page": 87,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P88",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 88",
+    "page": 88,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P89",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 89",
+    "page": 89,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P90",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 90",
+    "page": 90,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P91",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 91",
+    "page": 91,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P92",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 92",
+    "page": 92,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P93",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 93",
+    "page": 93,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P94",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 94",
+    "page": 94,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P95",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 95",
+    "page": 95,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P96",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 96",
+    "page": 96,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P97",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 97",
+    "page": 97,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P98",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 98",
+    "page": 98,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P99",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 99",
+    "page": 99,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P100",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 100",
+    "page": 100,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P101",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 101",
+    "page": 101,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P102",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 102",
+    "page": 102,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P103",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 103",
+    "page": 103,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P104",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 104",
+    "page": 104,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P105",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 105",
+    "page": 105,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P106",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 106",
+    "page": 106,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L4-P107",
+    "file": "Chp4 Requirements Engineering.pdf",
+    "label": "Lecture 4 · p. 107",
+    "page": 107,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P1",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 1",
+    "page": 1,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P2",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 2",
+    "page": 2,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P3",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 3",
+    "page": 3,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P4",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 4",
+    "page": 4,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P5",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 5",
+    "page": 5,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P6",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 6",
+    "page": 6,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P7",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 7",
+    "page": 7,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P8",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 8",
+    "page": 8,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P9",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 9",
+    "page": 9,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P10",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 10",
+    "page": 10,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P11",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 11",
+    "page": 11,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P12",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 12",
+    "page": 12,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P13",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 13",
+    "page": 13,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P14",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 14",
+    "page": 14,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P15",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 15",
+    "page": 15,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P16",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 16",
+    "page": 16,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P17",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 17",
+    "page": 17,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P18",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 18",
+    "page": 18,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P19",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 19",
+    "page": 19,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P20",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 20",
+    "page": 20,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P21",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 21",
+    "page": 21,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P22",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 22",
+    "page": 22,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P23",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 23",
+    "page": 23,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P24",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 24",
+    "page": 24,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P25",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 25",
+    "page": 25,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P26",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 26",
+    "page": 26,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P27",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 27",
+    "page": 27,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P28",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 28",
+    "page": 28,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P29",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 29",
+    "page": 29,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P30",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 30",
+    "page": 30,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P31",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 31",
+    "page": 31,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P32",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 32",
+    "page": 32,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P33",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 33",
+    "page": 33,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P34",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 34",
+    "page": 34,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P35",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 35",
+    "page": 35,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P36",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 36",
+    "page": 36,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P37",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 37",
+    "page": 37,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P38",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 38",
+    "page": 38,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P39",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 39",
+    "page": 39,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P40",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 40",
+    "page": 40,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P41",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 41",
+    "page": 41,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P42",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 42",
+    "page": 42,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P43",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 43",
+    "page": 43,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P44",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 44",
+    "page": 44,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P45",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 45",
+    "page": 45,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P46",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 46",
+    "page": 46,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P47",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 47",
+    "page": 47,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P48",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 48",
+    "page": 48,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P49",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 49",
+    "page": 49,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P50",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 50",
+    "page": 50,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P51",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 51",
+    "page": 51,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P52",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 52",
+    "page": 52,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P53",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 53",
+    "page": 53,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P54",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 54",
+    "page": 54,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P55",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 55",
+    "page": 55,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P56",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 56",
+    "page": 56,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P57",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 57",
+    "page": 57,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P58",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 58",
+    "page": 58,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P59",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 59",
+    "page": 59,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L5-P60",
+    "file": "Chp5 Architecture Design .pdf",
+    "label": "Lecture 5 · p. 60",
+    "page": 60,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P1",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 1",
+    "page": 1,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P2",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 2",
+    "page": 2,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P3",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 3",
+    "page": 3,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P4",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 4",
+    "page": 4,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P5",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 5",
+    "page": 5,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P6",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 6",
+    "page": 6,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P7",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 7",
+    "page": 7,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P8",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 8",
+    "page": 8,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P9",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 9",
+    "page": 9,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P10",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 10",
+    "page": 10,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P11",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 11",
+    "page": 11,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P12",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 12",
+    "page": 12,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P13",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 13",
+    "page": 13,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P14",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 14",
+    "page": 14,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P15",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 15",
+    "page": 15,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P16",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 16",
+    "page": 16,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P17",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 17",
+    "page": 17,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P18",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 18",
+    "page": 18,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P19",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 19",
+    "page": 19,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P20",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 20",
+    "page": 20,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P21",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 21",
+    "page": 21,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P22",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 22",
+    "page": 22,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P23",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 23",
+    "page": 23,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P24",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 24",
+    "page": 24,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P25",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 25",
+    "page": 25,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P26",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 26",
+    "page": 26,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P27",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 27",
+    "page": 27,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P28",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 28",
+    "page": 28,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P29",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 29",
+    "page": 29,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P30",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 30",
+    "page": 30,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P31",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 31",
+    "page": 31,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P32",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 32",
+    "page": 32,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P33",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 33",
+    "page": 33,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P34",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 34",
+    "page": 34,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P35",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 35",
+    "page": 35,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P36",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 36",
+    "page": 36,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P37",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 37",
+    "page": 37,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P38",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 38",
+    "page": 38,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P39",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 39",
+    "page": 39,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P40",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 40",
+    "page": 40,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P41",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 41",
+    "page": 41,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P42",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 42",
+    "page": 42,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P43",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 43",
+    "page": 43,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P44",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 44",
+    "page": 44,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P45",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 45",
+    "page": 45,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P46",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 46",
+    "page": 46,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P47",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 47",
+    "page": 47,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P48",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 48",
+    "page": 48,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P49",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 49",
+    "page": 49,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P50",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 50",
+    "page": 50,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P51",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 51",
+    "page": 51,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P52",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 52",
+    "page": 52,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P53",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 53",
+    "page": 53,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P54",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 54",
+    "page": 54,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P55",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 55",
+    "page": 55,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P56",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 56",
+    "page": 56,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P57",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 57",
+    "page": 57,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P58",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 58",
+    "page": 58,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P59",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 59",
+    "page": 59,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P60",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 60",
+    "page": 60,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P61",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 61",
+    "page": 61,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P62",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 62",
+    "page": 62,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P63",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 63",
+    "page": 63,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P64",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 64",
+    "page": 64,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P65",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 65",
+    "page": 65,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P66",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 66",
+    "page": 66,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P67",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 67",
+    "page": 67,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P68",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 68",
+    "page": 68,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P69",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 69",
+    "page": 69,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P70",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 70",
+    "page": 70,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P71",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 71",
+    "page": 71,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P72",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 72",
+    "page": 72,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P73",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 73",
+    "page": 73,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P74",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 74",
+    "page": 74,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P75",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 75",
+    "page": 75,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P76",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 76",
+    "page": 76,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P77",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 77",
+    "page": 77,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P78",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 78",
+    "page": 78,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P79",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 79",
+    "page": 79,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P80",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 80",
+    "page": 80,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P81",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 81",
+    "page": 81,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P82",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 82",
+    "page": 82,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P83",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 83",
+    "page": 83,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P84",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 84",
+    "page": 84,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P85",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 85",
+    "page": 85,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P86",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 86",
+    "page": 86,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P87",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 87",
+    "page": 87,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P88",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 88",
+    "page": 88,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P89",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 89",
+    "page": 89,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P90",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 90",
+    "page": 90,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P91",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 91",
+    "page": 91,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P92",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 92",
+    "page": 92,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P93",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 93",
+    "page": 93,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P94",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 94",
+    "page": 94,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P95",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 95",
+    "page": 95,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P96",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 96",
+    "page": 96,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P97",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 97",
+    "page": 97,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P98",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 98",
+    "page": 98,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P99",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 99",
+    "page": 99,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P100",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 100",
+    "page": 100,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P101",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 101",
+    "page": 101,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P102",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 102",
+    "page": 102,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P103",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 103",
+    "page": 103,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P104",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 104",
+    "page": 104,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P105",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 105",
+    "page": 105,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P106",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 106",
+    "page": 106,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P107",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 107",
+    "page": 107,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P108",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 108",
+    "page": 108,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P109",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 109",
+    "page": 109,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P110",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 110",
+    "page": 110,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P111",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 111",
+    "page": 111,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P112",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 112",
+    "page": 112,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P113",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 113",
+    "page": 113,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P114",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 114",
+    "page": 114,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P115",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 115",
+    "page": 115,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P116",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 116",
+    "page": 116,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P117",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 117",
+    "page": 117,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P118",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 118",
+    "page": 118,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P119",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 119",
+    "page": 119,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P120",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 120",
+    "page": 120,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P121",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 121",
+    "page": 121,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P122",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 122",
+    "page": 122,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P123",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 123",
+    "page": 123,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P124",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 124",
+    "page": 124,
+    "role": "Course lecture"
+  },
+  {
+    "id": "L6-P125",
+    "file": "Chp6 System Modelling.pdf",
+    "label": "Lecture 6 · p. 125",
+    "page": 125,
+    "role": "Course lecture"
+  },
+  {
+    "id": "TB-1",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 1 · pp. 19–30",
+    "page": 20,
+    "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "TB-2",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 2 · pp. 45–64",
+    "page": 46,
+    "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "TB-3",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 3 · pp. 75–91",
+    "page": 76,
+    "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "TB-4",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 4 · pp. 105–137",
+    "page": 106,
+    "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "TB-5",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 5 · pp. 141–148",
+    "page": 142,
+    "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "TB-6",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 6 · pp. 171–195",
+    "page": 172,
+    "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "TB-7",
+    "file": "Software Engineering - Ian Sommerville.pdf",
+    "label": "Ch. 7 · p. 198 onward",
+    "page": 199,
+    "role": "Supplementary textbook; verified PDF locator"
+  }
+]

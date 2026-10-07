@@ -1,0 +1,185 @@
+[
+  {
+    "id": "diagram-context",
+    "title": "Appointment portal context",
+    "topicId": "modeling",
+    "diagramType": "context",
+    "prompt": "Model the Appointment portal as the system under design. A Patient uses it; an external Identity service authenticates users; an external Notification service sends confirmations. Put the portal inside the boundary and all three external entities outside. Connect each external entity to the portal with an undirected context relationship labeled uses, authenticates, or sends confirmations respectively.",
+    "requiredElements": [
+      {
+        "id": "portal",
+        "label": "Appointment portal",
+        "kind": "system",
+        "inside": true,
+        "aliases": [
+          "portal",
+          "appointment system"
+        ]
+      },
+      {
+        "id": "patient",
+        "label": "Patient",
+        "kind": "actor",
+        "inside": false,
+        "aliases": [
+          "patient user"
+        ]
+      },
+      {
+        "id": "identity",
+        "label": "Identity service",
+        "kind": "external",
+        "inside": false,
+        "aliases": [
+          "authentication service"
+        ]
+      },
+      {
+        "id": "notification",
+        "label": "Notification service",
+        "kind": "external",
+        "inside": false,
+        "aliases": [
+          "notifications service"
+        ]
+      }
+    ],
+    "requiredConnections": [
+      {
+        "source": "patient",
+        "target": "portal",
+        "label": "uses",
+        "relation": "context",
+        "directed": false
+      },
+      {
+        "source": "identity",
+        "target": "portal",
+        "label": "authenticates",
+        "relation": "context",
+        "directed": false
+      },
+      {
+        "source": "notification",
+        "target": "portal",
+        "label": "sends confirmations",
+        "relation": "context",
+        "directed": false
+      }
+    ],
+    "acceptableAlternatives": [
+      "Equivalent listed node labels and any layout are accepted. Undirected context links may be entered in either endpoint order."
+    ],
+    "sourceIds": [
+      "L6-P4",
+      "L6-P5",
+      "L6-P6",
+      "L6-P7",
+      "MR-P1"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  },
+  {
+    "id": "diagram-booking",
+    "title": "Patient booking use cases",
+    "topicId": "modeling",
+    "diagramType": "use-case",
+    "prompt": "Draw the scoped use-case diagram for an Appointment portal. Patient can Book appointment and Cancel appointment. Booking always includes Check availability. Put Patient outside the system boundary and all three use cases inside. Add undirected association links from Patient to each user goal (label association). Add a directed include link from Book appointment to Check availability (label include). Other portal interactions are outside this exercise.",
+    "requiredElements": [
+      {
+        "id": "patient",
+        "label": "Patient",
+        "kind": "actor",
+        "inside": false,
+        "aliases": []
+      },
+      {
+        "id": "book",
+        "label": "Book appointment",
+        "kind": "usecase",
+        "inside": true,
+        "aliases": [
+          "make appointment",
+          "book an appointment"
+        ]
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel appointment",
+        "kind": "usecase",
+        "inside": true,
+        "aliases": [
+          "cancel an appointment"
+        ]
+      },
+      {
+        "id": "check",
+        "label": "Check availability",
+        "kind": "usecase",
+        "inside": true,
+        "aliases": [
+          "check appointment availability"
+        ]
+      }
+    ],
+    "requiredConnections": [
+      {
+        "source": "patient",
+        "target": "book",
+        "label": "association",
+        "relation": "association",
+        "directed": false
+      },
+      {
+        "source": "patient",
+        "target": "cancel",
+        "label": "association",
+        "relation": "association",
+        "directed": false
+      },
+      {
+        "source": "book",
+        "target": "check",
+        "label": "include",
+        "relation": "include",
+        "directed": true
+      }
+    ],
+    "acceptableAlternatives": [
+      "Equivalent listed node labels and any layout are accepted. Actor associations are undirected. The include relationship must point toward the included behavior."
+    ],
+    "sourceIds": [
+      "L4-P36",
+      "L4-P37",
+      "L4-P38",
+      "L4-P39",
+      "L4-P40",
+      "L4-P41",
+      "L4-P42",
+      "L4-P43",
+      "L4-P44",
+      "L4-P45",
+      "L6-P16",
+      "L6-P17",
+      "L6-P18",
+      "L6-P19",
+      "L6-P20",
+      "L6-P21",
+      "L6-P22",
+      "L6-P23",
+      "L6-P24",
+      "L6-P25",
+      "L6-P26",
+      "L6-P27",
+      "L6-P28",
+      "L6-P29",
+      "L6-P30",
+      "L6-P31",
+      "L6-P32",
+      "L6-P33",
+      "L6-P34",
+      "MR-P1"
+    ],
+    "provenance": "SOURCE_DERIVED"
+  }
+]

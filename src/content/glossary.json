@@ -1,0 +1,46 @@
+[
+  {
+    "term": "XP",
+    "expansion": "Extreme Programming"
+  },
+  {
+    "term": "MCQ",
+    "expansion": "multiple-choice question"
+  },
+  {
+    "term": "UML",
+    "expansion": "Unified Modeling Language"
+  },
+  {
+    "term": "API",
+    "expansion": "application programming interface"
+  },
+  {
+    "term": "UI",
+    "expansion": "user interface"
+  },
+  {
+    "term": "AI",
+    "expansion": "artificial intelligence"
+  },
+  {
+    "term": "QA",
+    "expansion": "quality assurance"
+  },
+  {
+    "term": "ATM",
+    "expansion": "automated teller machine"
+  },
+  {
+    "term": "PIN",
+    "expansion": "personal identification number"
+  },
+  {
+    "term": "RPC",
+    "expansion": "remote procedure call"
+  },
+  {
+    "term": "ID",
+    "expansion": "identifier"
+  }
+]

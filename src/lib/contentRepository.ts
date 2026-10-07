@@ -1,0 +1,10 @@
+import sources from '@/content/sources.json';
+import topics from '@/content/topics.json';
+import subtopics from '@/content/subtopics.json';
+import concepts from '@/content/concepts.json';
+import questions from '@/content/questions.json';
+import cases from '@/content/caseStudies.json';
+import diagrams from '@/content/diagramExercises.json';
+import { validateContent } from '@/content/validate';
+export const content = validateContent({ sources, topics, subtopics, concepts, questions, cases, diagrams });
+export const sourceMap = new Map(content.sources.map(s=>[s.id,s]));
