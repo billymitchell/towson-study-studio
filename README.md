@@ -59,7 +59,9 @@ All seven MVP milestones and the October 6 priorities 1–3 plus required confid
 
 ## Deployment
 
-The code is maintained in the private [GitHub repository](https://github.com/billymitchell/towson-study-studio). Vercel builds this Next.js app with `npm ci` and `npm run build`, configured in `vercel.json`.
+The live app is available at https://towson-study-studio-billy-mitchells-projects.vercel.app without Vercel sign-in. A GitHub link appears in the footer on every page.
+
+The code is maintained in the public [GitHub repository](https://github.com/billymitchell/towson-study-studio). Vercel builds this Next.js app with `npm ci` and `npm run build`, configured in `vercel.json`.
 
 To release with the Vercel CLI after signing in:
 
