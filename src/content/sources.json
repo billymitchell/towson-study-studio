@@ -3309,5 +3309,19 @@
     "label": "Ch. 7 · p. 198 onward",
     "page": 199,
     "role": "Supplementary textbook; verified PDF locator"
+  },
+  {
+    "id": "ACT-SEQ-P1",
+    "file": "Sequence diagram class activity solution.pdf",
+    "label": "ATM withdrawal sequence activity · p. 1",
+    "page": 1,
+    "role": "Supplementary class-activity comparison"
+  },
+  {
+    "id": "ACT-UC-P1",
+    "file": "Use Case Diagram class activity solution.pdf",
+    "label": "Airline use-case activity · p. 1",
+    "page": 1,
+    "role": "Class-activity use-case example"
   }
 ]

@@ -1,24 +1,24 @@
-# Bounded cheat-sheet reference — planned feature
+# Bounded cheat-sheet reference — implemented
 
-Requested October 6, 2026. **Planned; not implemented. HIGH IMPACT.**
+Requested October 6, 2026; implemented October 8, 2026 as recommendation item 4, feature rows F22–F23. **Complete. HIGH IMPACT.**
 
 Let a learner curate the concepts they most need onto one printable 8.5 × 11-inch reference sheet. The user can add their own notes and accept suggested notes after low-scoring questions. Limited space and a fixed handwriting-sized font encourage choosing useful reminders.
 
-## Confirmed requirements and proposed defaults
+## Confirmed requirements and implemented defaults
 
-| Setting | Planned behavior |
+| Setting | Implemented behavior |
 |---|---|
 | Paper size | **8.5 × 11 inches**, with a hard one-page limit. |
-| Orientation / sides | Proposed: portrait, one side. A second side is not included in the initial feature. |
-| Font | Proposed: fixed **14-point** readable font, **20-point line height**. This is a handwriting-size proxy, not a claim that everyone's handwriting has one size. Calibrate with a sample printed at actual size before implementation acceptance. |
-| Margins | Proposed: **0.5 inch** on each side, leaving a 7.5 × 10-inch content area. |
+| Orientation / sides | Portrait, one side. A second side is not included in the initial feature. |
+| Font | Fixed **14-point** readable font, **20-point line height**. This is a handwriting-size proxy, not a claim that everyone's handwriting has one size. PDF verification confirms one Letter page at 14-point type; printed readability can be checked at actual size. |
+| Margins | **0.5 inch** on each side, leaving a 7.5 × 10-inch content area. |
 | Density | Fixed font, line spacing, margins, and block spacing. No shrink-to-fit, variable font sizes, or extra pages. |
 | Content | Short editable text notes, headings, bullet lists, and acronym expansions. Freeform diagrams, images, rich formatting, and multiple sheets are later scope. |
 | Recommendations | Suggest a note after a successfully saved, revealed answer with normalized score **below 2/3**, matching the existing missed-question threshold. |
 | Persistence | Save notes, order, source/attempt links, and dismissed suggestions across reloads; include them in backup export/import. |
 | Output | Printable single-page preview and browser Print / Save as PDF at Letter size and 100% scale, with browser headers/footers disabled. |
 
-Font size, line height, margins, and single-sided orientation are proposed implementation defaults. The requested paper size, fixed handwriting-sized text, bounded space, editable content, and low-score suggestions are requirements.
+Font size, line height, margins, and single-sided orientation are the implemented defaults. The requested paper size, fixed handwriting-sized text, bounded space, editable content, and low-score suggestions are requirements.
 
 ## Learner flow
 
@@ -28,7 +28,7 @@ Font size, line height, margins, and single-sided orientation are proposed imple
 4. Show the proposed note's space cost before committing it. When full, preserve the current sheet and the proposed text; explain that the learner must shorten the note or remove another note. Rejected additions must not silently truncate text or erase saved notes.
 5. Save and resume the sheet independently of the active study session. Print or save a single-page PDF matching the preview.
 
-Opening or editing a suggestion pauses the existing auto-advance countdown so the question does not disappear during review. Dismissing a suggestion does not change the recorded answer, confidence, or score.
+A qualifying undecided suggestion holds ordinary-practice auto-advance; opening or editing it persistently pauses the existing countdown so the question does not disappear during review. Dismissing a suggestion does not change the recorded answer, confidence, or score.
 
 ## Space enforcement
 
@@ -51,7 +51,7 @@ Keep source/attempt metadata outside the printed content unless the learner expl
 
 ## Data and implementation sequence
 
-1. Introduce versioned `ReferenceSheet` and `ReferenceNote` records plus per-attempt suggestion decisions. Store owner, page/layout version, ordered note IDs, text, optional topic/concept/source/attempt references, timestamps, and revision. Preserve all existing storage v2 data in the next migration; validate imports against the same page limits.
+1. Introduce versioned `ReferenceSheet` and `ReferenceNote` records plus per-attempt suggestion decisions. Store owner, page/layout version, ordered note IDs, text, optional topic/concept/source/attempt references, timestamps, and revision. Storage v4 preserves all existing v0–v3 data and retains original migration backups; validate imports against the same page limits.
 2. Implement the fixed-layout editor, capacity validation, ordering, local persistence, and backup integration. Build browser print styles from the same layout. The initial sheet is browser-local; later accounts/sync must isolate and synchronize it with other owner records.
 3. Connect suggestions to revealed saved evaluations in practice and completed mock review. Integrate Stay and review behavior, editable candidate text, deduplication, and dismissal state.
 4. Verify editor, persistence/migration, print/PDF pagination, recommendation thresholds/reveal timing, accessibility, mobile scaling, and offline use. Add user-facing instructions and update the implementation record when delivered.
@@ -68,7 +68,7 @@ Engineering-agent estimates; **k = 1,000 tokens**. These are planning ranges, no
 | **Incremental total** | | **18–31k** |
 | **With 20% contingency** | Rounded estimate | **22–38k** |
 
-Runtime AI API token spend: **zero for this initial design**. AI summarization and graphical notes would require separate scope and estimates. Recommend delivering this after the completed session/feedback work and before accounts/runtime AI; it can use the saved attempts and source-linked explanations already available.
+Runtime AI API token spend: **zero for this implementation**. AI summarization and graphical notes would require separate scope and estimates. Delivered using saved attempts and authored, source-linked explanations. Engineering-agent usage was not metered; the estimates above remain historical planning ranges.
 
 ## Acceptance criteria
 
@@ -78,3 +78,7 @@ Runtime AI API token spend: **zero for this initial design**. AI summarization a
 - Low-score suggestions use the correct explanation, respect the strict threshold and pending evaluations, and never appear before mock review is allowed.
 - Repeat suggestions do not duplicate notes; dismissal survives reload; opening a suggestion pauses auto-advance.
 - Capacity remains consistent on mobile and desktop, controls work with keyboard/touch, save failures preserve existing data, and offline editing/backup rules remain compatible with the app.
+
+## Delivery verification
+
+The fixed-layout editor, rendered capacity checks, per-response decisions, storage v4 migration, backup/import, offline font caching, and practice/completed-mock feedback integration are implemented. Browser verification covers note editing/reordering/deleting, whitespace retention, long-word wrapping, rejected overflow with draft recovery, font failure and recovery, backup restore, failed saves, thresholds and mock reveal, deduplication/dismissal, accessibility, mobile scaling, and offline use. Short and nearly full printed PDFs each contain exactly one 612 × 792-point Letter page with 14-point type and no clipped content. See [implementation-plan.md](implementation-plan.md) for integrated verification details.

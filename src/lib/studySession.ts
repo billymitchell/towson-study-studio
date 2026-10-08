@@ -1,15 +1,17 @@
 import type { Answer, Attempt, Confidence, SessionDraft, SessionSettings, StudyItem, StudySession } from '@/content/types';
 import { SessionSettingsSchema, SessionDraftSchema, StudySessionSchema } from '@/content/types';
-import { isChoice, responseValid, scoreChoice } from './questions';
+import { isChoice, responseValid, scoreChoice, exactChoiceCorrect } from './questions';
 import { gradeDiagram } from './diagramGrader';
 export const emptyDraft=():SessionDraft=>SessionDraftSchema.parse({});
 export function newStudySession(mode:StudySession['mode'],items:StudyItem[],settings:Partial<SessionSettings>={},id=crypto.randomUUID(),now=new Date().toISOString()):StudySession{
-  return StudySessionSchema.parse({id,ownerId:'local',mode,status:'active',items,index:0,drafts:{},submissions:{},pausedItemIds:[],settings:SessionSettingsSchema.parse(settings),createdAt:now,updatedAt:now,revision:0});
+  return StudySessionSchema.parse({id,ownerId:'local',mode,status:'active',items,index:0,drafts:{},submissions:{},pausedItemIds:[],settings:SessionSettingsSchema.parse({scoringPolicy:'partial',mockAdvance:mode==='mock'?'immediate':'countdown',...settings}),createdAt:now,updatedAt:now,revision:0});
 }
 export function sessionStats(session:StudySession){
   const entries=session.items.map(i=>session.submissions[i.id]).filter(Boolean);
   const scored=entries.filter(e=>e.score!==null),earned=scored.reduce((sum,e)=>sum+e.score!,0);
-  return {total:session.items.length,submitted:entries.length,scored:scored.length,pending:entries.length-scored.length,correct:scored.filter(e=>e.score===1).length,percent:scored.length?earned/scored.length*100:null,complete:entries.length===session.items.length};
+  const choiceEntries=session.items.filter(isChoice).flatMap(item=>{const sub=session.submissions[item.id];return sub&&sub.score!==null?[{item,sub}]:[];});
+  const exactCorrect=choiceEntries.filter(({item,sub})=>sub.exactCorrect??exactChoiceCorrect(item,sub.response)).length;
+  return {total:session.items.length,submitted:entries.length,scored:scored.length,pending:entries.length-scored.length,correct:scored.filter(e=>e.score===1).length,percent:scored.length?earned/scored.length*100:null,choiceScored:choiceEntries.length,exactCorrect,exactPercent:choiceEntries.length?exactCorrect/choiceEntries.length*100:null,complete:entries.length===session.items.length};
 }
 export function updateSessionDraft(session:StudySession,itemId:string,patch:Partial<SessionDraft>):StudySession{
   if(!session.items.some(i=>i.id===itemId))throw new Error('Unknown session item');
@@ -21,8 +23,11 @@ export function submitSessionItem(session:StudySession,itemId:string,response:An
   if(session.submissions[itemId])return session;
   if(session.status!=='active')throw new Error('Session is not active');
   const item=session.items.find(i=>i.id===itemId);if(!item||!responseValid(item,response)||!['Low','Medium','High'].includes(confidence))throw new Error('A complete answer and explicit confidence are required');
-  const score=session.mode==='mock'?null:isChoice(item)?scoreChoice(item,response):'diagramType' in item?gradeDiagram(item,response as Extract<Answer,{nodes:unknown}>).score:null;
-  return {...session,submissions:{...session.submissions,[itemId]:{response,confidence,score,selfScore:null,submittedAt:new Date().toISOString()}}};
+  const score=session.mode==='mock'?null:isChoice(item)?scoreChoice(item,response,session.settings.scoringPolicy):'diagramType' in item?gradeDiagram(item,response as Extract<Answer,{nodes:unknown}>).score:null;
+  const exactCorrect=session.mode!=='mock'&&isChoice(item)?exactChoiceCorrect(item,response):null;
+  const result={...session,submissions:{...session.submissions,[itemId]:{response,confidence,score,exactCorrect,selfScore:null,submittedAt:new Date().toISOString()}}};
+  // Submission and immediate navigation are persisted together by the provider.
+  return session.mode==='mock'&&session.settings.autoAdvance&&session.settings.mockAdvance==='immediate'?advanceSession(result,itemId):result;
 }
 export function selfScoreSessionItem(session:StudySession,itemId:string,score:number):StudySession{
   const item=session.items.find(i=>i.id===itemId),submission=session.submissions[itemId];
@@ -35,7 +40,7 @@ export function finishSession(session:StudySession):StudySession{
   const stats=sessionStats(session);if(!stats.complete||(session.mode!=='mock'&&stats.scored!==stats.total))throw new Error('Complete all items before finishing');
   if(session.status==='completed')return session;
   const submissions={...session.submissions};
-  if(session.mode==='mock')for(const item of session.items){const entry=submissions[item.id];if(isChoice(item))submissions[item.id]={...entry,score:scoreChoice(item,entry.response)};else if('diagramType' in item)submissions[item.id]={...entry,score:gradeDiagram(item,entry.response as Extract<Answer,{nodes:unknown}>).score};}
+  if(session.mode==='mock')for(const item of session.items){const entry=submissions[item.id];if(isChoice(item))submissions[item.id]={...entry,score:scoreChoice(item,entry.response,session.settings.scoringPolicy),exactCorrect:exactChoiceCorrect(item,entry.response)};else if('diagramType' in item)submissions[item.id]={...entry,score:gradeDiagram(item,entry.response as Extract<Answer,{nodes:unknown}>).score};}
   return {...session,status:'completed',submissions};
 }
 export function sessionAttempts(session:StudySession):Attempt[]{
@@ -43,7 +48,7 @@ export function sessionAttempts(session:StudySession):Attempt[]{
   return session.items.flatMap(item=>{
     const sub=session.submissions[item.id];if(!sub||sub.score===null)return [];
     const topicIds='topicIds' in item?item.topicIds:[item.topicId];
-    return topicIds.map(topicId=>({id:`${session.id}:${item.id}:${topicId}`,sessionId:session.id,itemId:item.id,topicId,itemType:'diagramType' in item?'diagram' as const:'scenario' in item?'case' as const:item.type,response:sub.response,score:sub.score!,confidence:sub.confidence,completedAt:sub.submittedAt,sourceIds:item.sourceIds,itemVersion:'version' in item?item.version:1,evaluation:isChoice(item)||'diagramType' in item?'objective' as const:'self' as const}));
+    return topicIds.map(topicId=>({id:`${session.id}:${item.id}:${topicId}`,sessionId:session.id,responseId:`${session.id}:${item.id}`,itemId:item.id,topicId,itemType:'diagramType' in item?'diagram' as const:'scenario' in item?'case' as const:item.type,response:sub.response,score:sub.score!,confidence:sub.confidence,completedAt:sub.submittedAt,sourceIds:item.sourceIds,itemVersion:'version' in item?item.version:1,evaluation:isChoice(item)||'diagramType' in item?'objective' as const:'self' as const,...(isChoice(item)?{scoringPolicy:session.settings.scoringPolicy,scoringVersion:session.settings.scoringVersion,exactCorrect:sub.exactCorrect??exactChoiceCorrect(item,sub.response)}:{})}));
   });
 }
 export function advanceSession(session:StudySession,expectedItemId:string):StudySession{

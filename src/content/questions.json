@@ -1522,13 +1522,13 @@
   {
     "id": "mcq-expanded-03",
     "type": "multiple-choice",
-    "version": 1,
+    "version": 2,
     "topicId": "intro",
     "subtopicId": "software",
     "difficulty": "Intermediate",
-    "prompt": "A developer says engineering work ends as soon as the first release runs. Which response matches the course?",
+    "prompt": "A developer says engineering work ends as soon as the first release runs. Which response most completely matches the course?",
     "choices": [
-      "Only debugging continues; requirement changes are outside engineering",
+      "Engineering continues with debugging after delivery",
       "Documentation belongs entirely to customers",
       "Engineering also covers maintenance and evolution after delivery",
       "All later changes must be treated as hardware work"
@@ -1542,7 +1542,7 @@
     "answer": 2,
     "explanation": "The discipline covers software production and maintenance, including evolution.",
     "distractorExplanations": [
-      "Changing requirements can require software evolution as well as debugging.",
+      "Debugging after delivery is part of maintaining software, but this answer omits adaptation to changing needs and broader evolution.",
       "Associated documentation is part of software and its production.",
       "The discipline covers software production and maintenance, including evolution.",
       "Software can change without replacing hardware."
@@ -1551,7 +1551,13 @@
       "MR-P1",
       "L1-P11"
     ],
-    "provenance": "SOURCE_DERIVED"
+    "provenance": "SOURCE_DERIVED",
+    "partialCredits": {
+      "a": {
+        "score": 0.5,
+        "explanation": "Recognizes post-delivery maintenance through debugging, but omits adaptation to changing requirements and broader evolution. This incomplete understanding earns half credit."
+      }
+    }
   },
   {
     "id": "mcq-expanded-04",

@@ -5,12 +5,13 @@ import { missedIds, topicMastery } from '@/lib/mastery';
 import { isChoice } from '@/lib/questions';
 import { newStudySession, practiceQueue } from '@/lib/studySession';
 import type { StudyItem, SessionSettings } from '@/content/types';
+import { SessionSettingsSchema } from '@/content/types';
 import { useProgress } from './ProgressProvider';
 import { SessionRunner } from './SessionRunner';
 import { PageHeading, Empty } from './Shared';
 export function PracticeRunner({mode}:{mode:'multiple-choice'|'short-answer'|'case'}){
   const progress=useProgress();const {data,ready,error}=progress;
-  const [selection,setSelection]=useState<SessionSettings>({topicId:'all',subtopicId:'all',filter:'mixed',style:'all',count:20,autoAdvance:true,target:70});
+  const [selection,setSelection]=useState<SessionSettings>(()=>SessionSettingsSchema.parse({scoringPolicy:'partial'}));
   const [sessionId,setSessionId]=useState(''),[initialized,setInitialized]=useState(false);const started=useRef(false);
   const missed=missedIds(data.attempts),weak=new Set(content.topics.filter(t=>topicMastery(t,data.attempts).status==='Weak'&&data.attempts.some(a=>a.topicId===t.id)).map(t=>t.id));
   const bank:StudyItem[]=mode==='case'?content.cases:content.questions.filter(q=>mode==='multiple-choice'?isChoice(q):q.type==='short-answer');
@@ -36,6 +37,7 @@ export function PracticeRunner({mode}:{mode:'multiple-choice'|'short-answer'|'ca
       <label>Chapter<select value={selection.topicId} onChange={e=>setSelection({...selection,topicId:e.target.value,subtopicId:'all'})}><option value="all">All chapters</option>{content.topics.map(t=><option key={t.id} value={t.id}>{t.title}</option>)}</select></label>
       <label>Queue<select value={selection.filter} onChange={e=>setSelection({...selection,filter:e.target.value as SessionSettings['filter']})}><option value="mixed">Mixed practice</option><option value="weak">Weak areas</option><option value="missed">Missed questions</option></select></label>
       {mode==='multiple-choice'&&<label>Question style<select value={selection.style} onChange={e=>setSelection({...selection,style:e.target.value as SessionSettings['style']})}><option value="all">Single answer + select all</option><option value="single">Single answer</option><option value="multiple">Select all that apply</option></select></label>}
+      {mode==='multiple-choice'&&<label>Multiple-choice scoring<select value={selection.scoringPolicy} onChange={e=>setSelection({...selection,scoringPolicy:e.target.value as SessionSettings['scoringPolicy']})}><option value="partial">Partial credit</option><option value="exact">Exact answer only</option></select></label>}
       <label>Session length<select value={selection.count} onChange={e=>setSelection({...selection,count:Number(e.target.value)})}>{[1,5,10,20,50,100].map(n=><option key={n} value={n}>{n===100?'All available (up to 100)':n+' questions'}</option>)}</select></label>
       {selection.subtopicId!=='all'&&<button className="button secondary" onClick={()=>setSelection({...selection,subtopicId:'all'})}>Clear subtopic filter</button>}
     </div><p>{items.length} matching items · next session: {Math.min(items.length,selection.count)} questions. Changing these settings leaves your current queue intact.</p><button className="button primary" disabled={!initialized||!!error||!items.length} onClick={start}>Start new study session</button></details>

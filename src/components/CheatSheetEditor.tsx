@@ -1,0 +1,35 @@
+'use client';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
+import { useProgress } from './ProgressProvider';
+import { PageHeading } from './Shared';
+import { NoteComposer, ReferencePage, SuggestionCard, useReferenceCapacity } from './ReferenceSheetTools';
+import { loadSheetFont, measureReferenceSheet, ReferenceDraftSchema, revisedSheet, type ReferenceSheet } from '@/lib/referenceSheet';
+import { referenceSuggestions } from '@/lib/referenceSuggestions';
+export function CheatSheetEditor(){
+  const progress=useProgress(),sheet=progress.data.referenceSheet,[title,setTitle]=useState(sheet.title),[proposed,setProposed]=useState<ReferenceSheet|null>(null),[printMessage,setPrintMessage]=useState(''),[mounted,setMounted]=useState(false);
+  const {ready:fontReady,error:fontError,capacity,retry}=useReferenceCapacity(sheet),candidate=proposed??{...sheet,title};
+  const proposedCapacity=useReferenceCapacity(candidate),candidateFit=!!proposedCapacity.capacity?.fit;
+  const display=candidateFit?candidate:sheet,suggestions=referenceSuggestions(progress.data);
+  const receiveCandidate=useCallback((next:ReferenceSheet|null)=>setProposed(next),[]);
+  useEffect(()=>{setMounted(true);},[]);useEffect(()=>{setTitle(sheet.title);},[sheet.title]);
+  function saveTitle(){progress.saveReferenceSheet(revisedSheet(sheet,{title}));}
+  function remove(id:string){const notes=sheet.notes.filter(n=>n.id!==id);progress.saveReferenceSheet(revisedSheet(sheet,{notes,...(sheet.draft.noteId===id?{draft:ReferenceDraftSchema.parse({})}:{})}));}
+  function move(index:number,direction:number){const notes=[...sheet.notes],target=index+direction;if(target<0||target>=notes.length)return;[notes[index],notes[target]]=[notes[target],notes[index]];progress.saveReferenceSheet(revisedSheet(sheet,{notes}));}
+  async function print(){try{await loadSheetFont();if(!measureReferenceSheet(sheet).fit)throw new Error('This sheet exceeds one page. Shorten notes before printing.');setPrintMessage('Printing saved notes only. Choose Letter, 100% scale, and disable browser headers and footers.');window.print();}catch(e){setPrintMessage(e instanceof Error?e.message:'Printing could not start.');}}
+  if(!progress.ready)return <p role="status">Loading your reference sheet…</p>;
+  return <><PageHeading eyebrow="KEEP THE USEFUL REMINDERS" title="Your one-page cheat sheet." description="Curate the concepts you need most. Fixed 14-point text, 20-point line spacing, and half-inch margins keep this reference on one 8.5 × 11-inch page."/>
+    <p className="note">Notes save on this browser and are included in your Progress backup. Preview may scale on a small screen; printed text stays the same size. Print uses saved notes only.</p>
+    <div className="sheet-workspace"><div className="sheet-controls"><section className="panel"><h2>Edit your reference</h2><form onSubmit={e=>{e.preventDefault();saveTitle();}}><label>Sheet title (optional)<input value={title} onChange={e=>setTitle(e.target.value)}/></label><button className="button secondary" disabled={!fontReady||!!progress.error}>Save sheet title</button></form><NoteComposer key={`${sheet.draft.noteId??'new'}:${sheet.draft.suggestionKey??''}`} title={title} persistDraft onCandidate={receiveCandidate}/></section>
+    <section className="panel"><h2>Saved notes · {sheet.notes.length}</h2>{sheet.notes.length?<ol className="reference-note-list">{sheet.notes.map((note,index)=><li key={note.id}><p>{note.text}</p><small>{note.kind} · {note.origin==='personal'?'Your note':note.origin==='edited'?'Edited source reminder':'Source reminder'}</small><div className="button-row"><button className="button secondary" aria-label={`Edit note ${index+1}`} disabled={!!progress.error} onClick={()=>progress.referenceDraft({noteId:note.id,text:note.text,kind:note.kind,suggestionKey:null})}>Edit</button><button className="button secondary" aria-label={`Move note ${index+1} up`} disabled={index===0||!fontReady||!!progress.error} onClick={()=>move(index,-1)}>↑</button><button className="button secondary" aria-label={`Move note ${index+1} down`} disabled={index===sheet.notes.length-1||!fontReady||!!progress.error} onClick={()=>move(index,1)}>↓</button><button className="button danger" aria-label={`Delete note ${index+1}`} disabled={!fontReady||!!progress.error} onClick={()=>remove(note.id)}>Delete</button></div></li>)}</ol>:<p>No notes yet. Add your own reminder or choose a suggestion below.</p>}</section></div>
+    <section className="sheet-preview-section" aria-labelledby="sheet-preview-title"><div className="sheet-preview-heading"><h2 id="sheet-preview-title">Letter-page preview</h2><p role="status">{fontError||(!fontReady?'Loading fixed font…':capacity?`${Math.round(capacity.usedPercent)}% of saved sheet used · about ${Math.floor(capacity.remaining/(80/3))} lines remaining`: '')}</p>{fontError&&<button className="button secondary" onClick={retry}>Retry font loading</button>}<progress value={capacity?.usedPercent??0} max={100} aria-label="Reference sheet space used"/><p>{candidateFit&&(proposed||title!==sheet.title)?'Preview includes your proposed change. Save it to include it in print.':!candidateFit?'Proposed change does not fit. Preview shows the saved sheet.':'Preview of saved notes.'}</p><button className="button primary" onClick={print} disabled={!fontReady||!!progress.error||!capacity?.fit}>Print / Save as PDF</button><p role="status">{printMessage||progress.notice}</p></div><SheetPreview sheet={display}/></section></div>
+    <section className="panel sheet-suggestions"><h2>Reminders from saved mistakes</h2><p>Suggestions appear only after feedback is revealed and a saved score is below ⅔. Pending written scores and unfinished mock exams contribute no suggestions.</p>{suggestions.length?suggestions.map(s=><SuggestionCard key={s.conceptKey} suggestion={s} headingLevel={3}/>):<p>No undecided suggestions. Keep practicing; future mistakes may offer new reminders.</p>}</section>
+    {mounted&&createPortal(<div className="reference-print-root" aria-hidden="true"><ReferencePage sheet={sheet}/></div>,document.body)}
+  </>;
+}
+
+function SheetPreview({sheet}:{sheet:ReferenceSheet}){
+  const wrapper=useRef<HTMLDivElement>(null),[scale,setScale]=useState(1),[enlarged,setEnlarged]=useState(false);
+  useEffect(()=>{const node=wrapper.current;if(!node)return;const size=()=>setScale(enlarged?1:Math.min(1,node.clientWidth/816));size();const observer=new ResizeObserver(size);observer.observe(node);return()=>observer.disconnect();},[enlarged]);
+  return <><label className="checkbox-label"><input type="checkbox" checked={enlarged} onChange={e=>setEnlarged(e.target.checked)}/>Enlarge preview to actual size</label><div className="sheet-preview-scroll" ref={wrapper} tabIndex={0} role="region" aria-label="Fixed-size Letter preview; scroll when enlarged"><div style={{width:816*scale,height:1056*scale}}><div style={{transform:`scale(${scale})`,transformOrigin:'top left',width:816,height:1056}}><ReferencePage sheet={sheet}/></div></div></div></>;
+}

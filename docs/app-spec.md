@@ -1,6 +1,13 @@
 # Personal Midterm Study App — Product Specification
 
-## Implemented session update — October 6, 2026
+## Implemented scoring, navigation, and diagram lesson — October 8, 2026
+
+- New sessions default to partial-credit MCQs; exact scoring remains selectable for new sessions. Select-all points are `max(0, correctlySelected / totalCorrect - incorrectlySelected / totalIncorrect)`. Single-answer fractional credit requires a validated, authored choice weight and rationale. Confidence never changes points.
+- Persist scoring policy/version and exact correctness independently from earned points. Show practice score plus separate exact-answer MCQ accuracy. Historical scores and session snapshots retain their original policy. Storage v3 migrates v0/v1/v2 and backs up pre-v3 data on first successful write.
+- New sample exams submit and navigate immediately in one saved operation across all four formats. Allow countdown/manual alternatives. Failed writes retain the question/draft; repeated submits do not skip items. The last response requires explicit Finish mock before any scores or solutions appear.
+- The study guide and diagram workspace link to `/study/diagrams`: a source-backed ATM sequence walkthrough and Airline Support System use-case example, with guided highlighting, alternatives, accessible text, zoom, original images/PDFs, and six unscored lesson checks. Explain the handwritten include-arrow differences from the requested redraw. Sequence teaching is supplementary; it does not change confirmed midterm scope or add a sequence editor/grader.
+
+## Implemented session update — October 6, 2026 (historical baseline)
 
 - Finite sessions hold frozen item/choice snapshots, index, per-item drafts, explicit pre-answer confidence, immutable submissions, self-check selections, status, revision/timestamps, and settings in storage v2. Existing v0/v1 attempts, diagrams, and completed mocks migrate intact. Active practice and mock sessions resume on reload and from Progress links.
 - The bank has 80 single-answer and 20 select-all MCQs. Select-all has two or three correct options and requires an exact set, without partial credit. Option IDs persist independently of display order; legacy numeric answers remain supported.
@@ -18,11 +25,15 @@
 - Render dashed open arrows for include/extend, solid hollow-triangle arrows for generalization, and filled context arrows only for directed relationships. Undirected actor/context links have no arrow. Explain source/target direction and provide a reverse control. SVG marker identifiers must be unique.
 - Display verified textbook edition/chapter/section, printed/PDF page ranges, and specific subject-index links for topics, questions, cases, and diagrams. Prefer relevant narrow subsections; deduplicate case readings. Retain lecture scope/provenance and clarify mismatched supplemental terminology. Validation checks the local textbook fingerprint.
 
-## Planned addition — cheat-sheet reference
+## Implemented cheat sheet and learning trends — October 8, 2026
 
-Provide an editable, space-limited **8.5 × 11-inch reference sheet** with fixed handwriting-sized text. Proposed initial defaults are one portrait side, 14-point font, 20-point line spacing, and half-inch margins. Capacity follows actual rendered layout; additions/edits cannot shrink the font, spill onto a second page, clip content, or silently truncate notes. Show remaining space; allow editing/reordering/deleting, persistent save/backup, and single-page printing / Save as PDF.
+Provide an editable, space-limited **8.5 × 11-inch reference sheet** with fixed handwriting-sized text. Implemented defaults are one portrait side, 14-point font, 20-point line spacing, and half-inch margins. Capacity follows actual rendered layout; additions/edits cannot shrink the font, spill onto a second page, clip content, or silently truncate notes. Show remaining space; allow editing/reordering/deleting, persistent save/backup, and single-page printing / Save as PDF.
 
-After a saved, revealed score below 2/3, recommend a concise correct-concept note with source links. Users can edit/add or dismiss it; recommendations do not insert automatically. Group repeated concept suggestions, preserve dismissal, and pause auto-advance while reviewing a suggestion. Pending evaluations and unfinished mocks cannot reveal suggestions. This feature is **planned, not implemented**; details and acceptance are in [cheat-sheet-plan.md](cheat-sheet-plan.md).
+After a saved, revealed score below 2/3, recommend a concise correct-concept note with source links. Users can edit/add or dismiss it; recommendations do not insert automatically. Group repeated concept suggestions, preserve dismissal, and pause auto-advance while reviewing a suggestion. Pending evaluations and unfinished mocks cannot reveal suggestions. Implemented at `/cheat-sheet`; details and acceptance are in [cheat-sheet-plan.md](cheat-sheet-plan.md).
+
+Progress includes first-try exact MCQ accuracy, daily score trends with separate comparable cohorts, response volume, chapter gaps, matched repeat recovery, recurring low scores, and Low/Medium/High confidence calibration. Objective results and written self-assessments stay separate. Pending evaluations contribute only to volume; active mocks are excluded. Multi-topic cases count once overall. First submissions are determined before filters; cohorts distinguish content/scoring versions, format, method, difficulty, and practice/mock mode. At least three matched items are required for a numerical improvement claim. Dates are browser-local; unknown-version legacy results stay separate.
+
+Storage v4 adds the ordered reference sheet, editable draft, revisions/source links, and per-response suggestion decisions. Migration preserves v0–v3 activity and historical scoring with pre-v4 and earlier backups. A stable response ID links new multi-topic attempt rows. Import checks shape, references, response consistency, and actual page fit before replacing data. Fixed-font failure disables capacity-dependent saves/print; save or overflow failure preserves existing notes and proposed text. The sheet route and fixed font are cached offline.
 
 ## Purpose and scope
 

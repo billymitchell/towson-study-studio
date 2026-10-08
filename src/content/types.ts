@@ -13,8 +13,11 @@ export const SubtopicSchema = z.object({ ...linked, topicId: z.string(), title: 
 export const ConceptSchema = z.object({ ...authored, subtopicId: z.string(), title: z.string(), definition: z.string().min(1), explanation: z.string().min(1), example: z.string().min(1), commonMistake: z.string().min(1), relatedConceptIds: z.array(z.string()), skills: z.array(skill) });
 const question = { ...authored, version: z.number().int().positive().default(1), topicId: z.string(), subtopicId: z.string(), difficulty, prompt: z.string().min(1) };
 const choices = { choices: z.array(z.string().min(1)).length(4), choiceIds: z.array(z.string().min(1)).length(4).default(['a','b','c','d']), explanation: z.string().min(1), distractorExplanations: z.array(z.string().min(1)).length(4) };
+export const PartialCreditsSchema = z.record(z.string(),z.object({score:z.number().gt(0).lt(1),explanation:z.string().min(1)}));
+export const ScoringPolicySchema = z.enum(['exact','partial']);
+export type ScoringPolicy = z.infer<typeof ScoringPolicySchema>;
 export const QuestionSchema = z.discriminatedUnion('type', [
-  z.object({ ...question, ...choices, type: z.literal('multiple-choice'), answer: z.number().int().min(0).max(3) }),
+  z.object({ ...question, ...choices, type: z.literal('multiple-choice'), answer: z.number().int().min(0).max(3),partialCredits:PartialCreditsSchema.optional() }).refine(q=>Object.keys(q.partialCredits??{}).every(id=>q.choiceIds.includes(id)&&id!==q.choiceIds[q.answer]),'Partial credit must reference an incorrect choice'),
   z.object({ ...question, ...choices, type: z.literal('multiple-answer'), correctChoiceIds: z.array(z.string().min(1)).min(2).max(3) }),
   z.object({ ...question, type: z.literal('short-answer'), modelAnswer: z.string().min(1), expectedConcepts: z.array(z.string().min(1)).min(1), rubric: z.array(z.string().min(1)).min(1) }),
 ]);
@@ -42,7 +45,7 @@ export const ConfidenceSchema = z.enum(['Low', 'Medium', 'High']);
 export type Confidence = z.infer<typeof ConfidenceSchema>;
 export const AnswerSchema = z.union([z.string(), z.number(), z.array(z.string()), GraphSchema]);
 export type Answer = z.infer<typeof AnswerSchema>;
-export const AttemptSchema = z.object({ id: z.string(), itemId: z.string(), topicId: z.string(), itemType: z.enum(['multiple-choice', 'multiple-answer', 'short-answer', 'case', 'diagram']), response: AnswerSchema, score: z.number().min(0).max(1), confidence: ConfidenceSchema, completedAt: z.string().datetime(), sourceIds, sessionId: z.string().optional(), itemVersion: z.number().int().positive().optional(), evaluation: z.enum(['objective','self']).optional() });
+export const AttemptSchema = z.object({ id: z.string(), itemId: z.string(), topicId: z.string(), itemType: z.enum(['multiple-choice', 'multiple-answer', 'short-answer', 'case', 'diagram']), response: AnswerSchema, score: z.number().min(0).max(1), confidence: ConfidenceSchema, completedAt: z.string().datetime(), sourceIds, sessionId: z.string().optional(), responseId:z.string().min(1).optional(), itemVersion: z.number().int().positive().optional(), evaluation: z.enum(['objective','self']).optional(),scoringPolicy:ScoringPolicySchema.optional(),scoringVersion:z.literal(1).optional(),exactCorrect:z.boolean().optional() });
 export type Attempt = z.infer<typeof AttemptSchema>;
 export const SavedDiagramSchema = z.object({ id: z.string(), exerciseId: z.string(), topicId: z.string(), diagramType: z.enum(['context','use-case']), graph: GraphSchema, updatedAt: z.string().datetime(), sourceIds });
 export type SavedDiagram = z.infer<typeof SavedDiagramSchema>;
@@ -50,9 +53,9 @@ export const StudyItemSchema = z.union([QuestionSchema, CaseSchema, DiagramSchem
 export type StudyItem = z.infer<typeof StudyItemSchema>;
 export const SessionDraftSchema = z.object({ response: AnswerSchema.default(''), confidence: ConfidenceSchema.nullable().default(null), parts: z.array(z.string()).default([]), selfScore: z.number().int().min(0).max(3).nullable().default(null), checked: z.array(z.string()).default([]) });
 export type SessionDraft = z.infer<typeof SessionDraftSchema>;
-export const SubmissionSchema = z.object({response:AnswerSchema,confidence:ConfidenceSchema,submittedAt:z.string().datetime(),score:z.number().min(0).max(1).nullable(),selfScore:z.number().int().min(0).max(3).nullable().default(null)});
+export const SubmissionSchema = z.object({response:AnswerSchema,confidence:ConfidenceSchema,submittedAt:z.string().datetime(),score:z.number().min(0).max(1).nullable(),selfScore:z.number().int().min(0).max(3).nullable().default(null),exactCorrect:z.boolean().nullable().default(null)});
 export type Submission = z.infer<typeof SubmissionSchema>;
-export const SessionSettingsSchema = z.object({topicId:z.string().default('all'),subtopicId:z.string().default('all'),filter:z.enum(['mixed','weak','missed']).default('mixed'),style:z.enum(['all','single','multiple']).default('all'),count:z.number().int().min(1).max(100).default(20),autoAdvance:z.boolean().default(true),target:z.number().int().min(0).max(100).default(70)});
+export const SessionSettingsSchema = z.object({topicId:z.string().default('all'),subtopicId:z.string().default('all'),filter:z.enum(['mixed','weak','missed']).default('mixed'),style:z.enum(['all','single','multiple']).default('all'),count:z.number().int().min(1).max(100).default(20),autoAdvance:z.boolean().default(true),target:z.number().int().min(0).max(100).default(70),scoringPolicy:ScoringPolicySchema.default('exact'),scoringVersion:z.literal(1).default(1),mockAdvance:z.enum(['immediate','countdown']).default('countdown')});
 export type SessionSettings = z.infer<typeof SessionSettingsSchema>;
 export const StudySessionSchema = z.object({id:z.string().min(1),ownerId:z.literal('local'),mode:z.enum(['multiple-choice','short-answer','case','mock']),status:z.enum(['active','completed','abandoned']),items:z.array(StudyItemSchema).min(1).max(100),index:z.number().int().nonnegative(),drafts:z.record(z.string(),SessionDraftSchema),submissions:z.record(z.string(),SubmissionSchema),pausedItemIds:z.array(z.string()),settings:SessionSettingsSchema,createdAt:z.string().datetime(),updatedAt:z.string().datetime(),revision:z.number().int().nonnegative()});
 export type StudySession = z.infer<typeof StudySessionSchema>;

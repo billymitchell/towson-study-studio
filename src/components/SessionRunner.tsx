@@ -11,7 +11,14 @@ const DiagramEditor=dynamic(()=>import('./DiagramEditor').then(m=>m.DiagramEdito
 export function SessionRunner({session}:{session:StudySession}){
   const {navigate,pauseAdvance,finish,error}=useProgress();const stats=sessionStats(session),item=session.items[session.index];
   const prompt=useRef<HTMLDivElement>(null),previousIndex=useRef(session.index);
-  useEffect(()=>{if(previousIndex.current!==session.index){previousIndex.current=session.index;prompt.current?.querySelector<HTMLElement>('.question-heading')?.focus();}},[session.index]);
+  useEffect(()=>{
+    if(previousIndex.current===session.index)return;previousIndex.current=session.index;
+    const container=prompt.current;if(!container)return;
+    const focus=()=>{const heading=container.querySelector<HTMLElement>('.question-heading');heading?.focus();return !!heading;};
+    if(focus())return;
+    // The diagram editor loads lazily; focus its prompt once it has mounted.
+    const observer=new MutationObserver(()=>{if(focus())observer.disconnect();});observer.observe(container,{childList:true,subtree:true});return()=>observer.disconnect();
+  },[session.index]);
   function move(index:number){pauseAdvance(session.id,item.id);navigate(session.id,index);}
   return <><SessionHeader session={session}/>{session.status==='completed'?<>
     <section className="panel session-complete" aria-live="polite"><h2>{session.mode==='mock'?'Mock complete · review your work':'Study session complete'}</h2><p>All {stats.total} responses are saved. {stats.pending?'Record the remaining written self-check scores below.':'Review your responses and explanations below.'}</p></section>

@@ -58,6 +58,17 @@ The course lecture numbering and textbook chapter numbering diverge for modeling
 - Use PDF page locators for stable citation. The HTML copy may help inspect the same slide but is not a second independent source.
 - The supplied class-activity solution PDFs (`Use Case Diagram class activity solution.pdf`, `Sequence diagram class activity solution.pdf`, and `Test First Developement Class Activity Solution.pdf`) are not required to establish exam scope. Consult them only if the instructor's exercise method is needed to clarify an already in-scope topic; do not use them to add topics.
 
+## October 8 supplementary diagram teaching — implemented
+
+The user explicitly requested a sequence-versus-use-case comparison using the two diagram class solutions. This authorizes supplementary teaching examples without changing the professor-defined exam blueprint. Each PDF has one image-based page; both pages were rendered and visually inspected on October 8. The following IDs are registered in `src/content/sources.json`; both PDFs are shipped in `public/sources`, with rendered originals under `public/lessons`:
+
+| Source ID | Source | Verified example / role |
+|---|---|---|
+| `ACT-SEQ-P1` | `Sequence diagram class activity solution.pdf`, PDF page 1 | Client / ATM / BankSystem withdrawal sequence with card/PIN/funds checks and approved, rejected, blocked-card alternatives. Supplementary comparison, not confirmed sequence exam scope. |
+| `ACT-UC-P1` | `Use Case Diagram class activity solution.pdf`, PDF page 1 | Airline Support System with passenger, check-in representative, baggage management system, TSA, check-in variants, baggage, boarding pass, security, boarding, and change flight. |
+
+Preserve source images and identify app-authored annotations/redraws. The airline source's include arrows point Issue boarding pass → Check in and Security check → Issue boarding pass; the user's requested semantics imply Check in → Issue boarding pass and Issue boarding pass → Security check. The teaching feature must explain those differences rather than silently attributing revised arrows to the instructor. Detailed requirements: [scoring-and-diagram-teaching-plan.md](scoring-and-diagram-teaching-plan.md).
+
 ## October 6 question-bank expansion
 
 Added 63 original single-answer scenarios and 20 original select-all items, for 100 MCQs total across all 22 blueprint rows. Records retain the existing row’s lecture citations and `MR-P1`, with per-choice explanations, stable choice IDs, and version 1. New MCQ practice on a topic does not alter the professor’s listed formats or imply a numeric exam weighting. No outside or restricted question bank was imported. Acronym expansions clarify existing source-derived text without changing source identifiers. Precise textbook index/page mapping remains planned.

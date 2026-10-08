@@ -1,0 +1,552 @@
+{
+  "id": "sequence-use-case-comparison",
+  "title": "Sequence or use case? See the difference.",
+  "intro": "Use-case diagrams describe the goals a system supports and the external roles involved. Sequence diagrams follow the messages exchanged during one scenario, in time order.",
+  "scopeNote": "Supplementary explanation requested for studying. The professor’s review establishes exam scope; this lesson does not imply that sequence diagrams are confirmed midterm questions.",
+  "sourceIds": [
+    "ACT-SEQ-P1",
+    "ACT-UC-P1",
+    "L6-P16",
+    "L6-P29"
+  ],
+  "comparison": [
+    {
+      "dimension": "Main question",
+      "useCase": "Who uses the system, and what goals does it support?",
+      "sequence": "Who sends which message to whom, and in what order?"
+    },
+    {
+      "dimension": "Elements",
+      "useCase": "Actors, system boundary, use-case ovals, associations, include, extend, generalization.",
+      "sequence": "Participants, lifelines, activation bars, messages, returns, and guarded alternatives."
+    },
+    {
+      "dimension": "Time",
+      "useCase": "Connections describe participation and relationships. They do not establish chronological order.",
+      "sequence": "Read messages from top to bottom to follow the interaction order."
+    },
+    {
+      "dimension": "Example",
+      "useCase": "Airline Support System: check in, check baggage, boarding, and change flight.",
+      "sequence": "ATM withdrawal: the user, ATM, and bank system exchange messages."
+    }
+  ],
+  "bridge": "A hypothetical ATM use-case overview could name “Withdraw cash.” The sequence diagram then explains how one withdrawal unfolds. This bridge is an app-authored comparison; the supplied ATM solution is a sequence diagram.",
+  "sequence": {
+    "title": "ATM withdrawal: follow the messages",
+    "subtitle": "ATM means automated teller machine. PIN means personal identification number. Client is the user; : ATM and bankSystem : BankSystem are the other participants.",
+    "participants": [
+      {
+        "id": "client",
+        "label": "Client (user)",
+        "x": 110
+      },
+      {
+        "id": "atm",
+        "label": ": ATM",
+        "x": 465
+      },
+      {
+        "id": "bank",
+        "label": "bankSystem : BankSystem",
+        "x": 820
+      }
+    ],
+    "messages": [
+      {
+        "id": "insert",
+        "from": "client",
+        "to": "atm",
+        "label": "Insert a card",
+        "explanation": "The user starts the interaction by inserting a card into the ATM."
+      },
+      {
+        "id": "verify",
+        "from": "atm",
+        "to": "atm",
+        "label": "Verify the card",
+        "explanation": "A self-call shows the ATM doing work on its own lifeline."
+      },
+      {
+        "id": "pin",
+        "from": "client",
+        "to": "atm",
+        "label": "Enter card PIN",
+        "explanation": "The user supplies the PIN. This is a new message, later than inserting the card."
+      },
+      {
+        "id": "check-pin",
+        "from": "atm",
+        "to": "atm",
+        "label": "Check PIN",
+        "explanation": "The ATM checks the PIN; the source draws this as another self-call."
+      },
+      {
+        "id": "amount",
+        "from": "client",
+        "to": "atm",
+        "label": "Choose amount to withdraw",
+        "explanation": "The user specifies the requested withdrawal amount."
+      },
+      {
+        "id": "funds",
+        "from": "atm",
+        "to": "bank",
+        "label": "Check funds (requestedAmount)",
+        "explanation": "The ATM asks the bank system to check the client’s funds for the requested amount."
+      }
+    ],
+    "branches": [
+      {
+        "id": "approved",
+        "label": "Transaction approved",
+        "guard": "[transaction approved]",
+        "explanation": "The bank returns permission. The ATM gives money and returns the card.",
+        "messages": [
+          {
+            "from": "bank",
+            "to": "atm",
+            "label": "Permission",
+            "return": true
+          },
+          {
+            "from": "atm",
+            "to": "client",
+            "label": "Give money",
+            "return": false
+          },
+          {
+            "from": "atm",
+            "to": "client",
+            "label": "Return the card",
+            "return": false
+          }
+        ]
+      },
+      {
+        "id": "rejected",
+        "label": "Transaction rejected",
+        "guard": "[transaction rejected]",
+        "explanation": "The bank returns rejection. The ATM shows rejection details and returns the card.",
+        "messages": [
+          {
+            "from": "bank",
+            "to": "atm",
+            "label": "Rejection",
+            "return": true
+          },
+          {
+            "from": "atm",
+            "to": "client",
+            "label": "Show rejection details",
+            "return": false
+          },
+          {
+            "from": "atm",
+            "to": "client",
+            "label": "Return the card",
+            "return": false
+          }
+        ]
+      },
+      {
+        "id": "blocked",
+        "label": "Card blocked",
+        "guard": "[card blocked]",
+        "explanation": "The bank reports a blocked card. The ATM keeps the card and displays blocking information.",
+        "messages": [
+          {
+            "from": "bank",
+            "to": "atm",
+            "label": "Card blocked",
+            "return": true
+          },
+          {
+            "from": "atm",
+            "to": "atm",
+            "label": "Keep hold of the card",
+            "return": false
+          },
+          {
+            "from": "atm",
+            "to": "client",
+            "label": "Show blocking information",
+            "return": false
+          }
+        ]
+      }
+    ],
+    "notation": [
+      "Dashed vertical lifelines represent participants over time; activation bars indicate periods of activity.",
+      "Solid arrows are messages; the source’s dashed horizontal arrows show bank responses.",
+      "An arrow that loops back to the same lifeline is a self-call.",
+      "The alt frame contains guarded alternatives. Approved, rejected, and blocked-card paths are alternatives, not three successive stages. Only the chosen path is highlighted in this walkthrough."
+    ],
+    "sourceId": "ACT-SEQ-P1",
+    "originalImage": "/lessons/atm-original.png"
+  },
+  "airline": {
+    "title": "Airline Support System: actors and goals",
+    "subtitle": "Use cases sit inside the Airline Support System boundary. Actors sit outside it. TSA means Transportation Security Administration; an actor can be a person or an external system.",
+    "nodes": [
+      {
+        "id": "passenger",
+        "label": "Passenger",
+        "kind": "actor",
+        "x": 105,
+        "y": 380
+      },
+      {
+        "id": "rep",
+        "label": "Check-in representative",
+        "kind": "actor",
+        "x": 1100,
+        "y": 160
+      },
+      {
+        "id": "baggage-system",
+        "label": "Baggage management system",
+        "kind": "external",
+        "x": 1100,
+        "y": 365
+      },
+      {
+        "id": "tsa",
+        "label": "TSA",
+        "kind": "actor",
+        "x": 1100,
+        "y": 630
+      },
+      {
+        "id": "checkin",
+        "label": "Check in",
+        "kind": "usecase",
+        "x": 600,
+        "y": 130
+      },
+      {
+        "id": "mobile",
+        "label": "Mobile check in",
+        "kind": "usecase",
+        "x": 375,
+        "y": 235
+      },
+      {
+        "id": "online",
+        "label": "Online check in",
+        "kind": "usecase",
+        "x": 600,
+        "y": 235
+      },
+      {
+        "id": "terminal",
+        "label": "Terminal check in",
+        "kind": "usecase",
+        "x": 825,
+        "y": 235
+      },
+      {
+        "id": "baggage",
+        "label": "Check baggage",
+        "kind": "usecase",
+        "x": 600,
+        "y": 360
+      },
+      {
+        "id": "pass",
+        "label": "Issue boarding pass",
+        "kind": "usecase",
+        "x": 600,
+        "y": 480
+      },
+      {
+        "id": "security",
+        "label": "Security check",
+        "kind": "usecase",
+        "x": 600,
+        "y": 620
+      },
+      {
+        "id": "boarding",
+        "label": "Boarding",
+        "kind": "usecase",
+        "x": 375,
+        "y": 755
+      },
+      {
+        "id": "change",
+        "label": "Change flight",
+        "kind": "usecase",
+        "x": 825,
+        "y": 755
+      }
+    ],
+    "edges": [
+      {
+        "from": "passenger",
+        "to": "checkin",
+        "relation": "association"
+      },
+      {
+        "from": "passenger",
+        "to": "baggage",
+        "relation": "association"
+      },
+      {
+        "from": "passenger",
+        "to": "pass",
+        "relation": "association"
+      },
+      {
+        "from": "passenger",
+        "to": "security",
+        "relation": "association"
+      },
+      {
+        "from": "passenger",
+        "to": "boarding",
+        "relation": "association"
+      },
+      {
+        "from": "passenger",
+        "to": "change",
+        "relation": "association"
+      },
+      {
+        "from": "rep",
+        "to": "checkin",
+        "relation": "association"
+      },
+      {
+        "from": "rep",
+        "to": "baggage",
+        "relation": "association"
+      },
+      {
+        "from": "rep",
+        "to": "pass",
+        "relation": "association"
+      },
+      {
+        "from": "rep",
+        "to": "change",
+        "relation": "association"
+      },
+      {
+        "from": "baggage-system",
+        "to": "baggage",
+        "relation": "association"
+      },
+      {
+        "from": "tsa",
+        "to": "security",
+        "relation": "association"
+      },
+      {
+        "from": "mobile",
+        "to": "checkin",
+        "relation": "generalization"
+      },
+      {
+        "from": "online",
+        "to": "checkin",
+        "relation": "generalization"
+      },
+      {
+        "from": "terminal",
+        "to": "checkin",
+        "relation": "generalization"
+      },
+      {
+        "from": "checkin",
+        "to": "pass",
+        "relation": "include",
+        "route": [
+          [
+            705,
+            130
+          ],
+          [
+            952,
+            130
+          ],
+          [
+            952,
+            480
+          ],
+          [
+            705,
+            480
+          ]
+        ],
+        "labelX": 820,
+        "labelY": 480
+      },
+      {
+        "from": "pass",
+        "to": "security",
+        "relation": "include",
+        "route": [
+          [
+            600,
+            512
+          ],
+          [
+            600,
+            588
+          ]
+        ],
+        "labelX": 670,
+        "labelY": 556
+      },
+      {
+        "from": "boarding",
+        "to": "pass",
+        "relation": "include",
+        "route": [
+          [
+            375,
+            723
+          ],
+          [
+            375,
+            480
+          ],
+          [
+            495,
+            480
+          ]
+        ],
+        "labelX": 375,
+        "labelY": 575
+      }
+    ],
+    "explorations": [
+      {
+        "id": "checkin",
+        "label": "Check in and its variants",
+        "nodeIds": [
+          "passenger",
+          "rep",
+          "checkin",
+          "mobile",
+          "online",
+          "terminal",
+          "pass"
+        ],
+        "explanation": "Passenger and check-in representative participate in Check in. Mobile, Online, and Terminal check in specialize the general Check in use case; hollow triangles point toward Check in. These are alternative ways to check in, not three mandatory include relationships. In the requested model, Check in includes Issue boarding pass."
+      },
+      {
+        "id": "baggage",
+        "label": "Check baggage",
+        "nodeIds": [
+          "passenger",
+          "rep",
+          "baggage-system",
+          "baggage"
+        ],
+        "explanation": "Passenger and check-in representative participate in Check baggage. Baggage management system is an external system actor connected to this goal, demonstrating that actors need not be people."
+      },
+      {
+        "id": "pass",
+        "label": "Issue boarding pass and security",
+        "nodeIds": [
+          "passenger",
+          "rep",
+          "tsa",
+          "checkin",
+          "pass",
+          "security"
+        ],
+        "explanation": "Passenger receives a boarding pass, with the check-in representative participating in issuing it. The requested model has Check in include Issue boarding pass, and Issue boarding pass include Security check. TSA participates in Security check. Include arrows point toward the required included behavior."
+      },
+      {
+        "id": "boarding",
+        "label": "Boarding",
+        "nodeIds": [
+          "passenger",
+          "boarding",
+          "pass"
+        ],
+        "explanation": "Boarding is a passenger goal. The instructor source also shows Boarding include Issue boarding pass. This is a modeled dependency on included behavior, not a timeline saying when the passenger boards."
+      },
+      {
+        "id": "change",
+        "label": "Change flight",
+        "nodeIds": [
+          "passenger",
+          "rep",
+          "change"
+        ],
+        "explanation": "Passenger can Change flight; the source also connects the check-in representative. Ordinary actor associations are undirected and indicate participation."
+      }
+    ],
+    "sourceNote": "Annotated redraw of your requested model. The handwritten instructor solution points Issue boarding pass → Check in and Security check → Issue boarding pass. Your requested inclusion semantics use Check in → Issue boarding pass and Issue boarding pass → Security check. The redraw follows your model and labels these differences rather than silently changing the original. These are class-exercise assumptions, not a description of actual airline or TSA operations.",
+    "sourceId": "ACT-UC-P1",
+    "originalImage": "/lessons/airline-original.png"
+  },
+  "checks": [
+    {
+      "id": "choose",
+      "prompt": "Which diagram answers “Who can check in or change a flight?”",
+      "choices": [
+        "Use-case diagram",
+        "Sequence diagram"
+      ],
+      "answer": 0,
+      "explanation": "A use-case diagram connects actors to supported user goals."
+    },
+    {
+      "id": "order",
+      "prompt": "In the ATM example, what happens after the user chooses an amount?",
+      "choices": [
+        "The ATM asks the bank system to check funds",
+        "The three alternative outcomes occur one after another",
+        "The user inserts a card for the first time"
+      ],
+      "answer": 0,
+      "explanation": "Messages run top to bottom: the amount is chosen before the ATM requests a funds check."
+    },
+    {
+      "id": "alt",
+      "prompt": "What does the ATM alt frame mean?",
+      "choices": [
+        "All three branches always execute",
+        "One guarded alternative path applies"
+      ],
+      "answer": 1,
+      "explanation": "Approval, rejection, and a blocked card are alternative outcomes, not consecutive steps."
+    },
+    {
+      "id": "actor",
+      "prompt": "Why is the baggage management system an actor?",
+      "choices": [
+        "Only a human may be an actor",
+        "It is an external system interacting with the Airline Support System",
+        "It is an internal use-case oval"
+      ],
+      "answer": 1,
+      "explanation": "An actor is an external interacting role, including an external system."
+    },
+    {
+      "id": "include",
+      "prompt": "In your requested model, which way does the Check in include arrow point?",
+      "choices": [
+        "Issue boarding pass → Check in",
+        "Check in → Issue boarding pass"
+      ],
+      "answer": 1,
+      "explanation": "Include points from the including use case to its included behavior. The handwritten source reverses this relationship; the annotated redraw makes the requested semantics explicit."
+    },
+    {
+      "id": "generalization",
+      "prompt": "How do Mobile, Online, and Terminal check in relate to Check in?",
+      "choices": [
+        "All three are required steps, connected by include",
+        "They are specializations, with hollow triangles pointing to Check in"
+      ],
+      "answer": 1,
+      "explanation": "Generalization points from a specialized use case toward the general use case. It does not impose a chronological order."
+    }
+  ]
+}

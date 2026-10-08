@@ -36,12 +36,12 @@ test('course scope, source PDFs, required confidence, fixed queue and reload rec
   await page.getByRole('combobox',{name:'Confidence',exact:true}).selectOption('Low');
   await page.reload();await expect(page.getByRole('radio').nth((first.answer+1)%4)).toBeChecked();await expect(page.getByRole('combobox',{name:'Confidence',exact:true})).toHaveValue('Low');
   await page.getByRole('button',{name:'Submit answer'}).click();await expect(page.getByRole('heading',{name:'✕ Incorrect — review this one',exact:true})).toBeVisible();
-  await expect(page.locator('.session-score')).toContainText('0% practice accuracy');await expect(page.locator('.session-heading')).toContainText('1/20 submitted');
+  await expect(page.locator('.session-score')).toContainText('0% practice score');await expect(page.locator('.session-heading')).toContainText('1/20 submitted');
   await expect(page.locator('.feedback')).toHaveClass(/feedback-incorrect/);await expect(page.getByRole('combobox',{name:'Confidence',exact:true})).toHaveCount(0);
   await page.reload();expect((await store(page)).attempts).toHaveLength(1);expect((await store(page)).studySessions[0].items.map((q:{id:string})=>q.id)).toEqual(original.items.map((q:{id:string})=>q.id));
   await page.getByRole('button',{name:'Next now'}).click();await expect(page.locator('.session-heading')).toContainText('Question 2/20');
   const second=original.items[1];await page.getByRole('radio').nth(second.answer).check();await page.getByRole('combobox',{name:'Confidence',exact:true}).selectOption('High');await page.getByRole('button',{name:'Submit answer'}).click();
-  await expect(page.getByRole('heading',{name:'✓ Correct',exact:true})).toBeVisible();await expect(page.locator('.session-score')).toContainText('50% practice accuracy');
+  await expect(page.getByRole('heading',{name:'✓ Correct',exact:true})).toBeVisible();await expect(page.locator('.session-score')).toContainText('50% practice score');
   await page.goto('/progress');await expect(page.getByText('2 topic attempts',{exact:true})).toBeVisible();await page.getByRole('link',{name:'Resume session'}).click();await expect(page.locator('.session-heading')).toContainText('Question 2/20');expect(errors).toEqual([]);
 });
 test('select-all exact-set feedback, cancelable auto-advance and persisted settings',async({page})=>{
@@ -61,9 +61,9 @@ test('written and case drafts, confidence, checklist and pending scores survive 
   await expect(page.getByRole('heading',{name:'Model response'})).toHaveCount(0);
   const answer='Software includes programs and documentation. Engineering covers the production and maintenance lifecycle.';
   await page.getByLabel('Your response',{exact:true}).fill(answer);await expect(page.getByRole('button',{name:'Submit answer'})).toBeDisabled();await page.getByRole('combobox',{name:'Confidence',exact:true}).selectOption('Medium');await page.reload();await expect(page.locator('textarea')).toHaveValue(answer);
-  await page.getByRole('button',{name:'Submit answer'}).click();await expect(page.getByRole('heading',{name:'Model response'})).toBeVisible();await expect(page.locator('.session-score')).toContainText('— practice accuracy');
+  await page.getByRole('button',{name:'Submit answer'}).click();await expect(page.getByRole('heading',{name:'Model response'})).toBeVisible();await expect(page.locator('.session-score')).toContainText('— practice score');
   await page.locator('.rubric-list input').first().check();await page.getByRole('combobox',{name:'Self-check score',exact:true}).selectOption('2');await page.reload();await expect(page.locator('.rubric-list input').first()).toBeChecked();await expect(page.getByRole('combobox',{name:'Self-check score',exact:true})).toHaveValue('2');
-  await page.getByRole('button',{name:'Record self-check score'}).click();expect((await store(page)).attempts[0].score).toBeCloseTo(2/3);await expect(page.locator('.session-score')).toContainText('67% practice accuracy');
+  await page.getByRole('button',{name:'Record self-check score'}).click();expect((await store(page)).attempts[0].score).toBeCloseTo(2/3);await expect(page.locator('.session-score')).toContainText('67% practice score');
   await page.goto('/practice/cases');await page.getByRole('checkbox',{name:'Auto-advance after recording'}).uncheck();
   for(const [i,textarea] of (await page.locator('textarea').all()).entries())await textarea.fill('Original case reasoning '+i);await page.getByRole('combobox',{name:'Confidence',exact:true}).selectOption('High');await page.reload();await expect(page.locator('textarea').first()).toHaveValue('Original case reasoning 0');
   await page.getByRole('button',{name:'Submit answer'}).click();await expect(page.getByRole('heading',{name:'Common mistakes',exact:true})).toBeVisible();await page.getByRole('combobox',{name:'Self-check score',exact:true}).selectOption('3');await page.getByRole('button',{name:'Record self-check score'}).click();expect((await store(page)).attempts).toHaveLength(3);await expect(page.locator('.session-score')).toContainText('1/1 fully correct scored items');
@@ -144,7 +144,7 @@ test('failed storage write preserves the draft and prevents feedback and auto-ad
 });
 test('a valid backup recovers corrupt storage without forcing a reset',async({page})=>{
   await page.goto('/progress');await page.evaluate(k=>localStorage.setItem(k,'corrupt'),key);await page.reload();await expect(page.locator('.storage-alert')).toBeVisible();page.on('dialog',d=>d.accept());
-  await page.getByLabel('Import backup',{exact:true}).setInputFiles({name:'progress.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({version:1,attempts:[],diagrams:[],sessions:[]}))});await expect(page.locator('.storage-alert')).toHaveCount(0);await expect(page.getByRole('status').filter({hasText:'Backup imported.'})).toBeVisible();expect((await store(page)).version).toBe(2);
+  await page.getByLabel('Import backup',{exact:true}).setInputFiles({name:'progress.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({version:1,attempts:[],diagrams:[],sessions:[]}))});await expect(page.locator('.storage-alert')).toHaveCount(0);await expect(page.getByRole('status').filter({hasText:'Backup imported.'})).toBeVisible();expect((await store(page)).version).toBe(4);
 });
 test('confidence and acronym explanations are visible to learners',async({page})=>{
   await page.goto('/study?topic=agile');await page.getByText('Acronym reference',{exact:true}).click();await expect(page.locator('.glossary')).toContainText('Extreme Programming');
